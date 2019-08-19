@@ -1,0 +1,17 @@
+/.phpintel/
+/prototype/node_modules
+/prototype/.sass-cache
+/design
+.DS_Store
+/build/composer.lock
+/build/*
+/build/themes/sative/content
+/build/themes/sative/content/*
+/build/themes/sative/meta
+/build/themes/sative/meta/*
+/.DS_Store
+**/.DS_Store
+!/.gitignore
+!/build/themes
+!/build/plugins/sative
+!/build/plugins/sative/*

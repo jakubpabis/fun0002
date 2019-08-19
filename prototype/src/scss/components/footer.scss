@@ -1,0 +1,138 @@
+.footer {
+    color: white;
+    background-color: $color-tertiary;
+    @include gradientA($color-secondary, $color-tertiary);
+    padding: 40px 0 25px;
+
+    .logo {
+        display: inline-block;
+        margin: 0 auto;
+
+        object,
+        svg {
+            display: block;
+            max-width: 100%;
+            width: 170px;
+        }
+
+    }
+
+    &__menu {
+        display: inline-block;
+        margin: 0 auto;
+
+        ul {
+            padding: 0;
+            margin-top: 25px;
+            display: flex;
+            flex-wrap: nowrap;
+            position: relative;
+
+            li {
+                padding: 0 4px;
+
+                a { 
+                    padding: 2px;
+
+                    i {
+                        font-size: 24px;
+                        line-height: 18px;
+                        border-radius: 6px;
+                        color: white;
+                        transition: all 200ms ease;
+                        background-color: transparent;
+                    }
+
+                    &:hover {
+
+                        i {
+                            transform: scale(1.2);
+                            // background-color: white;
+
+                            // &.fa-facebook-square {
+                            //     color: #3b5998;
+                            // }
+
+                            // &.fa-linkedin {
+                            //     color: #007bb5;
+                            // }
+
+                            // &.fa-twitter-square {
+                            //     color: #1da1f2;
+                            // }
+
+                            // &.fa-instagram {
+                            //     color: #c32aa3;
+                            // }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+
+        }
+
+    }
+
+    .fw400 {
+        margin-top: 40px;
+
+        a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+    }
+
+    .copyright {
+        margin-top: 30px;
+
+        small {
+            display: block;
+            font-size: 12px;
+            margin: 0 auto;
+        }
+
+        a {
+            display: inline-block;
+
+            span {
+                font-weight: 700;
+                padding-left: 2px;
+            }
+
+            i {
+                -webkit-text-fill-color: #c92d2d;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: #fff;
+                margin-left: 3px;
+                margin-right: 3px;
+                vertical-align: -1px;
+            }
+
+            &:hover {
+                color: white;
+                
+                i {
+                    transform: scale(1.25);
+                }
+
+                span {
+                    color: #c92d2d;
+                    background-color: white;
+                    border-radius: 6px;
+                    padding: 1px 2px 2px;
+                    margin: 0 -2px 0 0;
+                }
+
+            }
+
+        }
+
+    }
+
+}
