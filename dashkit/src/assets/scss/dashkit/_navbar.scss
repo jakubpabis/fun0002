@@ -210,6 +210,7 @@
 
 .navbar-brand {
   margin-right: 0;
+  min-width: 180px;
 }
 
 .navbar-brand-img,
@@ -608,6 +609,7 @@
           }
 
           .navbar-brand {
+            min-width: 160px;
             display: block;
             text-align: center;
             padding-top: (1rem - $navbar-padding-y);

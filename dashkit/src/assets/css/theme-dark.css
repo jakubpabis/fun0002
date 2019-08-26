@@ -8791,7 +8791,8 @@ a.text-white:hover, a.text-white:focus {
   border-top-color: #3b2861; }
 
 .navbar-brand {
-  margin-right: 0; }
+  margin-right: 0;
+  min-width: 180px; }
 
 .navbar-brand-img,
 .navbar-brand > img {
@@ -9138,6 +9139,7 @@ a.text-white:hover, a.text-white:focus {
   .navbar-vertical.navbar-expand-xs .navbar-nav .nav .nav .nav-link {
     padding-left: 4rem; }
   .navbar-vertical.navbar-expand-xs .navbar-brand {
+    min-width: 160px;
     display: block;
     text-align: center;
     padding-top: 0.25rem;
@@ -9215,6 +9217,7 @@ a.text-white:hover, a.text-white:focus {
     .navbar-vertical.navbar-expand-sm .navbar-nav .nav .nav .nav-link {
       padding-left: 4rem; }
     .navbar-vertical.navbar-expand-sm .navbar-brand {
+      min-width: 160px;
       display: block;
       text-align: center;
       padding-top: 0.25rem;
@@ -9292,6 +9295,7 @@ a.text-white:hover, a.text-white:focus {
     .navbar-vertical.navbar-expand-md .navbar-nav .nav .nav .nav-link {
       padding-left: 4rem; }
     .navbar-vertical.navbar-expand-md .navbar-brand {
+      min-width: 160px;
       display: block;
       text-align: center;
       padding-top: 0.25rem;
@@ -9369,6 +9373,7 @@ a.text-white:hover, a.text-white:focus {
     .navbar-vertical.navbar-expand-lg .navbar-nav .nav .nav .nav-link {
       padding-left: 4rem; }
     .navbar-vertical.navbar-expand-lg .navbar-brand {
+      min-width: 160px;
       display: block;
       text-align: center;
       padding-top: 0.25rem;
@@ -9446,6 +9451,7 @@ a.text-white:hover, a.text-white:focus {
     .navbar-vertical.navbar-expand-xl .navbar-nav .nav .nav .nav-link {
       padding-left: 4rem; }
     .navbar-vertical.navbar-expand-xl .navbar-brand {
+      min-width: 160px;
       display: block;
       text-align: center;
       padding-top: 0.25rem;
