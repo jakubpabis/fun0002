@@ -9,6 +9,7 @@
 /build/themes/sative/content/*
 /build/themes/sative/meta
 /build/themes/sative/meta/*
+/node_modules
 /.DS_Store
 **/.DS_Store
 !/.gitignore

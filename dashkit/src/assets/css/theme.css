@@ -10912,3 +10912,12 @@ a:focus, button:focus {
 
 .is-invalid ~ .select2 .select2-selection {
   border-color: #E63757 !important; }
+
+img,
+picture,
+iframe,
+svg,
+object {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }

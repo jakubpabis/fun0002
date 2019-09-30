@@ -2,3 +2,12 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+img,
+picture,
+iframe,
+svg,
+object {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
