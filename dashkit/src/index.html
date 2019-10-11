@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     @@include("partials/head.html", {
-      "title": "Dashkit"
+      "title": "Fundit"
     })
   </head>
   <body>
@@ -41,13 +41,11 @@
     ================================================== -->
     <div class="main-content">
 
-      @@if (navPosition == 'combo' || demoMode) {
-        @@include("partials/topbar.html")
-      }
+      @@include("partials/topbar.html")
 
       <!-- HEADER -->
       <div class="header bg-dark pb-5">
-        <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
+        <div class="container-fluid">
 
           <!-- Body -->
           <div class="header-body">
@@ -56,7 +54,7 @@
                 
                 <!-- Pretitle -->
                 <h6 class="header-pretitle text-secondary">
-                  Nowość
+                  Nowości
                 </h6>
 
                 <!-- Title -->
@@ -111,7 +109,7 @@
                                 </div>
                                 <div class="row justify-content-between align-items-center">
                                   <div class="col-auto">
-                                    <h1 class="mb-0">58 754 PLN</h1>
+                                    <h1 class="mb-0">28 754 PLN <small class="text-muted ml-2">z 100 000 PLN</small></h1>
                                   </div>
                                   <div class="col-auto">
                                     <h2 class="mb-0">
@@ -127,13 +125,14 @@
                                     </h3>
                                   </div>
                                   <div class="col-lg-4">
-                                    <input type="text" class="form-control form-control-prepended" placeholder="Kwota" data-mask="#.##0,00 PLN" data-mask-reverse="true">
+                                    <input type="text" class="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" value="1000">
                                   </div>
                                   <div class="col-auto pl-0 pr-0">
                                     <h3 class="mb-0">=</h3>
                                   </div>
-                                  <div class="col-lg-4 pr-0">
-                                    <input type="number" class="form-control" placeholder="Jednostki">
+                                  <div class="col-lg-4 pr-0 input-jednostki">
+                                    <input type="number" class="form-control" placeholder="Jednostki" value="100">
+                                    <i class="fe fe-info" data-toggle="tooltip" data-placement="bottom" title="Cena za jednostkę: 10 PLN"></i>
                                   </div>
                                   <div class="col-auto">
                                     <button type="button" class="btn btn-outline-primary"><i class="fe fe-check-circle mr-2"></i> Kupuj</button>
@@ -182,7 +181,7 @@
                                 </div>
                                 <div class="row justify-content-between align-items-center">
                                   <div class="col-auto">
-                                    <h1 class="mb-0">128 754 PLN</h1>
+                                    <h1 class="mb-0">128 754 PLN <small class="text-muted ml-2">z 150 000 PLN</small></h1>
                                   </div>
                                   <div class="col-auto">
                                     <h2 class="mb-0">
@@ -198,13 +197,14 @@
                                     </h3>
                                   </div>
                                   <div class="col-lg-4">
-                                    <input type="text" class="form-control form-control-prepended" placeholder="Kwota" data-mask="#.##0,00 PLN" data-mask-reverse="true">
+                                    <input type="text" class="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" value="1000">
                                   </div>
                                   <div class="col-auto pl-0 pr-0">
                                     <h3 class="mb-0">=</h3>
                                   </div>
-                                  <div class="col-lg-4 pr-0">
-                                    <input type="number" class="form-control" placeholder="Jednostki">
+                                  <div class="col-lg-4 pr-0 input-jednostki">
+                                    <input type="number" class="form-control" placeholder="Jednostki" value="50">
+                                    <i class="fe fe-info" data-toggle="tooltip" data-placement="bottom" title="Cena za jednostkę: 20 PLN"></i>
                                   </div>
                                   <div class="col-auto">
                                     <button type="button" class="btn btn-outline-primary"><i class="fe fe-check-circle mr-2"></i> Kupuj</button>
@@ -225,7 +225,7 @@
       </div> <!-- / .header -->
       
       <!-- CARDS -->
-      <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container} mt-n6">
+      <div class="container-fluid mt-n6">
         <div class="row">
           <div class="col-12">
             
@@ -515,591 +515,17 @@
                           </h3>
                           <div class="row align-items-center">
                             <div class="col-lg-4">
-                              <input type="text" class="form-control form-control-prepended" placeholder="Kwota" data-mask="#.##0,00 PLN" data-mask-reverse="true">
+                              <input type="text" class="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" value="500">
                             </div>
                             <div class="col-auto pl-0 pr-0">
                               <h3 class="mb-0">=</h3>
                             </div>
-                            <div class="col-lg-4 pr-0">
-                              <input type="number" class="form-control" placeholder="Jednostki">
-                            </div>
-                            <div class="col-auto">
-                              <button type="button" class="btn btn-outline-primary"><i class="fe fe-check-circle mr-2"></i> Kupuj</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-  
-                </div>
-            </div>
-  
-            <div class="card">
-                <div class="card-body">
-                  
-                  <div class="row">
-                    <div class="col-xl-6 pr-4">
-
-                      <!-- Header -->
-                      <div class="mb-3">
-                        <div class="row align-items-center">
-                          <div class="col-auto">
-                            
-                            <!-- Avatar -->
-                            <a href="#!" class="avatar">
-                              <img src="assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded-circle">
-                            </a>
-      
-                          </div>
-                          <div class="col ml-n2">
-      
-                            <!-- Title -->
-                            <h4 class="card-title mb-1">
-                              Footroll
-                            </h4>
-      
-                            <!-- Time -->
-                            <p class="card-text small text-muted">
-                              <span class="fe fe-clock"></span> <time datetime="2018-05-24">4 godz. temu</time>
-                            </p>
-                            
-                          </div>
-                          <div class="col-auto">
-                            
-                            <!-- Dropdown -->
-                            <div class="dropdown">
-                              <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fe fe-more-vertical"></i>
-                              </a>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a href="#!" class="dropdown-item">
-                                  Action
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  Another action
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  Something else here
-                                </a>
+                            <div class="col-lg-4 pr-0 input-jednostki">
+                              <input type="number" class="form-control" placeholder="Jednostki" value="15">
+                              <i class="fe fe-info" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Cena poszczególnych jednostek: <br/>2 jedn. ⟶ 10 PLN<br/> 10 jedn. ⟶ 35 PLN<br/> 3 jedn. ⟶ 40 PLN"></i>
+                              <div class="info position-absolute mt-2" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Cena poszczególnych jednostek: <br/>2 jedn. ⟶ 10 PLN<br/> 10 jedn. ⟶ 35 PLN<br/> 3 jedn. ⟶ 40 PLN">
+                                <small class="text-muted">Do zapłaty: <strong class="white">450 PLN</strong></small>
                               </div>
-                            </div>
-                            
-                          </div>
-                        </div> <!-- / .row -->
-                      </div>
-      
-                      <!-- Text -->
-                      <p class="mb-3">
-                        I've been working on shipping the latest version of Launchday. The story I'm trying to focus on is something like "You're launching soon and need to be 100% focused on your product. Don't lose precious days designing, coding, and testing a product site. Instead, build one in minutes."
-                      </p>
-                      
-                      <p class="mb-4">
-                          What do you y'all think? Would love some feedback from <a href="#!" class="badge badge-soft-primary">@Ab</a> or <a href="#!" class="badge badge-soft-primary">@Adolfo</a>?
-                      </p>
-      
-                      <!-- Image -->
-                      <p class="text-center mb-3">
-                        <img src="assets/img/covers/profile-cover-4.jpg" alt="..." class="img-fluid rounded">
-                      </p>
-      
-                      <!-- Buttons -->
-                      <div class="mb-3">
-                        <div class="row">
-                          <div class="col">
-      
-                            <a href="#!" class="btn btn-sm btn-white">
-                              😬 1
-                            </a>
-                            <a href="#!" class="btn btn-sm btn-white">
-                              👍 2
-                            </a>
-                            <a href="#!" class="btn btn-sm btn-white">
-                              Zareaguj
-                            </a>
-      
-                          </div>
-
-                          <div class="col-auto">
-      
-                            <a href="#!" class="btn btn-sm btn-white">
-                            Udostępnij
-                            </a>
-      
-                          </div>
-                        </div> <!-- / .row -->
-                      </div>
-      
-                      <!-- Divider -->
-                      <hr>
-      
-                      <!-- Comments -->
-                      <div class="comment mb-3">
-                        <div class="row">
-                          <div class="col-auto">
-      
-                            <!-- Avatar -->
-                            <a class="avatar avatar-sm" href="profile-posts.html">
-                              <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
-                            </a>
-      
-                          </div>
-                          <div class="col ml-n2">
-                            
-                            <!-- Body -->
-                            <div class="comment-body">
-      
-                              <div class="row">
-                                <div class="col">
-      
-                                  <!-- Title -->
-                                  <h5 class="comment-title">
-                                    Ab Hadley
-                                  </h5>
-      
-                                </div>
-                                <div class="col-auto">
-      
-                                  <!-- Time -->
-                                  <time class="comment-time">
-                                    11:12
-                                  </time>
-      
-                                </div>
-                              </div> <!-- / .row -->
-      
-                              <!-- Text -->
-                              <p class="comment-text">
-                                Looking good Dianna! I like the image grid on the left, but it feels like a lot to process and doesn't really <em>show</em> me what the product does? I think using a short looping video or something similar demo'ing the product might be better?
-                              </p>
-      
-                            </div>
-      
-                          </div>
-                        </div> <!-- / .row -->
-                      </div>
-      
-                      <div class="comment mb-3">
-                        <div class="row">
-                          <div class="col-auto">
-      
-                            <!-- Avatar -->
-                            <a class="avatar avatar-sm" href="profile-posts.html">
-                              <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
-                            </a>
-      
-                          </div>
-                          <div class="col ml-n2">
-                            
-                            <!-- Body -->
-                            <div class="comment-body">
-      
-                              <div class="row">
-                                <div class="col">
-      
-                                  <!-- Title -->
-                                  <h5 class="comment-title">
-                                    Adolfo Hess
-                                  </h5>
-      
-                                </div>
-                                <div class="col-auto">
-      
-                                  <!-- Time -->
-                                  <time class="comment-time">
-                                    11:12
-                                  </time>
-      
-                                </div>
-                              </div> <!-- / .row -->
-      
-                              <!-- Text -->
-                              <p class="comment-text">
-                                Any chance you're going to link the grid up to a public gallery of sites built with Launchday?
-                              </p>
-      
-                            </div>
-      
-                          </div>
-                        </div> <!-- / .row -->
-                      </div>
-      
-                      <!-- Divider -->
-                      <hr>
-      
-                      <!-- Form -->
-                      <div class="row">
-                        <div class="col-auto">
-      
-                          <!-- Avatar -->
-                          <div class="avatar avatar-sm">
-                            <img src="assets/img/avatars/profiles/patryk.jpg" alt="..." class="avatar-img rounded-circle">
-                          </div>
-      
-                        </div>
-                        <div class="col ml-n2">
-      
-                          <!-- Input -->
-                          <form class="mt-1">
-                            <label class="sr-only">Skomentuj...</label>
-                            <textarea class="form-control form-control-flush" data-toggle="autosize" rows="1" placeholder="Skomentuj..."></textarea>
-                          </form>
-      
-                        </div>
-                        <div class="col-auto align-self-end">
-                          
-                          <!-- Icons -->
-                          <div class="text-muted mb-2">
-                            <a class="text-reset mr-3" href="#!" data-toggle="tooltip" title="Wstaw ikonkę emoji">
-                              <i class="fe fe-smile"></i>
-                            </a>
-                            <a class="text-reset" href="#!" data-toggle="tooltip" title="Załącz zdjęcie lub film">
-                              <i class="fe fe-camera"></i>
-                            </a>
-                          </div>
-      
-                        </div>
-                      </div> <!-- / .row -->
-
-                    </div>
-                    <div class="col-xl-6 pl-4">
-                      <div class="header-body pt-0">
-                        <div class="row align-items-end">
-                          <div class="col">
-                              
-                            <!-- Pretitle -->
-                            <h6 class="header-pretitle text-secondary">
-                              Footroll
-                            </h6>
-    
-                            <!-- Title -->
-                            <h1 class="header-title text-white">
-                              Wartość jednostek
-                            </h1>
-      
-                          </div>
-                        </div> <!-- / .row -->
-                      </div> <!-- / .header-body -->
-      
-                      <!-- Footer -->
-                      <div class="header-footer">
-      
-                        <!-- Chart -->
-                        <div class="chart">
-                          <canvas id="headerChart2" class="chart-canvas"></canvas>
-                        </div>
-    
-                      </div>
-
-                      <div class="row">
-                        <div class="col-12 mt-4 mb-3">
-                          <p class="text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repellat minima iusto, hic porro earum eligendi ipsam quaerat fugit. Accusantium delectus fuga aut esse ipsa fugit eveniet ipsum enim quam?
-                          </p>
-                        </div>
-                        <div class="col-12 mt-5">
-                          <h3>
-                            Kup jednostki
-                          </h3>
-                          <div class="row align-items-center">
-                            <div class="col-lg-4">
-                              <input type="text" class="form-control form-control-prepended" placeholder="Kwota" data-mask="#.##0,00 PLN" data-mask-reverse="true">
-                            </div>
-                            <div class="col-auto pl-0 pr-0">
-                              <h3 class="mb-0">=</h3>
-                            </div>
-                            <div class="col-lg-4 pr-0">
-                              <input type="number" class="form-control" placeholder="Jednostki">
-                            </div>
-                            <div class="col-auto">
-                              <button type="button" class="btn btn-outline-primary"><i class="fe fe-check-circle mr-2"></i> Kupuj</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-  
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                  
-                  <div class="row">
-                    <div class="col-xl-6 pr-4">
-
-                      <!-- Header -->
-                      <div class="mb-3">
-                        <div class="row align-items-center">
-                          <div class="col-auto">
-                            
-                            <!-- Avatar -->
-                            <a href="#!" class="avatar">
-                              <img src="assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded-circle">
-                            </a>
-      
-                          </div>
-                          <div class="col ml-n2">
-      
-                            <!-- Title -->
-                            <h4 class="card-title mb-1">
-                              Footroll
-                            </h4>
-      
-                            <!-- Time -->
-                            <p class="card-text small text-muted">
-                              <span class="fe fe-clock"></span> <time datetime="2018-05-24">4 godz. temu</time>
-                            </p>
-                            
-                          </div>
-                          <div class="col-auto">
-                            
-                            <!-- Dropdown -->
-                            <div class="dropdown">
-                              <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fe fe-more-vertical"></i>
-                              </a>
-                              <div class="dropdown-menu dropdown-menu-right">
-                                <a href="#!" class="dropdown-item">
-                                  Action
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  Another action
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                  Something else here
-                                </a>
-                              </div>
-                            </div>
-                            
-                          </div>
-                        </div> <!-- / .row -->
-                      </div>
-      
-                      <!-- Text -->
-                      <p class="mb-3">
-                        I've been working on shipping the latest version of Launchday. The story I'm trying to focus on is something like "You're launching soon and need to be 100% focused on your product. Don't lose precious days designing, coding, and testing a product site. Instead, build one in minutes."
-                      </p>
-                      
-                      <p class="mb-4">
-                          What do you y'all think? Would love some feedback from <a href="#!" class="badge badge-soft-primary">@Ab</a> or <a href="#!" class="badge badge-soft-primary">@Adolfo</a>?
-                      </p>
-      
-                      <!-- Image -->
-                      <p class="text-center mb-3">
-                        <img src="assets/img/covers/profile-cover-4.jpg" alt="..." class="img-fluid rounded">
-                      </p>
-      
-                      <!-- Buttons -->
-                      <div class="mb-3">
-                        <div class="row">
-                          <div class="col">
-      
-                            <a href="#!" class="btn btn-sm btn-white">
-                              😬 1
-                            </a>
-                            <a href="#!" class="btn btn-sm btn-white">
-                              👍 2
-                            </a>
-                            <a href="#!" class="btn btn-sm btn-white">
-                              Zareaguj
-                            </a>
-      
-                          </div>
-
-                          <div class="col-auto">
-      
-                            <a href="#!" class="btn btn-sm btn-white">
-                            Udostępnij
-                            </a>
-      
-                          </div>
-                        </div> <!-- / .row -->
-                      </div>
-      
-                      <!-- Divider -->
-                      <hr>
-      
-                      <!-- Comments -->
-                      <div class="comment mb-3">
-                        <div class="row">
-                          <div class="col-auto">
-      
-                            <!-- Avatar -->
-                            <a class="avatar avatar-sm" href="profile-posts.html">
-                              <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
-                            </a>
-      
-                          </div>
-                          <div class="col ml-n2">
-                            
-                            <!-- Body -->
-                            <div class="comment-body">
-      
-                              <div class="row">
-                                <div class="col">
-      
-                                  <!-- Title -->
-                                  <h5 class="comment-title">
-                                    Ab Hadley
-                                  </h5>
-      
-                                </div>
-                                <div class="col-auto">
-      
-                                  <!-- Time -->
-                                  <time class="comment-time">
-                                    11:12
-                                  </time>
-      
-                                </div>
-                              </div> <!-- / .row -->
-      
-                              <!-- Text -->
-                              <p class="comment-text">
-                                Looking good Dianna! I like the image grid on the left, but it feels like a lot to process and doesn't really <em>show</em> me what the product does? I think using a short looping video or something similar demo'ing the product might be better?
-                              </p>
-      
-                            </div>
-      
-                          </div>
-                        </div> <!-- / .row -->
-                      </div>
-      
-                      <div class="comment mb-3">
-                        <div class="row">
-                          <div class="col-auto">
-      
-                            <!-- Avatar -->
-                            <a class="avatar avatar-sm" href="profile-posts.html">
-                              <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
-                            </a>
-      
-                          </div>
-                          <div class="col ml-n2">
-                            
-                            <!-- Body -->
-                            <div class="comment-body">
-      
-                              <div class="row">
-                                <div class="col">
-      
-                                  <!-- Title -->
-                                  <h5 class="comment-title">
-                                    Adolfo Hess
-                                  </h5>
-      
-                                </div>
-                                <div class="col-auto">
-      
-                                  <!-- Time -->
-                                  <time class="comment-time">
-                                    11:12
-                                  </time>
-      
-                                </div>
-                              </div> <!-- / .row -->
-      
-                              <!-- Text -->
-                              <p class="comment-text">
-                                Any chance you're going to link the grid up to a public gallery of sites built with Launchday?
-                              </p>
-      
-                            </div>
-      
-                          </div>
-                        </div> <!-- / .row -->
-                      </div>
-      
-                      <!-- Divider -->
-                      <hr>
-      
-                      <!-- Form -->
-                      <div class="row">
-                        <div class="col-auto">
-      
-                          <!-- Avatar -->
-                          <div class="avatar avatar-sm">
-                            <img src="assets/img/avatars/profiles/patryk.jpg" alt="..." class="avatar-img rounded-circle">
-                          </div>
-      
-                        </div>
-                        <div class="col ml-n2">
-      
-                          <!-- Input -->
-                          <form class="mt-1">
-                            <label class="sr-only">Skomentuj...</label>
-                            <textarea class="form-control form-control-flush" data-toggle="autosize" rows="1" placeholder="Skomentuj..."></textarea>
-                          </form>
-      
-                        </div>
-                        <div class="col-auto align-self-end">
-                          
-                          <!-- Icons -->
-                          <div class="text-muted mb-2">
-                            <a class="text-reset mr-3" href="#!" data-toggle="tooltip" title="Wstaw ikonkę emoji">
-                              <i class="fe fe-smile"></i>
-                            </a>
-                            <a class="text-reset" href="#!" data-toggle="tooltip" title="Załącz zdjęcie lub film">
-                              <i class="fe fe-camera"></i>
-                            </a>
-                          </div>
-      
-                        </div>
-                      </div> <!-- / .row -->
-
-                    </div>
-                    <div class="col-xl-6 pl-4">
-                      <div class="header-body pt-0">
-                        <div class="row align-items-end">
-                          <div class="col">
-                              
-                            <!-- Pretitle -->
-                            <h6 class="header-pretitle text-secondary">
-                              Footroll
-                            </h6>
-    
-                            <!-- Title -->
-                            <h1 class="header-title text-white">
-                              Wartość jednostek
-                            </h1>
-      
-                          </div>
-                        </div> <!-- / .row -->
-                      </div> <!-- / .header-body -->
-      
-                      <!-- Footer -->
-                      <div class="header-footer">
-      
-                        <!-- Chart -->
-                        <div class="chart">
-                          <canvas id="headerChart2" class="chart-canvas"></canvas>
-                        </div>
-    
-                      </div>
-
-                      <div class="row">
-                        <div class="col-12 mt-4 mb-3">
-                          <p class="text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repellat minima iusto, hic porro earum eligendi ipsam quaerat fugit. Accusantium delectus fuga aut esse ipsa fugit eveniet ipsum enim quam?
-                          </p>
-                        </div>
-                        <div class="col-12 mt-5">
-                          <h3>
-                            Kup jednostki
-                          </h3>
-                          <div class="row align-items-center">
-                            <div class="col-lg-4">
-                              <input type="text" class="form-control form-control-prepended" placeholder="Kwota" data-mask="#.##0,00 PLN" data-mask-reverse="true">
-                            </div>
-                            <div class="col-auto pl-0 pr-0">
-                              <h3 class="mb-0">=</h3>
-                            </div>
-                            <div class="col-lg-4 pr-0">
-                              <input type="number" class="form-control" placeholder="Jednostki">
                             </div>
                             <div class="col-auto">
                               <button type="button" class="btn btn-outline-primary"><i class="fe fe-check-circle mr-2"></i> Kupuj</button>

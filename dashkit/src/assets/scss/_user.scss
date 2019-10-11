@@ -11,3 +11,36 @@ object {
     height: auto;
     vertical-align: middle;
 }
+
+.container-fluid {
+    max-width: 1670px;
+}
+
+.icon-xl {
+    font-size: 1.25em;
+}
+
+.text-white {
+    color: white!important;
+}
+
+.pos-badge {
+    top: -5px!important; 
+    right: -10px;
+}
+
+.input-jednostki {
+
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button  {
+        appearance: none!important;
+    }
+
+    > i {
+        position: absolute;
+        top: 6px;
+        right: 10px;
+        font-size: 18px;
+    }
+
+}
