@@ -13,29 +13,13 @@
 
     <!-- NAVIGATION
     ================================================== -->
-    @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
-      @@if (sidebarSize == 'base' || demoMode) {
-        @@include("partials/sidebar.html", {
-          "category": "dashboards",
-          "subcategory": "",
-          "page": "index.html"
-        })
-      }
-      @@if (sidebarSize == 'small' || demoMode) {
-        @@include("partials/sidebar-sm.html", {
-          "category": "dashboards",
-          "subcategory": "",
-          "page": "index.html"
-        })
-      }
-    }
-    @@if (navPosition == 'topnav' || demoMode) {
-      @@include("partials/topnav.html", {
-        "category": "dashboards",
-        "subcategory": "",
-        "page": "index.html"
-      })
-    }
+    @@include("partials/sidebar.html", {
+      "category": "dashboards",
+      "subcategory": "",
+      "page": "index.html"
+    })
+
+    
 
     <!-- MAIN CONTENT
     ================================================== -->
@@ -44,7 +28,7 @@
       @@include("partials/topbar.html")
 
       <!-- HEADER -->
-      <div class="header bg-dark pb-5">
+      <div class="header pb-5">
         <div class="container-fluid">
 
           <!-- Body -->

@@ -10945,3 +10945,18 @@ object {
   top: 6px;
   right: 10px;
   font-size: 18px; }
+
+#topbar {
+  position: fixed;
+  left: 250px;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15); }
+
+.main-content {
+  padding-top: 80px;
+  box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.15); }
+
+.card-body {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1); }
