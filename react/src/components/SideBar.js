@@ -14,14 +14,14 @@ export default class SideBar extends Component {
                 </button>
 
                 {/* <!-- Brand --> */}
-                <a className="navbar-brand" href="index.html">
+                <a className="navbar-brand" href="/">
                 <img src="/assets/img/logo_white.svg" className="navbar-brand-img mx-auto" alt="..." />
                 </a>
 
                 <div className="avatar avatar-xxl mx-auto mb-5 d-none d-xl-block d-lg-block d-md-block text-center">
                 <img src="assets/img/avatars/profiles/patryk.jpg" alt="..." className="mx-auto avatar-img rounded-circle" />
                 <h3 className="mt-3 header-title text-center">
-                    Patryk Starzycki
+                    Patryk Starzycki <i data-toggle="tooltip" title="dziala!!!">blabla</i>
                 </h3>
                 </div>
 
@@ -64,7 +64,7 @@ export default class SideBar extends Component {
                     </div>
                     </div>
                 </form>
-
+            {/* to FIX ! on page refresh no class Active on index */}
                 {/* <!-- Navigation --> */}
                 <ul className="navbar-nav">
                     <li className="nav-item">
@@ -83,13 +83,13 @@ export default class SideBar extends Component {
                     </Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#sidebarPages" data-toggle="collapse" role="button" aria-expanded="@@if(category=='pages'){true}@@if(category!=='pages'){false}" aria-controls="sidebarPages">
+                    <a className="nav-link" href="#sidebarPages" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
                         <i className="fe fe-file"></i> Pages
                     </a>
                     <div className="collapse @@if(category=='pages'){show}" id="sidebarPages">
                         <ul className="nav nav-sm flex-column">
                         <li className="nav-item">
-                            <a href="#sidebarProfile" className="nav-link" data-toggle="collapse" role="button" aria-expanded="@@if(subcategory=='profile'){true}@@if(subcategory!=='profile'){false}" aria-controls="sidebarProfile">
+                            <a href="#sidebarProfile" className="nav-link" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProfile">
                             Profile
                             </a>
                             <div className="collapse @@if(subcategory=='profile'){show}" id="sidebarProfile">
@@ -123,7 +123,7 @@ export default class SideBar extends Component {
                             </div>
                         </li>
                         <li className="nav-item">
-                            <a href="#sidebarProject" className="nav-link" data-toggle="collapse" role="button" aria-expanded="@@if(subcategory=='project'){true}@@if(subcategory!=='project'){false}" aria-controls="sidebarProject">
+                            <a href="#sidebarProject" className="nav-link" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProject">
                             Project
                             </a>
                             <div className="collapse @@if(subcategory=='project'){show}" id="sidebarProject">
@@ -152,7 +152,7 @@ export default class SideBar extends Component {
                             </div>
                         </li>
                         <li className="nav-item">
-                            <a href="#sidebarTeam" className="nav-link" data-toggle="collapse" role="button" aria-expanded="@@if(subcategory=='team'){true}@@if(subcategory!=='team'){false}" aria-controls="sidebarTeam">
+                            <a href="#sidebarTeam" className="nav-link" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTeam">
                             Team
                             </a>
                             <div className="collapse @@if(subcategory=='team'){show}" id="sidebarTeam">
@@ -181,7 +181,7 @@ export default class SideBar extends Component {
                             </div>
                         </li>
                         <li className="nav-item">
-                            <a href="#sidebarFeed" className="nav-link" data-toggle="collapse" role="button" aria-expanded="@@if(subcategory=='feed'){true}@@if(subcategory!=='feed'){false}" aria-controls="sidebarFeed">
+                            <a href="#sidebarFeed" className="nav-link" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarFeed">
                             Feed
                             </a>
                             <div className="collapse @@if(subcategory=='feed'){show}" id="sidebarFeed">
@@ -345,7 +345,7 @@ export default class SideBar extends Component {
                 {/* <!-- Navigation --> */}
                 <ul className="navbar-nav mb-md-4">
                     <li className="nav-item">
-                    <a className="nav-link" href="#sidebarComponents" data-toggle="collapse" role="button" aria-expanded="@@if(category=='components'){true}@@if( category!=='components'){false}" aria-controls="sidebarComponents">
+                    <a className="nav-link" href="#sidebarComponents" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarComponents">
                         <i className="fe fe-book-open"></i> Components
                     </a>
                     <div className="collapse @@if(category=='components'){show}" id="sidebarComponents">

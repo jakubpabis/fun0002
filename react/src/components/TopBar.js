@@ -9,7 +9,7 @@ export default class TopBar extends Component {
                     <div className="mr-4 d-none d-md-flex">
                     <div className="col-auto pl-0">
                         <h6 className="header-pretitle">
-                        Pozostały abonament
+                        Pozostały abonament <i data-toggle="tooltip" title="dziala!!!">blabla</i>
                         </h6>
                         <h2 className="header-title">
                         1 234,56 <small>PLN</small>

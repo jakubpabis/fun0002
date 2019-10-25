@@ -5,7 +5,12 @@ import Home from '../components/Home';
 import Kupuj from '../components/Kupuj';
 import Sprzedaj from '../components/Sprzedaj';
 
+import loadScripts from '../loadScripts';
+
 export default class MainContent extends Component {
+    componentDidMount() {
+        loadScripts();
+    }
     render() {
         return (
                 <div className="main-content">
