@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Header from '../components/Header';
 import Cards from '../components/Cards';
+import useScript from '../hooks/useScript';
 
-import loadScripts from '../loadScripts';
 
 const Home = () => {
-    useEffect(() => {
-        loadScripts()
-    })
+    useScript(`${process.env.PUBLIC_URL}/assets/js/theme.min.js`);
+    // useEffect(() =>  {
+    //     window.$('[data-toggle="tooltip"]').tooltip();
+    //   })
     return (
         <div>
             <Header />
