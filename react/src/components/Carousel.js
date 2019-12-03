@@ -63,13 +63,13 @@ const Carousel = () => {
                                         </h3>
                                     </div>
                                     <div className="col-lg-4">
-                                        <input type="text" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" value="1000" />
+                                        <input type="number" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" defaultValue="1000" />
                                     </div>
                                     <div className="col-auto pl-0 pr-0">
                                         <h3 className="mb-0">=</h3>
                                     </div>
                                     <div className="col-lg-4 pr-0 input-jednostki">
-                                        <input type="number" className="form-control" placeholder="Jednostki" value="100" />
+                                        <input type="number" className="form-control" placeholder="Jednostki" defaultValue="100" />
                                         <i className="fe fe-info" data-toggle="tooltip" data-placement="bottom" title="Cena za jednostkę: 10 PLN" />
                                     </div>
                                     <div className="col-auto">
@@ -135,13 +135,13 @@ const Carousel = () => {
                                         </h3>
                                     </div>
                                     <div className="col-lg-4">
-                                        <input type="text" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" value="1000" />
+                                        <input type="number" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" defaultValue="1000" />
                                     </div>
                                     <div className="col-auto pl-0 pr-0">
                                         <h3 className="mb-0">=</h3>
                                     </div>
                                     <div className="col-lg-4 pr-0 input-jednostki">
-                                        <input type="number" className="form-control" placeholder="Jednostki" value="50" />
+                                        <input type="number" className="form-control" placeholder="Jednostki" defaultValue="50" />
                                         <i className="fe fe-info" data-toggle="tooltip" data-placement="bottom" title="Cena za jednostkę: 20 PLN"></i>
                                     </div>
                                     <div className="col-auto">

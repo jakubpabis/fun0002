@@ -1,0 +1,1 @@
+export const CHANGE_INPUT_FIELD = 'CHANGE_INPUT_FIELD';
