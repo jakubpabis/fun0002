@@ -5,6 +5,8 @@ const Carousel = () => {
         window.$('.carousel').carousel();
       })
 
+const inputFieldRestriction = evt => (evt.key === "e" || evt.key === "." || evt.key === "+" || evt.key === "-" ) && (evt.keyCode === 69 || evt.keyCode === 190 || evt.keyCode === 187 || evt.keyCode === 189) && evt.preventDefault()
+
     return (
         <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators">
@@ -63,13 +65,13 @@ const Carousel = () => {
                                         </h3>
                                     </div>
                                     <div className="col-lg-4">
-                                        <input type="number" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" defaultValue="1000" />
+                                        <input type="number" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" defaultValue="1000" onKeyDown={ inputFieldRestriction } />
                                     </div>
                                     <div className="col-auto pl-0 pr-0">
                                         <h3 className="mb-0">=</h3>
                                     </div>
                                     <div className="col-lg-4 pr-0 input-jednostki">
-                                        <input type="number" className="form-control" placeholder="Jednostki" defaultValue="100" />
+                                        <input type="number" className="form-control" placeholder="Jednostki" defaultValue="100" onKeyDown={ inputFieldRestriction } />
                                         <i className="fe fe-info" data-toggle="tooltip" data-placement="bottom" title="Cena za jednostkę: 10 PLN" />
                                     </div>
                                     <div className="col-auto">
@@ -135,13 +137,13 @@ const Carousel = () => {
                                         </h3>
                                     </div>
                                     <div className="col-lg-4">
-                                        <input type="number" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" defaultValue="1000" />
+                                        <input type="number" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" defaultValue="1000" onKeyDown={ inputFieldRestriction } />
                                     </div>
                                     <div className="col-auto pl-0 pr-0">
                                         <h3 className="mb-0">=</h3>
                                     </div>
                                     <div className="col-lg-4 pr-0 input-jednostki">
-                                        <input type="number" className="form-control" placeholder="Jednostki" defaultValue="50" />
+                                        <input type="number" className="form-control" placeholder="Jednostki" defaultValue="50" onKeyDown={ inputFieldRestriction } />
                                         <i className="fe fe-info" data-toggle="tooltip" data-placement="bottom" title="Cena za jednostkę: 20 PLN"></i>
                                     </div>
                                     <div className="col-auto">

@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Cards = () => {
+
+  const inputFieldRestriction = evt => (evt.key === "e" || evt.key === "." || evt.key === "+" || evt.key === "-" ) && (evt.keyCode === 69 || evt.keyCode === 190 || evt.keyCode === 187 || evt.keyCode === 189) && evt.preventDefault()
+
     return (
         <div className="container-fluid mt-n6">
         <div className="row">
@@ -292,13 +295,13 @@ const Cards = () => {
                           </h3>
                           <div className="row align-items-center">
                             <div className="col-lg-4">
-                              <input type="number" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" defaultValue="500" onKeyDown={ evt => (evt.key === "e" || evt.key === "." || evt.key === "+" || evt.key === "-" ) && (evt.keyCode === 69 || evt.keyCode === 190 || evt.keyCode === 187 || evt.keyCode === 189) && evt.preventDefault() } />
+                              <input type="number" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" defaultValue="500" onKeyDown={ inputFieldRestriction } />
                             </div>
                             <div className="col-auto pl-0 pr-0">
                               <h3 className="mb-0">=</h3>
                             </div>
                             <div className="col-lg-4 pr-0 input-jednostki">
-                              <input type="number" className="form-control" placeholder="Jednostki" defaultValue="15" />
+                              <input type="number" className="form-control" placeholder="Jednostki" defaultValue="15" onKeyDown={ inputFieldRestriction } />
                               <i className="fe fe-info" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Cena poszczególnych jednostek: <br/>2 jedn. ⟶ 10 PLN<br/> 10 jedn. ⟶ 35 PLN<br/> 3 jedn. ⟶ 40 PLN"></i>
                               <div className="info position-absolute mt-2" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Cena poszczególnych jednostek: <br/>2 jedn. ⟶ 10 PLN<br/> 10 jedn. ⟶ 35 PLN<br/> 3 jedn. ⟶ 40 PLN">
                                 <small className="text-muted">Do zapłaty: <strong className="white">450 PLN</strong></small>
