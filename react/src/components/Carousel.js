@@ -5,7 +5,7 @@ const Carousel = () => {
         window.$('.carousel').carousel();
       })
 
-const inputFieldRestriction = evt => (evt.key === "e" || evt.key === "." || evt.key === "+" || evt.key === "-" ) && (evt.keyCode === 69 || evt.keyCode === 190 || evt.keyCode === 187 || evt.keyCode === 189) && evt.preventDefault()
+    const inputFieldRestriction = evt => (evt.key === "e" || evt.key === "." || evt.key === "+" || evt.key === "-" ) && (evt.keyCode === 69 || evt.keyCode === 190 || evt.keyCode === 187 || evt.keyCode === 189) && evt.preventDefault()
 
     return (
         <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
