@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux';
+
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import Modals from '../components/Modals';
@@ -9,18 +9,7 @@ import Home from '../components/Home';
 import Kupuj from '../components/Kupuj';
 import Sprzedaj from '../components/Sprzedaj';
 
-import { setInputField } from '../actions';
 
-const mapStateToProps = state => {
-  return {
-    inputField: state.inputField
-  }
-}
-const mapDispatchToProps = dispatch => {
-  return {
-    onInputChange: (event) => dispatch(setInputField(event.target.value))
-  }
-}
 
 
 class App extends Component {
@@ -50,7 +39,7 @@ class App extends Component {
   }
   render() {
 
-    const { onInputChange } = this.props;
+    
     return (
       <div className="App" >
         <Router>
@@ -59,7 +48,7 @@ class App extends Component {
           <div className="main-content">
               <TopBar />
               <Switch>
-               <Route path="/" exact component={Home} inputChange={onInputChange} />
+               <Route path="/" exact component={Home} />
                 <Route path="/kupuj" component={Kupuj} />
                 <Route path="/sprzedaj" component={Sprzedaj} />
             </Switch>
@@ -70,4 +59,4 @@ class App extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

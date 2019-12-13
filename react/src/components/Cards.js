@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cards = () => {
+const Cards = ({ inputChange }) => {
 
   const inputFieldRestriction = evt => (evt.key === "e" || evt.key === "." || evt.key === "+" || evt.key === "-" ) && (evt.keyCode === 69 || evt.keyCode === 190 || evt.keyCode === 187 || evt.keyCode === 189) && evt.preventDefault()
 
@@ -295,7 +295,7 @@ const Cards = () => {
                         </h3>
                         <div className="row align-items-center">
                           <div className="col-lg-4">
-                            <input type="number" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" defaultValue="500" onKeyDown={ inputFieldRestriction } />
+                            <input type="number" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" onKeyDown={ inputFieldRestriction }  onChange={inputChange} />
                           </div>
                           <div className="col-auto pl-0 pr-0">
                             <h3 className="mb-0">=</h3>
