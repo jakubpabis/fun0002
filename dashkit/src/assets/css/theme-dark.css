@@ -10180,8 +10180,7 @@ a:focus, button:focus {
 
 .header-body {
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #1E3A5C; }
+  padding-bottom: 1.5rem; }
 
 .header.bg-dark .header-body,
 .header.bg-hero .header-body {
@@ -10979,9 +10978,6 @@ object {
 .icon-xl {
   font-size: 1.25em; }
 
-.text-white {
-  color: white !important; }
-
 .pos-badge {
   top: -5px !important;
   right: -10px; }
@@ -11003,11 +10999,26 @@ object {
   right: 0;
   top: 0;
   z-index: 999;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15); }
+  border: none;
+  border-bottom: 1px solid #E3EBF6; }
+
+#sidebar {
+  border: none; }
 
 .main-content {
   padding-top: 80px;
-  box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.15); }
+  box-shadow: inset 1px 1px 0 #e3ebf6;
+  border: none !important; }
 
-.card-body {
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1); }
+.card {
+  border-radius: 0.6em;
+  border: 1px solid #E3EBF6;
+  box-shadow: none; }
+
+.carousel-indicators li {
+  background-color: #02a694 !important;
+  height: 4px;
+  width: 36px; }
+
+body {
+  background-color: #EDF2F9 !important; }

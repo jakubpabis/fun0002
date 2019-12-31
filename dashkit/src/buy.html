@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "title": "Kupuj - Fundit"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    
+
+    <!-- NAVIGATION
+    ================================================== -->
+    @@include("partials/sidebar.html", {
+      "category": "dashboards",
+      "subcategory": "",
+      "page": "buy.html"
+    })
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content">
+
+
+      @@include("partials/topbar.html")
+
+      <!-- HEADER -->
+      <div class="header pb-5">
+        <div class="container-fluid">
+
+          <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-10 col-12">
+
+              <div class="card mt-5">
+                <div class="card-body pb-0">
+
+                  <!-- Body -->
+                  <div class="header-body">
+                      <div class="row align-items-end">
+                      <div class="col">
+                          
+                          <!-- Pretitle -->
+                          <h6 class="header-pretitle text-secondary">
+                            Wartość jednostek udziałowych
+                          </h6>
+
+                          <!-- Title -->
+                          <h1 class="header-title ">
+                            Footroll
+                          </h1>
+
+                      </div>
+                      <div class="col-auto">
+                          
+                          <!-- Nav -->
+                          <ul class="nav nav-tabs header-tabs">
+                            <li class="nav-item" data-toggle="chart" data-target="#headerChart" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN">
+                                <a href="#" class="nav-link text-center" data-toggle="tab">
+                                  <h4 class="text-muted mb-0">
+                                    1 tydzień
+                                  </h4>
+                                </a>
+                              </li>
+                            <li class="nav-item" data-toggle="chart" data-target="#headerChart" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN">
+                                <a href="#" class="nav-link text-center" data-toggle="tab">
+                                  <h4 class="text-muted mb-0">
+                                    2 tygodnie
+                                  </h4>
+                                </a>
+                            </li>
+                            <li class="nav-item" data-toggle="chart" data-target="#headerChart" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN">
+                                <a href="#" class="nav-link text-center" data-toggle="tab">
+                                  <h4 class="text-muted mb-0">
+                                    1 miesiąc
+                                  </h4>
+                                </a>
+                            </li>
+                            <li class="nav-item" data-toggle="chart" data-target="#headerChart" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN">
+                              <a href="#" class="nav-link text-center active" data-toggle="tab">
+                              <h4 class=" mb-0">
+                                  3 miesiące
+                              </h4>
+                              </a>
+                            </li>
+                          </ul>
+
+                      </div>
+                      </div> <!-- / .row -->
+                  </div> <!-- / .header-body -->
+
+                  <div class="header-footer">
+
+                    <!-- Chart -->
+                    <div class="chart mb-5">
+                        <canvas id="headerChart2" class="chart-canvas"></canvas>
+                    </div>
+
+                  
+                          <h2 class="header-title  mb-4">
+                            Więcej o Footroll
+                          </h2>
+
+
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </p>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </p>
+
+
+                  </div>
+
+                  <hr>
+
+                  <div class="header-footer pb-5">
+                    <h1 class="mb-4">
+                      Kup jednostki
+                    </h1>
+                    <div class="row align-items-center pb-4">
+                      <div class="col-lg-4">
+                        <input type="text" class="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" value="500">
+                      </div>
+                      <div class="col-auto pl-0 pr-0">
+                        <h3 class="mb-0"> = </h3>
+                      </div>
+                      <div class="col-lg-4 pr-0 input-jednostki">
+                        <input type="number" class="form-control" placeholder="Jednostki" value="15">
+                        <i class="fe fe-info" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Cena poszczególnych jednostek: <br/>2 jedn. ⟶ 10 PLN<br/> 10 jedn. ⟶ 35 PLN<br/> 3 jedn. ⟶ 40 PLN"></i>
+                        <div class="info position-absolute mt-2" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Cena poszczególnych jednostek: <br/>2 jedn. ⟶ 10 PLN<br/> 10 jedn. ⟶ 35 PLN<br/> 3 jedn. ⟶ 40 PLN">
+                          <small class="text-muted">Do zapłaty: <strong class="white">450 PLN</strong></small>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <button type="button" class="btn btn-primary pl-5 pr-5"><i class="fe fe-check-circle mr-2"></i> Kupuj</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                </div>
+              </div>
+
+                <!-- Footer -->
+                
+            </div>
+
+          </div>
+
+        </div>
+      </div> <!-- / .header -->
+      
+      <!-- CARDS -->
+      <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
+        <div class="row mt-4 mt-md-5">
+          <div class="col-12 col-lg-6">
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- / .main-content -->
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>
