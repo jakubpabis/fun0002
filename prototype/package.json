@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "author": "Luke McLean",
-  "dependencies": {},
+  "dependencies": {
+    "node-gyp": "^6.1.0"
+  },
   "devDependencies": {
     "browser-sync": "^1.3.2",
     "chalk": "*",

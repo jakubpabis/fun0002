@@ -16,9 +16,17 @@
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />-->
 
     <!-- Theme CSS -->
+    
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
      
-    <link rel="stylesheet" href="./assets/css/theme-dark.min.css">
-     
+    <link rel="stylesheet" href="./assets/css/theme.min.css" id="stylesheetLight">
+
+    <!-- build:css ./assets/css/theme-dark.min.css id="stylesheetDark"
+    <link rel="stylesheet" href="./assets/css/theme-dark.css" id="stylesheetDark">
+     endbuild -->
+
+    <!--<style>body { display: none; }</style>-->
+
 
     <title>Dashkit</title>
   </head>
@@ -26,7 +34,120 @@
 
     <!-- MODALS
     ================================================== -->
-    
+    <!-- Modal: Demo -->
+    <div class="modal fade fixed-right" id="modalDemo" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical" role="document">
+        <form class="modal-content" id="demoForm">
+          <div class="modal-body">
+        
+            <!-- Close -->
+            <a class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </a>
+
+            <div class="text-center">
+              <img src="./assets/img/illustrations/designer-life.svg" alt="..." class="img-fluid mb-3">
+            </div>
+
+            <h2 class="text-center mb-2">
+              Make Dashkit Your Own
+            </h2>
+
+            <p class="text-center mb-4">
+              Set preferences that will be cookied for your live preview demonstration.
+            </p>
+
+            <hr class="mb-4">
+
+            <h4 class="mb-1">
+              Color Scheme
+            </h4>
+
+            <p class="small text-muted mb-3">
+              Overall light or dark presentation.
+            </p>
+
+            <div class="btn-group-toggle d-flex mb-4" data-toggle="buttons">
+              <label class="btn btn-white active col">
+                <input type="radio" name="colorScheme" id="colorSchemeLight" value="light" checked> <i class="fe fe-sun mr-2"></i> Light Mode
+              </label>
+              <label class="btn btn-white col ml-2">
+                <input type="radio" name="colorScheme" id="colorSchemeDark" value="dark"> <i class="fe fe-moon mr-2"></i> Dark Mode
+              </label>
+            </div>
+
+            <h4 class="mb-1">
+              Navigation Position
+            </h4>
+
+            <p class="small text-muted mb-3">
+              Select the primary navigation paradigm for your app.
+            </p>
+
+            <div class="btn-group-toggle d-flex mb-4" data-toggle="buttons">
+              <label class="btn btn-white active col">
+                <input type="radio" name="navPosition" id="navPositionSidenav" value="sidenav" checked> Sidenav
+              </label>
+              <label class="btn btn-white col ml-2">
+                <input type="radio" name="navPosition" id="navPositionTopnav" value="topnav"> Topnav
+              </label>
+              <label class="btn btn-white col ml-2">
+                <input type="radio" name="navPosition" id="navPositionCombo" value="combo"> Combo
+              </label>
+            </div>
+
+            <div class="collapse show" id="sidebarSizeContainer">
+
+              <h4 class="mb-1">
+                Sidenav Sizing <span class="badge badge-soft-primary">New</span>
+              </h4>
+
+              <p class="small text-muted mb-3">
+                Standard navigation sizing or minified icons with dropdowns.
+              </p>
+
+              <div class="btn-group-toggle d-flex mb-4" data-toggle="buttons">
+                <label class="btn btn-white active col">
+                  <input type="radio" name="sidebarSize" id="sidebarSizeBase" value="base" checked> Fullsize
+                </label>
+                <label class="btn btn-white col ml-2">
+                  <input type="radio" name="sidebarSize" id="sidebarSizeSmall" value="small"> Icons
+                </label>
+              </div>
+
+            </div>
+
+            <h4 class="mb-1">
+              Navigation Color <span class="badge badge-soft-primary">New</span>
+            </h4>
+
+            <p class="small text-muted mb-3">
+              Usually dictated by the color scheme, but can be overriden.  
+            </p>
+
+            <div class="btn-group-toggle d-flex" data-toggle="buttons">
+              <label class="btn btn-white active col">
+                <input type="radio" name="navColor" id="navColorDefault" value="default" checked> Default
+              </label>
+              <label class="btn btn-white col ml-2">
+                <input type="radio" name="navColor" id="navColorInverted" value="inverted"> Inverted
+              </label>
+              <label class="btn btn-white col ml-2">
+                <input type="radio" name="navColor" id="navColorVibrant" value="vibrant"> Vibrant
+              </label>
+            </div>
+      
+          </div>
+          <div class="modal-footer border-0">
+        
+            <button type="submit" class="btn btn-block btn-primary mt-auto">
+              Preview
+            </button>
+
+          </div>
+        </form>
+      </div>
+    </div>
 
     <!-- Modal: Members -->
     <div class="modal fade" id="modalMembers" tabindex="-1" role="dialog" aria-hidden="true">
@@ -442,12 +563,12 @@
 
             <!-- Title -->
             <h4 class="modal-title">
-              Notifications
+              Powiadomienia
             </h4>
 
             <!-- Link -->
-            <a href="#!">
-              Mark all as read
+            <a href="#!" class="text-right">
+              Oznacz wszystkie jako przeczytane
             </a>
         
           </div>
@@ -1278,7 +1399,7 @@
 
             <!-- Brand -->
             <a class="navbar-brand" href="index.html">
-              <img src="./assets/img/logo_white.svg" class="navbar-brand-img mx-auto" alt="...">
+              <img src="./assets/img/logo.svg" class="navbar-brand-img mx-auto" alt="...">
             </a>
 
             <div class="avatar avatar-xxl mx-auto mb-5 d-none d-xl-block d-lg-block d-md-block text-center">
@@ -1335,16 +1456,74 @@
                     <i class="fe fe-home"></i> Panel główny
                   </a>
                 </li>
+                <li>
+                  <hr class="navbar-divider my-3">
+                </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="kupuj.html" role="button">
+                  <a class="nav-link " href="buy.html" role="button">
                     <i class="fe fe-shopping-cart"></i> Kupuj
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="sprzedaj.html" role="button">
+                  <a class="nav-link " href="sell.html" role="button">
                     <i class="fe fe-dollar-sign"></i> Sprzedaj
                   </a>
                 </li>
+                <li>
+                  <hr class="navbar-divider my-3">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="new.html" role="button">
+                    <i class="fe fe-clock"></i> Nadchodzące emisje
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="news.html" role="button">
+                    <i class="fe fe-message-square"></i> Wiadomości
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sidebarModalActivity" data-toggle="modal">
+                   <span class="fe fe-bell"></span> Powiadomienia
+                  </a>
+                </li>
+                <li>
+                  <hr class="navbar-divider my-3">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#userSub" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="userSub">
+                    <i class="fe fe-user"></i> Moje konto
+                  </a>
+                  <div class="collapse" id="userSub">
+                    <ul class="nav nav-sm flex-column">
+                      <li class="nav-item">
+                        <a href="subscription.html" class="nav-link" role="button">
+                          Wykup abonament
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="user-settings.html" class="nav-link" role="button">
+                          Ustawienia
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#logout" class="nav-link" role="button">
+                          Wyloguj się
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <hr class="navbar-divider my-3">
+                </li>
+
+              <!-- Heading 
+              <h6 class="navbar-heading">
+                Dodatkowe
+              </h6>-->
+
+              <!-- Navigation -->
                 <li class="nav-item">
                   <a class="nav-link" href="#sidebarPages" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarPages">
                     <i class="fe fe-file"></i> Pages
@@ -1590,23 +1769,6 @@
                     </ul>
                   </div>
                 </li>
-                <li class="nav-item d-md-none">
-                  <a class="nav-link" href="#sidebarModalActivity" data-toggle="modal">
-                   <span class="fe fe-bell"></span> Notifications
-                  </a>
-                </li>
-              </ul>
-
-              <!-- Divider -->
-              <hr class="navbar-divider my-3">
-
-              <!-- Heading 
-              <h6 class="navbar-heading">
-                Dodatkowe
-              </h6>-->
-
-              <!-- Navigation -->
-              <ul class="navbar-nav mb-md-4">
                 <li class="nav-item">
                   <a class="nav-link" href="#sidebarComponents" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarComponents">
                     <i class="fe fe-book-open"></i> Components
@@ -1785,10 +1947,10 @@
 
       
         <nav class="navbar navbar-expand-md navbar-light d-none d-md-flex" id="topbar">
-          <div class="container-fluid">
+          <div class="container-fluid justify-content-end">
 
-            <div class="mr-4 d-none d-md-flex">
-              <div class="col-auto pl-0">   
+            <div class="mr-5 d-none d-md-flex">
+              <div class="col-auto text-right">   
                 <h6 class="header-pretitle">
                   Pozostały abonament
                 </h6>
@@ -1798,13 +1960,13 @@
               </div>
             </div>
 
-            <div class="mr-4 d-none d-md-block">
-              <div class="col-auto pl-0">   
+            <div class="mr-5 d-none d-md-block">
+              <div class="col-auto text-right">   
                 <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <h6 class="header-pretitle">
                     Zainwestowany kapitał
                   </h6>
-                  <h2 class="header-title text-white">
+                  <h2 class="header-title">
                     6 543,21 <small>PLN</small>
                   </h2>
                 </a> 
@@ -3051,7 +3213,7 @@
     <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
     <script src="./assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
     <script src="./assets/libs/list.js/dist/list.min.js"></script>
-    <!-- <script src="./assets/libs/quill/dist/quill.min.js"></script> -->
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
     <script src="./assets/libs/select2/dist/js/select2.min.js"></script>
     <script src="./assets/libs/chart.js/Chart.extension.min.js"></script>
 
