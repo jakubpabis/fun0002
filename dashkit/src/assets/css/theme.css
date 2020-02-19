@@ -9128,11 +9128,11 @@ a.text-white:hover, a.text-white:focus {
   .navbar-vertical.navbar-expand-xs .navbar-nav .nav-link {
     padding: 0.5rem 1.5rem; }
     .navbar-vertical.navbar-expand-xs .navbar-nav .nav-link.active:before {
-      top: 0.5rem;
-      bottom: 0.5rem;
+      top: 0.25rem;
+      bottom: 0.25rem;
       left: 0;
       right: auto;
-      border-left: 2px solid #02a694;
+      border-left: 10px solid #02a694;
       border-bottom: 0; }
   .navbar-vertical.navbar-expand-xs .navbar-nav .nav .nav-link {
     padding-left: 3.25rem; }
@@ -9206,11 +9206,11 @@ a.text-white:hover, a.text-white:focus {
     .navbar-vertical.navbar-expand-sm .navbar-nav .nav-link {
       padding: 0.5rem 1.5rem; }
       .navbar-vertical.navbar-expand-sm .navbar-nav .nav-link.active:before {
-        top: 0.5rem;
-        bottom: 0.5rem;
+        top: 0.25rem;
+        bottom: 0.25rem;
         left: 0;
         right: auto;
-        border-left: 2px solid #02a694;
+        border-left: 10px solid #02a694;
         border-bottom: 0; }
     .navbar-vertical.navbar-expand-sm .navbar-nav .nav .nav-link {
       padding-left: 3.25rem; }
@@ -9284,11 +9284,11 @@ a.text-white:hover, a.text-white:focus {
     .navbar-vertical.navbar-expand-md .navbar-nav .nav-link {
       padding: 0.5rem 1.5rem; }
       .navbar-vertical.navbar-expand-md .navbar-nav .nav-link.active:before {
-        top: 0.5rem;
-        bottom: 0.5rem;
+        top: 0.25rem;
+        bottom: 0.25rem;
         left: 0;
         right: auto;
-        border-left: 2px solid #02a694;
+        border-left: 10px solid #02a694;
         border-bottom: 0; }
     .navbar-vertical.navbar-expand-md .navbar-nav .nav .nav-link {
       padding-left: 3.25rem; }
@@ -9362,11 +9362,11 @@ a.text-white:hover, a.text-white:focus {
     .navbar-vertical.navbar-expand-lg .navbar-nav .nav-link {
       padding: 0.5rem 1.5rem; }
       .navbar-vertical.navbar-expand-lg .navbar-nav .nav-link.active:before {
-        top: 0.5rem;
-        bottom: 0.5rem;
+        top: 0.25rem;
+        bottom: 0.25rem;
         left: 0;
         right: auto;
-        border-left: 2px solid #02a694;
+        border-left: 10px solid #02a694;
         border-bottom: 0; }
     .navbar-vertical.navbar-expand-lg .navbar-nav .nav .nav-link {
       padding-left: 3.25rem; }
@@ -9440,11 +9440,11 @@ a.text-white:hover, a.text-white:focus {
     .navbar-vertical.navbar-expand-xl .navbar-nav .nav-link {
       padding: 0.5rem 1.5rem; }
       .navbar-vertical.navbar-expand-xl .navbar-nav .nav-link.active:before {
-        top: 0.5rem;
-        bottom: 0.5rem;
+        top: 0.25rem;
+        bottom: 0.25rem;
         left: 0;
         right: auto;
-        border-left: 2px solid #02a694;
+        border-left: 10px solid #02a694;
         border-bottom: 0; }
     .navbar-vertical.navbar-expand-xl .navbar-nav .nav .nav-link {
       padding-left: 3.25rem; }
@@ -10929,7 +10929,7 @@ object {
 
 .pos-badge {
   top: -5px !important;
-  right: -10px; }
+  right: -12px; }
 
 .input-jednostki input[type=number]::-webkit-inner-spin-button,
 .input-jednostki input[type=number]::-webkit-outer-spin-button {
@@ -10938,7 +10938,7 @@ object {
 
 .input-jednostki > i {
   position: absolute;
-  top: 6px;
+  bottom: 6px;
   right: 10px;
   font-size: 18px; }
 
@@ -10969,5 +10969,13 @@ object {
   height: 4px;
   width: 36px; }
 
+.btn-group {
+  z-index: 0; }
+
 body {
   background-color: #EDF2F9 !important; }
+
+button.btn i {
+  font-size: 16px;
+  vertical-align: -1px;
+  font-weight: 700; }

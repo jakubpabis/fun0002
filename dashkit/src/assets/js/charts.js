@@ -64,7 +64,7 @@
     Chart.defaults.global.legend.labels.padding = 16;
 
     // Point
-    Chart.defaults.global.elements.point.radius = 0;
+    Chart.defaults.global.elements.point.radius = 4;
     Chart.defaults.global.elements.point.backgroundColor = colors.primary[700];
 
     // Line
@@ -72,7 +72,7 @@
     Chart.defaults.global.elements.line.borderWidth = 3;
     Chart.defaults.global.elements.line.borderColor = colors.primary[700];
     Chart.defaults.global.elements.line.backgroundColor = colors.transparent;
-    Chart.defaults.global.elements.line.borderCapStyle = 'rounded';
+    Chart.defaults.global.elements.line.borderCapStyle = 'butt';
 
     // Rectangle
     Chart.defaults.global.elements.rectangle.backgroundColor = colors.primary[700];
@@ -208,8 +208,8 @@
         drawBorder: false,
         drawTicks: false,
         zeroLineColor: colors.gray[300],
-        zeroLineBorderDash: [2],
-        zeroLineBorderDashOffset: [2]
+        zeroLineBorderDash: [0],
+        zeroLineBorderDashOffset: [0]
       },
       ticks: {
         beginAtZero: true,

@@ -91,7 +91,7 @@
   // Variables
   //
   
-  var chart = document.getElementById('headerChart2');
+  var chart = document.getElementById('headerChart2').getContext('2d');
 
 
   //
@@ -135,10 +135,10 @@
         }
       },
       data: {
-        labels: ['Sty', 'Lut', 'Mar', 'Kwi', 'Maj', 'Cze', 'Lip', 'Sie', 'Wrz', 'Paź', 'Lis', 'Gru'],
+        labels: ['Lis', 'Gru', 'Sty'],
         datasets: [{
-          label: 'Zarobki',
-          data: [-20,10,5,15,10,-20,15,25,20,-30,25,100]
+          label: 'Wartość jednostki udziałowej',
+          data: [-20,15,100]
         }]
       }
     });
