@@ -17,7 +17,7 @@ const SideBar = () => {
 
         {/* <!-- Brand --> */}
         <a className="navbar-brand" href="/">
-          <img src="./assets/img/logo_white.svg" className="navbar-brand-img mx-auto" alt="..." />
+          <img src="./assets/img/logo.svg" className="navbar-brand-img mx-auto" alt="..." />
         </a>
 
         <div className="avatar avatar-xxl mx-auto mb-5 d-none d-xl-block d-lg-block d-md-block text-center">
@@ -84,7 +84,59 @@ const SideBar = () => {
                 <i className="fe fe-dollar-sign"></i> Sprzedaj
               </NavLink>
             </li>
+            <li>
+            {/* <!-- Divider --> */}
+              <hr className="navbar-divider my-3" />
+            </li>
+                    {/* nowe link */}
             <li className="nav-item">
+              <NavLink className="nav-link " to="/new" role="button" activeClassName="active">
+                <i className="fe fe-clock"></i> Nadchodzące emisje
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link " to="/news" role="button" activeClassName="active">
+                <i className="fe fe-message-square"></i> Wiadomości
+              </NavLink>
+            </li>
+
+            <li>
+            {/* <!-- Divider --> */}
+              <hr className="navbar-divider my-3" />
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#userSub" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="userSub">
+                <i class="fe fe-user"></i> Moje konto
+              </a>
+              <div class="collapse" id="userSub">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="subscription.html" class="nav-link" role="button">
+                      Wykup abonament
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="user-settings.html" class="nav-link" role="button">
+                      Ustawienia
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#logout" class="nav-link" role="button">
+                      Wyloguj się
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+            {/* <!-- Divider --> */}
+              <hr className="navbar-divider my-3" />
+            </li>
+
+
+
+            {/* <li className="nav-item">
               <a className="nav-link" href="#sidebarPages" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
                 <i className="fe fe-file"></i> Pages
               </a>
@@ -334,10 +386,9 @@ const SideBar = () => {
                <span className="fe fe-bell"></span> Notifications
               </a>
             </li>
-          </ul>
+          </ul> */}
 
-          {/* <!-- Divider --> */}
-          <hr className="navbar-divider my-3" />
+
 
           {/* <!-- Heading
           <h6 className="navbar-heading">
@@ -345,7 +396,7 @@ const SideBar = () => {
           </h6>--> */}
 
           {/* <!-- Navigation --> */}
-          <ul className="navbar-nav mb-md-4">
+          {/* <ul className="navbar-nav mb-md-4">
             <li className="nav-item">
               <a className="nav-link" href="#sidebarComponents" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarComponents">
                 <i className="fe fe-book-open"></i> Components
@@ -499,7 +550,7 @@ const SideBar = () => {
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> */}
           </ul>
 
           {/* <!-- Push content down --> */}

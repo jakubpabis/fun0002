@@ -11,116 +11,140 @@ const Kupuj = () => {
 
   return (
       <div>
-      <div className="header bg-dark pb-5">
+      <div className="header pb-5">
       <div className="container-fluid">
 
-        <div className="row">
-          <div className="col-12">
+        <div className="row justify-content-center">
+          {/* object widht below */}
+          <div className="col-xl-9 col-lg-10 col-12">
             {/* <!-- Body --> */}
             <div className="card mt-5">
-              <div className="card-body">
+              <div className="card-header bg-primary">
+                <div>
+                {/* <!-- Title --> */}
+                  <h1 className="mt-3 header-title ">
+                    AutoRobin
+                  </h1>
 
-                <div className="row">
+                  {/* <!-- Pretitle --> */}
 
-                  <div className="col-xl-7 col-lg-6">
-                    <h3 className="header-pretitle text-secondary mb-5">
+                    <h6 className="mt-2 mb-3 header-pretitle text-white">
                       Wartość jednostek udziałowych
-                    </h3>
+                    </h6>
+                  </div>
+                  </div>
+                  <div className="card-body pb-0">
+                    <div className="row justify-content-end">
+                      <div className="col-auto">
+
+                          {/* <!-- Nav --> */}
+                          <div className="btn-group" role="group" aria-label="Wykres">
+                            <button type="button" className="btn btn-light" data-toggle="chart" data-target="#headerChart2" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN" dataToggle="tab">1 tydzień</button>
+                            <button type="button" className="btn btn-light" data-toggle="chart" data-target="#headerChart2" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN" dataToggle="tab">2 tygodnie</button>
+                            <button type="button" className="btn btn-light" data-toggle="chart" data-target="#headerChart2" data-update='{"data":{"labels": ["1.11", "7.11", "14.11", "21.11", "28.11"],"datasets":[{"data":[10,25,30,5,100]}]}}' data-prefix="" data-suffix="k PLN" dataToggle="tab">1 miesiąc</button>
+                            <button type="button" className="btn btn-light active" data-toggle="chart" data-target="#headerChart2" data-update='{"data":{"labels": ["Lis", "Gru", "Sty"], "datasets":[{"data":[-20,15,100]}]}}' data-prefix="" data-suffix="k PLN" dataToggle="tab">3 miesiące</button>
+                          </div>
+
+                      </div>
+                    </div>
+                    {/* <!-- / .row --> */}
+
+                    <div className="header-footer">
+
                     {/* <!-- Chart --> */}
-                    <div className="chart">
-                      <canvas id="headerChart" className="chart-canvas"></canvas>
+                    <div className="chart mb-5">
+                      <canvas id="headerChart2" className="chart-canvas"></canvas>
+                    </div>
+
+                      <hr className="mb-5" />
+
+                      <h2 className="header-title mb-4">
+                        Więcej o AutoRobin
+                      </h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+
+
+
+
+                    </div>
+
+                  </div>
+
+                  <div className="card-footer bg-lighter">
+                    <div className="header-footer pt-3 pb-3">
+                      <h1 className="mb-5 text-primary">
+                        Kup jednostki
+                      </h1>
+                      <div className="row align-items-end pb-4">
+                        <div className="col-auto">
+                          <label for="">Kwota zakupu</label>
+                          <input type="text" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" value="500" />
+                        </div>
+                        <div className="col-auto pl-0 pr-0">
+                          <h3 className="mb-3"> = </h3>
+                        </div>
+                        <div className="col-auto pr-0 input-jednostki">
+                          <label for="">Ilość jednostek</label>
+                          <input type="number" className="form-control" placeholder="Jednostki" value="15" />
+                          <i className="fe fe-info" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Cena poszczególnych jednostek: <br/>2 jedn. ⟶ 10 PLN<br/> 10 jedn. ⟶ 35 PLN<br/> 3 jedn. ⟶ 40 PLN"></i>
+                          <div className="info position-absolute mt-2" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Cena poszczególnych jednostek: <br/>2 jedn. ⟶ 10 PLN<br/> 10 jedn. ⟶ 35 PLN<br/> 3 jedn. ⟶ 40 PLN">
+                            <small className="text-muted">Do zapłaty: <strong className="white">450 PLN</strong></small>
+                          </div>
+                        </div>
+                        <div className="col-auto">
+                          <button type="button" className="btn btn-primary pl-5 pr-5"><i className="fe fe-check-circle mr-2"></i> Kupuje</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  <div className="col-xl-5 col-lg-6">
-
-                    {/* <!-- Title --> */}
-                    <h1 className="header-title text-white mb-4">
-                      Footroll
-                    </h1>
-
-                    <div className="card-text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.
-                            <br/><br/>
-                            Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur.
-                            <br/><br/>
-                            Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                      </div>
-
                   </div>
-
-                </div>
-
-                {/* <!-- Card --> */}
-                <div className="card mt-4">
-                  <div className="card-body">
-
-                    <div className="row align-items-center">
-                      <div className="col">
-
-                        {/* <!-- Title --> */}
-                        <h6 className="card-title text-uppercase text-muted mb-2">
-                          Saldo
-                        </h6>
-
-                        {/* <!-- Heading --> */}
-                        <span className="h2 mb-0">
-                          19,200 PLN
-                        </span>
-
-                        {/* <!-- Badge --> */}
-                        <span className="badge badge-soft-success mt-n1">
-                          +13.5%
-                        </span>
-
-                      </div>
-                      <div className="col-auto">
-                        {/* <!-- Icon --> */}
-                        <span className="h2 fe fe-dollar-sign text-muted mb-0"></span>
-                      </div>
-                    </div> {/* <!-- / .row --> */}
-
                   </div>
-                </div>
-
-              </div>
-            </div>
 
               {/* <!-- Footer --> */}
-              <div className="header-footer">
+              {/* <div className="header-footer">
 
 
 
               </div>
           </div>
-          <div className="col-12">
+          <div className="col-12"> */}
           {/* <!-- Body --> */}
-          <div className="header-body">
+          {/* <div className="header-body">
               <div className="row align-items-end">
-              <div className="col">
+              <div className="col"> */}
 
                   {/* <!-- Pretitle --> */}
-                  <h6 className="header-pretitle text-secondary">
+                  {/* <h6 className="header-pretitle text-secondary">
                     Wartość jednostek udziałowych
-                  </h6>
+                  </h6> */}
 
                   {/* <!-- Title --> */}
-                  <h1 className="header-title text-white">
+                  {/* <h1 className="header-title text-white">
                     Techmed
                   </h1>
 
               </div>
-              <div className="col-auto">
+              <div className="col-auto"> */}
 
                   {/* <!-- Nav --> */}
-                  <ul className="nav nav-tabs header-tabs">
+                  {/* <ul className="nav nav-tabs header-tabs">
                   <li className="nav-item" data-toggle="chart" data-target="#headerChart2" data-update='{"data":{"datasets":[{"data":[-20,10,5,15,10,-20,15,25,20,-30,25,100]}]}}' data-prefix="" data-suffix="k PLN">
                       <a href="true" className="nav-link text-center active" data-toggle="tab">
                       <h6 className="header-pretitle text-secondary">
@@ -133,48 +157,48 @@ const Kupuj = () => {
                   </li>
                   </ul>
 
-              </div>
-          </div> {/* <!-- / .row --> */}
-          </div> {/* <!-- / .header-body --> */}
+              </div> */}
+          {/* </div> <!-- / .row --> */}
+          {/* </div> <!-- / .header-body --> */}
 
           {/* <!-- Footer --> */}
-          <div className="header-footer">
+          {/* <div className="header-footer"> */}
 
               {/* <!-- Chart --> */}
-              <div className="chart">
+              {/* <div className="chart">
                 <canvas id="headerChart2" className="chart-canvas"></canvas>
               </div>
 
               <div className="card mt-4">
                 <div className="card-body">
                     <div className="row align-items-center">
-                        <div className="col">
+                        <div className="col"> */}
 
                             {/* <!-- Title --> */}
-                            <h6 className="card-title text-uppercase text-muted mb-2">
+                            {/* <h6 className="card-title text-uppercase text-muted mb-2">
                             Saldo
-                            </h6>
+                            </h6> */}
 
                             {/* <!-- Heading --> */}
-                            <span className="h2 mb-0">
+                            {/* <span className="h2 mb-0">
                               109,930 PLN
-                            </span>
+                            </span> */}
 
                             {/* <!-- Badge --> */}
-                            <span className="badge badge-soft-success mt-n1">
+                            {/* <span className="badge badge-soft-success mt-n1">
                             +28.21%
                             </span>
 
                         </div>
                         <div className="col-auto">
-
+ */}
                             {/* <!-- Icon --> */}
-                            <span className="h2 fe fe-dollar-sign text-muted mb-0"></span>
+                            {/* <span className="h2 fe fe-dollar-sign text-muted mb-0"></span>
 
-                        </div>
-                    </div> {/* <!-- / .row --> */}
+                        </div> */}
+                    {/* </div> <!-- / .row --> */}
 
-                </div>
+                {/* </div>
               </div>
 
               <div className="card card-inactive">
@@ -209,13 +233,13 @@ const Kupuj = () => {
 
           </div>
           </div>
-        </div>
+        </div> */}
 
       </div>
-    </div> {/* <!-- / .header --> */}
+    {/* </div> <!-- / .header --> */}
 
     {/* <!-- CARDS --> */}
-    <div className="container-fluid">
+    {/* <div className="container-fluid">
       <div className="row mt-4 mt-md-5">
         <div className="col-12 col-lg-6">
 
@@ -223,10 +247,11 @@ const Kupuj = () => {
 
         </div>
       </div>
-    </div>
+    </div> */}
 
   </div>
-
+</div>
+</div>
   )
 }
 

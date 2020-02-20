@@ -9,7 +9,7 @@ const Cards = ({ inputChange }) => {
       <div className="row">
         <div className="col-12">
 
-          <div className="header-body mb-4">
+          <div className="header-body">
             <div className="row align-items-end">
               <div className="col">
 
@@ -19,7 +19,7 @@ const Cards = ({ inputChange }) => {
                 </h6>
 
                 {/* <!--Title --> */}
-                <h1 className="header-title text-white">
+                <h1 className="header-title">
                   Najnowsze informacje
                 </h1>
 

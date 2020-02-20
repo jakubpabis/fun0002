@@ -8,7 +8,8 @@ import TopBar from '../components/TopBar';
 import Home from '../components/Home';
 import Kupuj from '../components/Kupuj';
 import Sprzedaj from '../components/Sprzedaj';
-
+import News from '../components/News';
+import New from '../components/New';
 
 
 
@@ -39,7 +40,7 @@ class App extends Component {
   }
   render() {
 
-    
+
     return (
       <div className="App" >
         <Router>
@@ -51,6 +52,8 @@ class App extends Component {
                <Route path="/" exact component={Home} />
                 <Route path="/kupuj" component={Kupuj} />
                 <Route path="/sprzedaj" component={Sprzedaj} />
+                <Route path="/new" component={New} />
+                <Route path="/news" component={News} />
             </Switch>
           </div>
         </Router>

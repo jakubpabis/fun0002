@@ -8,7 +8,7 @@ const Header = () => {
             <div className="container-fluid">
 
             {/* <!-- Body --> */}
-            <div className="header-body">
+            <div className="header-body pb-0">
                 <div className="row align-items-end">
                 <div className="col">
 
@@ -18,7 +18,7 @@ const Header = () => {
                     </h6>
 
                     {/* <!-- Title --> */}
-                    <h1 className="header-title text-white">
+                    <h1 className="header-title">
                     Zobacz najnowsze emisje!
                     </h1>
 

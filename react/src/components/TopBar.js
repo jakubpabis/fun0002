@@ -5,12 +5,12 @@ const TopBar = () => {
     window.$('[data-toggle="tooltip"]').tooltip();
   })
         return (
-            <nav className="navbar navbar-expand-md navbar-light d-none d-md-flex" id="topbar">
-        <div className="container-fluid">
+          <nav className="navbar navbar-expand-md navbar-light d-none d-md-flex" id="topbar">
+          <div className="container-fluid justify-content-end">
 
-          <div className="mr-4 d-none d-md-flex">
-            <div className="col-auto pl-0">
-              <h6 className="header-pretitle">
+            <div className="mr-5 d-none d-md-flex">
+              <div className="col-auto text-right">
+                <h6 className="header-pretitle">
                 Pozostały abonament
               </h6>
               <h2 className="header-title">
@@ -19,13 +19,13 @@ const TopBar = () => {
             </div>
           </div>
 
-          <div className="mr-4 d-none d-md-block">
-            <div className="col-auto pl-0">
+          <div className="mr-5 d-none d-md-block">
+            <div className="col-auto text-right">
               <a href="true" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <h6 className="header-pretitle">
                   Zainwestowany kapitał
                 </h6>
-                <h2 className="header-title text-white">
+                <h2 className="header-title">
                   6 543,21 <small>PLN</small>
                 </h2>
               </a>
