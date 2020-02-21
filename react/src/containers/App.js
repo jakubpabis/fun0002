@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import Modals from '../components/Modals';
 import SideBar from '../components/SideBar';
+import Modals from '../components/Modals';
 import TopBar from '../components/TopBar';
 import Home from '../components/Home';
 import Kupuj from '../components/Kupuj';
@@ -11,7 +12,18 @@ import Sprzedaj from '../components/Sprzedaj';
 import News from '../components/News';
 import New from '../components/New';
 
+import { setModalsToggle } from '../actions';
 
+const mapStateToProps = state => {
+  return {
+    modalsToggle: state.modalsToggle
+  }
+}
+const mapDispatchToProps = dispatch => {
+  return {
+    onModalsToggle: () => dispatch(setModalsToggle())
+  }
+}
 
 class App extends Component {
   themeLoader = () => {
@@ -21,7 +33,6 @@ class App extends Component {
     script.async = true;
 
     document.body.appendChild(script);
-
   }
   componentDidMount() {
     this.themeLoader();
@@ -38,14 +49,16 @@ class App extends Component {
     // window.$('[data-toggle="tooltip"]').tooltip();
 
   }
-  render() {
 
+
+  render() {
+    const {onModalsToggle} = this.props;
 
     return (
       <div className="App" >
         <Router>
-          {/* <Modals /> */}
-          <SideBar />
+          <SideBar modalsToggle={onModalsToggle} />
+          <Modals />
           <div className="main-content">
               <TopBar />
               <Switch>
@@ -62,4 +75,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);

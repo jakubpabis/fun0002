@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const SideBar = () => {
+const SideBar = ({ modalsToggle }) => {
 
   useEffect(() =>  {
     window.$('[data-toggle="tooltip"]').tooltip();
@@ -99,30 +99,33 @@ const SideBar = () => {
                 <i className="fe fe-message-square"></i> Wiadomości
               </NavLink>
             </li>
+            <li className="nav-link" role="button" style={{cursor: 'pointer'}} onClick={modalsToggle} >
+              <i className="fe fe-bell"></i> Powiadomienia
+            </li>
 
             <li>
             {/* <!-- Divider --> */}
               <hr className="navbar-divider my-3" />
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#userSub" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="userSub">
-                <i class="fe fe-user"></i> Moje konto
+            <li className="nav-item">
+              <a className="nav-link" href="#userSub" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="userSub">
+                <i className="fe fe-user"></i> Moje konto
               </a>
-              <div class="collapse" id="userSub">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="subscription.html" class="nav-link" role="button">
+              <div className="collapse" id="userSub">
+                <ul className="nav nav-sm flex-column">
+                  <li className="nav-item">
+                    <a href="subscription.html" className="nav-link" role="button">
                       Wykup abonament
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a href="user-settings.html" class="nav-link" role="button">
+                  <li className="nav-item">
+                    <a href="user-settings.html" className="nav-link" role="button">
                       Ustawienia
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a href="#logout" class="nav-link" role="button">
+                  <li className="nav-item">
+                    <a href="#logout" className="nav-link" role="button">
                       Wyloguj się
                     </a>
                   </li>

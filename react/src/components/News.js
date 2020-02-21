@@ -48,7 +48,7 @@ const News = () => {
 
                                 {/* <!-- Time --> */}
                                 <p className="card-text small text-muted">
-                                    <span className="fe fe-clock"></span> <time datetime="2018-05-24">4 godz. temu</time>
+                                    <span className="fe fe-clock"></span> <time dateTime="2018-05-24">4 godz. temu</time>
                                 </p>
 
                                 </div>
@@ -279,7 +279,7 @@ const News = () => {
 
                                 {/* <!-- Time --> */}
                                 <p className="card-text small text-muted">
-                                    <span className="fe fe-clock"></span> <time datetime="2018-05-24">4 godz. temu</time>
+                                    <span className="fe fe-clock"></span> <time dateTime="2018-05-24">4 godz. temu</time>
                                 </p>
 
                                 </div>
@@ -513,7 +513,7 @@ const News = () => {
 
                                 {/* <!-- Time --> */}
                                 <p className="card-text small text-muted">
-                                    <span className="fe fe-clock"></span> <time datetime="2018-05-24">4 godz. temu</time>
+                                    <span className="fe fe-clock"></span> <time dateTime="2018-05-24">4 godz. temu</time>
                                 </p>
 
                                 </div>
@@ -745,7 +745,7 @@ const News = () => {
 
                                 {/* <!-- Time --> */}
                                 <p className="card-text small text-muted">
-                                    <span className="fe fe-clock"></span> <time datetime="2018-05-24">4 godz. temu</time>
+                                    <span className="fe fe-clock"></span> <time dateTime="2018-05-24">4 godz. temu</time>
                                 </p>
 
                                 </div>
