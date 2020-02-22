@@ -5,7 +5,7 @@ const Sprzedaj = () => {
 
   useScript(`${process.env.PUBLIC_URL}/assets/js/theme.min.js`);
   // useEffect(() =>  {
-  //   window.$('[dataToggle="tooltip"]').tooltip();
+  //   window.$('[datatoggle="tooltip"]').tooltip();
   // })
   return (
       <div>
@@ -38,10 +38,10 @@ const Sprzedaj = () => {
 
                         {/* <!-- Nav --> */}
                         <div className="btn-group" role="group" aria-label="Wykres">
-                          <button type="button" className="btn btn-light" dataToggle="chart" data-target="#headerChart" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">1 tydzień</button>
-                          <button type="button" className="btn btn-light" dataToggle="chart" data-target="#headerChart" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">2 tygodnie</button>
-                          <button type="button" className="btn btn-light" dataToggle="chart" data-target="#headerChart" data-update='{"data":{"labels": ["1.11", "7.11", "14.11", "21.11", "28.11"],"datasets":[{"data":[10,25,30,5,100]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">1 miesiąc</button>
-                          <button type="button" className="btn btn-light active" dataToggle="chart" data-target="#headerChart" data-update='{"data":{"labels": ["Lis", "Gru", "Sty"], "datasets":[{"data":[-20,15,100]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">3 miesiące</button>
+                          <button type="button" className="btn btn-light" datatoggle="chart" data-target="#headerChart" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">1 tydzień</button>
+                          <button type="button" className="btn btn-light" datatoggle="chart" data-target="#headerChart" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">2 tygodnie</button>
+                          <button type="button" className="btn btn-light" datatoggle="chart" data-target="#headerChart" data-update='{"data":{"labels": ["1.11", "7.11", "14.11", "21.11", "28.11"],"datasets":[{"data":[10,25,30,5,100]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">1 miesiąc</button>
+                          <button type="button" className="btn btn-light active" datatoggle="chart" data-target="#headerChart" data-update='{"data":{"labels": ["Lis", "Gru", "Sty"], "datasets":[{"data":[-20,15,100]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">3 miesiące</button>
                         </div>
 
                     </div>
@@ -65,15 +65,15 @@ const Sprzedaj = () => {
                     </h1>
                     <div className="row align-items-end pb-2">
                       <div className="col-lg-4">
-                        <label for="">Cena za jednostkę</label>
-                        <input type="text" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" value="500" />
+                        <label htmlFor="">Cena za jednostkę</label>
+                        <input type="text" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" defaultValue="500" />
                       </div>
                       <div className="col-auto pl-0 pr-0">
                         <h3 className="mb-3"> x </h3>
                       </div>
                       <div className="col-lg-4 pr-0 input-jednostki">
-                        <label for="">Ilość jednostek</label>
-                        <input type="number" className="form-control" placeholder="Jednostki" value="15" />
+                        <label htmlFor="">Ilość jednostek</label>
+                        <input type="number" className="form-control" placeholder="Jednostki" defaultValue="15" />
                       </div>
                       <div className="col-auto">
                         <button type="button" className="btn btn-primary pl-5 pr-5"><i className="fe fe-check-circle mr-2"></i> Sprzedaj</button>
@@ -111,10 +111,10 @@ const Sprzedaj = () => {
 
                         {/* <!-- Nav --> */}
                         <div className="btn-group" role="group" aria-label="Wykres">
-                          <button type="button" className="btn btn-light" dataToggle="chart" data-target="#headerChart2" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">1 tydzień</button>
-                          <button type="button" className="btn btn-light" dataToggle="chart" data-target="#headerChart2" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">2 tygodnie</button>
-                          <button type="button" className="btn btn-light" dataToggle="chart" data-target="#headerChart2" data-update='{"data":{"labels": ["1.11", "7.11", "14.11", "21.11", "28.11"],"datasets":[{"data":[10,25,30,5,100]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">1 miesiąc</button>
-                          <button type="button" className="btn btn-light active" dataToggle="chart" data-target="#headerChart2" data-update='{"data":{"labels": ["Lis", "Gru", "Sty"], "datasets":[{"data":[-20,15,100]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">3 miesiące</button>
+                          <button type="button" className="btn btn-light" datatoggle="chart" data-target="#headerChart2" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">1 tydzień</button>
+                          <button type="button" className="btn btn-light" datatoggle="chart" data-target="#headerChart2" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">2 tygodnie</button>
+                          <button type="button" className="btn btn-light" datatoggle="chart" data-target="#headerChart2" data-update='{"data":{"labels": ["1.11", "7.11", "14.11", "21.11", "28.11"],"datasets":[{"data":[10,25,30,5,100]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">1 miesiąc</button>
+                          <button type="button" className="btn btn-light active" datatoggle="chart" data-target="#headerChart2" data-update='{"data":{"labels": ["Lis", "Gru", "Sty"], "datasets":[{"data":[-20,15,100]}]}}' data-prefix="" data-suffix="k PLN" data-toggle="tab">3 miesiące</button>
                         </div>
 
                     </div>
@@ -138,15 +138,15 @@ const Sprzedaj = () => {
                     </h1>
                     <div className="row align-items-end pb-2">
                       <div className="col-lg-4">
-                        <label for="">Cena za jednostkę</label>
-                        <input type="text" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" value="500" />
+                        <label htmlFor="">Cena za jednostkę</label>
+                        <input type="text" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" defaultValue="500" />
                       </div>
                       <div className="col-auto pl-0 pr-0">
                         <h3 className="mb-3"> x </h3>
                       </div>
                       <div className="col-lg-4 pr-0 input-jednostki">
-                        <label for="">Ilość jednostek</label>
-                        <input type="number" className="form-control" placeholder="Jednostki" value="15" />
+                        <label htmlFor="">Ilość jednostek</label>
+                        <input type="number" className="form-control" placeholder="Jednostki" defaultValue="15" />
                       </div>
                       <div className="col-auto">
                         <button type="button" className="btn btn-primary pl-5 pr-5"><i className="fe fe-check-circle mr-2"></i> Sprzedaj</button>

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const SideBar = ({ modalsToggle }) => {
+const SideBar = ({ handleAction }) => {
 
   useEffect(() =>  {
     window.$('[data-toggle="tooltip"]').tooltip();
@@ -75,12 +75,12 @@ const SideBar = ({ modalsToggle }) => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link " to="/kupuj" role="button" activeClassName="active">
+              <NavLink className="nav-link " to="/buy" role="button" activeClassName="active">
                 <i className="fe fe-shopping-cart"></i> Kupuj
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link " to="/sprzedaj" role="button" activeClassName="active">
+              <NavLink className="nav-link " to="/sell" role="button" activeClassName="active">
                 <i className="fe fe-dollar-sign"></i> Sprzedaj
               </NavLink>
             </li>
@@ -99,7 +99,7 @@ const SideBar = ({ modalsToggle }) => {
                 <i className="fe fe-message-square"></i> Wiadomości
               </NavLink>
             </li>
-            <li className="nav-link" role="button" style={{cursor: 'pointer'}} onClick={modalsToggle} >
+            <li className="nav-link" role="button" onClick={() => handleAction} style={{cursor: 'pointer'}}>
               <i className="fe fe-bell"></i> Powiadomienia
             </li>
 

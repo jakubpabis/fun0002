@@ -1,29 +1,17 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SideBar from '../components/SideBar';
 import Modals from '../components/Modals';
-import TopBar from '../components/TopBar';
+import TopBar from '../components/TopBar/TopBar';
 import Home from '../components/Home';
-import Kupuj from '../components/Kupuj';
-import Sprzedaj from '../components/Sprzedaj';
+import Buy from '../components/Buy';
+import Sell from '../components/Sell';
 import News from '../components/News';
 import New from '../components/New';
 
-import { setModalsToggle } from '../actions';
-
-const mapStateToProps = state => {
-  return {
-    modalsToggle: state.modalsToggle
-  }
-}
-const mapDispatchToProps = dispatch => {
-  return {
-    onModalsToggle: () => dispatch(setModalsToggle())
-  }
-}
 
 class App extends Component {
   themeLoader = () => {
@@ -50,21 +38,19 @@ class App extends Component {
 
   }
 
-
   render() {
-    const {onModalsToggle} = this.props;
 
     return (
       <div className="App" >
         <Router>
-          <SideBar modalsToggle={onModalsToggle} />
-          <Modals />
+          <SideBar />
+
           <div className="main-content">
               <TopBar />
               <Switch>
                <Route path="/" exact component={Home} />
-                <Route path="/kupuj" component={Kupuj} />
-                <Route path="/sprzedaj" component={Sprzedaj} />
+                <Route path="/Buy" component={Buy} />
+                <Route path="/sell" component={Sell} />
                 <Route path="/new" component={New} />
                 <Route path="/news" component={News} />
             </Switch>
@@ -75,4 +61,4 @@ class App extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

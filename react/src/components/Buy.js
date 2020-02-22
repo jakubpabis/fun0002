@@ -39,10 +39,10 @@ const Kupuj = () => {
 
                           {/* <!-- Nav --> */}
                           <div className="btn-group" role="group" aria-label="Wykres">
-                            <button type="button" className="btn btn-light" data-toggle="chart" data-target="#headerChart2" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN" dataToggle="tab">1 tydzień</button>
-                            <button type="button" className="btn btn-light" data-toggle="chart" data-target="#headerChart2" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN" dataToggle="tab">2 tygodnie</button>
-                            <button type="button" className="btn btn-light" data-toggle="chart" data-target="#headerChart2" data-update='{"data":{"labels": ["1.11", "7.11", "14.11", "21.11", "28.11"],"datasets":[{"data":[10,25,30,5,100]}]}}' data-prefix="" data-suffix="k PLN" dataToggle="tab">1 miesiąc</button>
-                            <button type="button" className="btn btn-light active" data-toggle="chart" data-target="#headerChart2" data-update='{"data":{"labels": ["Lis", "Gru", "Sty"], "datasets":[{"data":[-20,15,100]}]}}' data-prefix="" data-suffix="k PLN" dataToggle="tab">3 miesiące</button>
+                            <button type="button" className="btn btn-light" data-toggle="chart" data-target="#headerChart2" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN" datatoggle="tab">1 tydzień</button>
+                            <button type="button" className="btn btn-light" data-toggle="chart" data-target="#headerChart2" data-update='{"data":{"datasets":[{"data":[0,10,5,15,10,20,15,25,20,30,25,40]}]}}' data-prefix="" data-suffix="k PLN" datatoggle="tab">2 tygodnie</button>
+                            <button type="button" className="btn btn-light" data-toggle="chart" data-target="#headerChart2" data-update='{"data":{"labels": ["1.11", "7.11", "14.11", "21.11", "28.11"],"datasets":[{"data":[10,25,30,5,100]}]}}' data-prefix="" data-suffix="k PLN" datatoggle="tab">1 miesiąc</button>
+                            <button type="button" className="btn btn-light active" data-toggle="chart" data-target="#headerChart2" data-update='{"data":{"labels": ["Lis", "Gru", "Sty"], "datasets":[{"data":[-20,15,100]}]}}' data-prefix="" data-suffix="k PLN" datatoggle="tab">3 miesiące</button>
                           </div>
 
                       </div>
@@ -93,15 +93,15 @@ const Kupuj = () => {
                       </h1>
                       <div className="row align-items-end pb-4">
                         <div className="col-auto">
-                          <label for="">Kwota zakupu</label>
-                          <input type="text" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" value="500" />
+                          <label htmlFor="">Kwota zakupu</label>
+                          <input type="text" className="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" defaultValue="500" />
                         </div>
                         <div className="col-auto pl-0 pr-0">
                           <h3 className="mb-3"> = </h3>
                         </div>
                         <div className="col-auto pr-0 input-jednostki">
-                          <label for="">Ilość jednostek</label>
-                          <input type="number" className="form-control" placeholder="Jednostki" value="15" />
+                          <label htmlFor="">Ilość jednostek</label>
+                          <input type="number" className="form-control" placeholder="Jednostki" defaultValue="15" />
                           <i className="fe fe-info" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Cena poszczególnych jednostek: <br/>2 jedn. ⟶ 10 PLN<br/> 10 jedn. ⟶ 35 PLN<br/> 3 jedn. ⟶ 40 PLN"></i>
                           <div className="info position-absolute mt-2" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Cena poszczególnych jednostek: <br/>2 jedn. ⟶ 10 PLN<br/> 10 jedn. ⟶ 35 PLN<br/> 3 jedn. ⟶ 40 PLN">
                             <small className="text-muted">Do zapłaty: <strong className="white">450 PLN</strong></small>

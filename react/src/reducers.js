@@ -1,9 +1,8 @@
 import { CHANGE_INPUT_FIELD } from './constants';
-import { TOGGLE_MODALS} from './constants';
 
 const initialState = {
     inputField: '',
-    modalsToggle: false
+    modalToggle: false
 }
 
 export const inputAmount = (state=initialState.inputField, action={}) => {
@@ -16,11 +15,4 @@ export const inputAmount = (state=initialState.inputField, action={}) => {
     }
 }
 
-export const toggleModals = (state=initialState.modalsToggle, action={}) => {
-    switch (action.type) {
-        case TOGGLE_MODALS:
-            return Object.assign({}, state, {modalsToggle: !state.modalsToggle});
-        default:
-            return state;
-    }
-}
+
