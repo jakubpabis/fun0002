@@ -111,7 +111,7 @@ const New = () => {
                   <div className="fallback">
                     <div className="custom-file">
                       <input type="file" className="custom-file-input" id="projectCoverUploads" />
-                      <label className="custom-file-label" for="projectCoverUploads">Choose file</label>
+                      <label className="custom-file-label" htmlFor="projectCoverUploads">Choose file</label>
                     </div>
                   </div>
 
@@ -142,7 +142,7 @@ const New = () => {
                       <div className="fallback">
                         <div className="custom-file">
                           <input type="file" className="custom-file-input" id="customFileUpload" multiple />
-                          <label className="custom-file-label" for="customFileUpload">Choose file</label>
+                          <label className="custom-file-label" htmlFor="customFileUpload">Choose file</label>
                         </div>
                       </div>
 
@@ -197,7 +197,7 @@ const New = () => {
                     </small>
                     <div className="custom-control custom-switch">
                       <input type="checkbox" className="custom-control-input" id="switchOne" />
-                      <label className="custom-control-label" for="switchOne"></label>
+                      <label className="custom-control-label" htmlFor="switchOne"></label>
                     </div>
                   </div>
 
