@@ -90,10 +90,8 @@
   //
   // Variables
   //
-  if(document.getElementById('headerChart2')) {
 
     var chart = document.getElementById('headerChart2').getContext('2d');
-
 
     //
     // Functions
@@ -154,7 +152,6 @@
       init(chart);
     }
 
-  }
 
 })();
 
@@ -890,61 +887,3 @@
   }
 
 })();
-
-$(document).ready(function() {
-
-});
-
-// $(document).ready(function() {
-
-//   if($('.facebook-feed').length > 0) {
-
-//       var fbDiv = document.createElement("div");
-//       fbDiv.id = "fb-root";
-//       document.body.appendChild(fbDiv);
-//       (function(d, script) {
-//         script = d.createElement("script");
-//         script.type = "text/javascript";
-//         script.async = true;
-//         script.src =
-//           "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=480328435978507&autoLogAppEvents=1";
-//         d.getElementsByTagName("head")[0].appendChild(script);
-//       })(document);
-
-//   }
-
-// });
-
-// $(window).on('load', function() {
-
-//   if($('.facebook-feed').length > 0) {
-
-//     FB.api('480328435978507/feed', { limit: 3 }, function(result) {
-//       $('.facebook-feed').empty();
-//       $(result.data).each(function(i, post) {
-//           entry = $('<div class="fb-item"></div>');
-//           if (post.icon) {
-//             entry.append('<img class="icon" src="' + post.icon + '" />');
-//           }
-//           switch(post.type) {
-//             case 'status':
-//               entry.append('<div class="fb-content">' + post.message + ' (' + post.from.name + ')</div>');
-//             break;
-  
-//             case 'link':
-//               entry.append('<div class="fb-content">' + post.message + ' (' + post.from.name + ')</div>');
-//               entry.append('<div class="fb-content"><a href="' + post.link + '">' + post.name + '</a></div>');
-//             break;
-  
-//             case 'photo':
-//             case 'video':
-//               entry.append('<div class="fb-content"><a href="' + post.link + '">' + post.message + '</a> (' + post.from.name + ')</div>');
-//             break;
-//           }
-//           $('.facebook-feed').append(entry);
-//       });
-//     });
-
-//   }
-
-// });
