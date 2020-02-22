@@ -22,7 +22,7 @@
     primary: {
       100: '#D2DDEC',
       300: '#A6C5F7',
-      700: '#2C7BE5',
+      700: '#02a694',
     },
     black: '#12263F',
     white: '#FFFFFF',

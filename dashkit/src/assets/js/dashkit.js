@@ -90,67 +90,70 @@
   //
   // Variables
   //
-  
-  var chart = document.getElementById('headerChart2').getContext('2d');
+  if(document.getElementById('headerChart2')) {
+
+    var chart = document.getElementById('headerChart2').getContext('2d');
 
 
-  //
-  // Functions
-  //
+    //
+    // Functions
+    //
 
-  function init(chart) {
-    new Chart(chart, {
-      type: 'line',
-      options: {
-        scales: {
-          yAxes: [{
-            gridLines: {
-              color: '#283E59',
-              zeroLineColor: '#283E59'
-            },
-            ticks: {
-              callback: function(value) {
-                if ( !(value % 10) ) {
-                  return '' + value + 'k PLN';
+    function init(chart) {
+      new Chart(chart, {
+        type: 'line',
+        options: {
+          scales: {
+            yAxes: [{
+              gridLines: {
+                color: '#283E59',
+                zeroLineColor: '#283E59'
+              },
+              ticks: {
+                callback: function(value) {
+                  if ( !(value % 10) ) {
+                    return '' + value + 'k PLN';
+                  }
                 }
               }
-            }
-          }]
-        },
-        tooltips: {
-          callbacks: {
-            label: function(item, data) {
-              var label = data.datasets[item.datasetIndex].label || '';
-              var yLabel = item.yLabel;
-              var content = '';
+            }]
+          },
+          tooltips: {
+            callbacks: {
+              label: function(item, data) {
+                var label = data.datasets[item.datasetIndex].label || '';
+                var yLabel = item.yLabel;
+                var content = '';
 
-              if (data.datasets.length > 1) {
-                content += '<span class="popover-body-label mr-auto">' + label + '</span>';
+                if (data.datasets.length > 1) {
+                  content += '<span class="popover-body-label mr-auto">' + label + '</span>';
+                }
+
+                content += '<span class="popover-body-value">' + yLabel + 'k PLN</span>';
+                return content;
               }
-
-              content += '<span class="popover-body-value">' + yLabel + 'k PLN</span>';
-              return content;
             }
           }
+        },
+        data: {
+          labels: ['Lis', 'Gru', 'Sty'],
+          datasets: [{
+            label: 'Wartość jednostki udziałowej',
+            data: [-20,15,100]
+          }]
         }
-      },
-      data: {
-        labels: ['Lis', 'Gru', 'Sty'],
-        datasets: [{
-          label: 'Wartość jednostki udziałowej',
-          data: [-20,15,100]
-        }]
-      }
-    });
-  };
+      });
+    };
 
 
-  //
-  // Events
-  //
-  
-  if (typeof Chart !== 'undefined' && chart) {
-    init(chart);
+    //
+    // Events
+    //
+    
+    if (typeof Chart !== 'undefined' && chart) {
+      init(chart);
+    }
+
   }
 
 })();
@@ -681,6 +684,10 @@
             borderWidth: 2
           },
           point: {
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+            borderColor: 'rgba(0, 0, 0, 0)',
+            borderWidth: 0,
+            radius: 0,
             hoverRadius: 0
           }
         },
@@ -691,9 +698,78 @@
         }
       },
       data: {
-        labels: new Array(12),
+        labels: new Array(9),
         datasets: [{
-          data: [0, 15, 10, 25, 30, 15, 40, 50, 80, 60, 55, 65]
+          data: [0, 15, 10, 25, 30, 15, 40, 50, 5]
+        }]
+      }
+    });
+  };
+
+
+  //
+  // Events
+  //
+  
+  if (typeof Chart !== 'undefined' && chart) {
+    init(chart);
+  }
+
+})();
+
+
+
+// Sparkline
+//
+// Sparkline card chart
+
+(function() {
+
+  //
+  // Variables
+  //
+  
+  var chart = document.getElementById('sparklineChart2');
+
+
+  //
+  // Functions
+  //
+
+  function init(chart) {
+    new Chart(chart, {
+      type: 'line',
+      options: {
+        scales: {
+          yAxes: [{
+            display: false
+          }],
+          xAxes: [{
+            display: false
+          }]
+        },
+        elements: {
+          line: {
+            borderWidth: 2
+          },
+          point: {
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+            borderColor: 'rgba(0, 0, 0, 0)',
+            borderWidth: 0,
+            radius: 0,
+            hoverRadius: 0
+          }
+        },
+        tooltips: {
+          custom: function() {
+            return false;
+          }
+        }
+      },
+      data: {
+        labels: new Array(9),
+        datasets: [{
+          data: [0, 15, 10, 45, 30, 15, 100, 50, 400]
         }]
       }
     });
@@ -814,3 +890,61 @@
   }
 
 })();
+
+$(document).ready(function() {
+
+});
+
+// $(document).ready(function() {
+
+//   if($('.facebook-feed').length > 0) {
+
+//       var fbDiv = document.createElement("div");
+//       fbDiv.id = "fb-root";
+//       document.body.appendChild(fbDiv);
+//       (function(d, script) {
+//         script = d.createElement("script");
+//         script.type = "text/javascript";
+//         script.async = true;
+//         script.src =
+//           "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=480328435978507&autoLogAppEvents=1";
+//         d.getElementsByTagName("head")[0].appendChild(script);
+//       })(document);
+
+//   }
+
+// });
+
+// $(window).on('load', function() {
+
+//   if($('.facebook-feed').length > 0) {
+
+//     FB.api('480328435978507/feed', { limit: 3 }, function(result) {
+//       $('.facebook-feed').empty();
+//       $(result.data).each(function(i, post) {
+//           entry = $('<div class="fb-item"></div>');
+//           if (post.icon) {
+//             entry.append('<img class="icon" src="' + post.icon + '" />');
+//           }
+//           switch(post.type) {
+//             case 'status':
+//               entry.append('<div class="fb-content">' + post.message + ' (' + post.from.name + ')</div>');
+//             break;
+  
+//             case 'link':
+//               entry.append('<div class="fb-content">' + post.message + ' (' + post.from.name + ')</div>');
+//               entry.append('<div class="fb-content"><a href="' + post.link + '">' + post.name + '</a></div>');
+//             break;
+  
+//             case 'photo':
+//             case 'video':
+//               entry.append('<div class="fb-content"><a href="' + post.link + '">' + post.message + '</a> (' + post.from.name + ')</div>');
+//             break;
+//           }
+//           $('.facebook-feed').append(entry);
+//       });
+//     });
+
+//   }
+
+// });
