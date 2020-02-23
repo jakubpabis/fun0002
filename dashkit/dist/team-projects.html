@@ -1417,10 +1417,10 @@
 
               <!-- Navigation -->
                 <li class="nav-item">
-                  <a class="nav-link" href="#sidebarPages" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
+                  <a class="nav-link" href="#sidebarPages" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarPages">
                     <i class="fe fe-file"></i> Pages
                   </a>
-                  <div class="collapse " id="sidebarPages">
+                  <div class="collapse show" id="sidebarPages">
                     <ul class="nav nav-sm flex-column">
                       <li class="nav-item">
                         <a href="#sidebarProfile" class="nav-link" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProfile">
@@ -1486,10 +1486,10 @@
                         </div>
                       </li>
                       <li class="nav-item">
-                        <a href="#sidebarTeam" class="nav-link" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTeam">
+                        <a href="#sidebarTeam" class="nav-link" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarTeam">
                           Team
                         </a>
-                        <div class="collapse " id="sidebarTeam">
+                        <div class="collapse show" id="sidebarTeam">
                           <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
                               <a href="team-overview.html" class="nav-link ">
@@ -1497,7 +1497,7 @@
                               </a>
                             </li>
                             <li class="nav-item">
-                              <a href="team-projects.html" class="nav-link ">
+                              <a href="team-projects.html" class="nav-link active">
                                 Projects
                               </a>
                             </li>
@@ -2172,205 +2172,1207 @@
           </div>
         </nav>
       
+      
+      <!-- HEADER -->
+      <div class="header">
 
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-10 col-xl-8">
+        <!-- Image -->
+        <img src="assets/img/covers/team-cover.jpg" class="header-img-top" alt="...">
+        
+        <div class="container-fluid">
 
-              <!-- Header -->
-              <div class="header mt-md-5">
-                <div class="header-body">
+          <!-- Body -->
+          <div class="header-body mt-n5 mt-md-n6">
+            <div class="row align-items-end">
+              <div class="col-auto">
+                
+                <!-- Avatar -->
+                <div class="avatar avatar-xxl header-avatar-top">
+                  <img src="assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded border border-4 border-body">
+                </div>
 
-                  <!-- Pretitle -->
-                  <h6 class="header-pretitle">
-                    Documentation
-                  </h6>
-  
-                  <!-- Title -->
-                  <h1 class="header-title">
-                    Changelog
-                  </h1>
+              </div>
+              <div class="col mb-3 ml-n3 ml-md-n2">
+                
+                <!-- Pretitle -->
+                <h6 class="header-pretitle">
+                  Groups
+                </h6>
+
+                <!-- Title -->
+                <h1 class="header-title">
+                  Launchday
+                </h1>
+
+              </div>
+              <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
+                
+                <!-- Button -->
+                <a href="#!" class="btn btn-primary d-block d-md-inline-block lift">
+                  Join
+                </a>
+
+              </div>
+            </div> <!-- / .row -->
+            <div class="row align-items-center">
+              <div class="col">
+                
+                <!-- Nav -->
+                <ul class="nav nav-tabs nav-overflow header-tabs">
+                  <li class="nav-item">
+                    <a href="team-overview.html" class="nav-link">
+                      Overview
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="team-projects.html" class="nav-link active">
+                      Projects
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="team-members.html" class="nav-link">
+                      Members
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                      Settings
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div> <!-- / .header-body -->
+
+        </div>
+
+      </div> <!-- / .header -->
+      
+      <!-- CONTENT -->
+      <div data-toggle="lists" data-options='{"valueNames": ["name"]}'>
+        <div class="container-fluid" data-toggle="lists" data-options='{"valueNames": ["name"], "listClass": "listAlias"}'>
+          <div class="row mb-4">
+            <div class="col">
+              
+              <!-- Form -->
+              <form>
+                <div class="input-group input-group-lg input-group-merge">
+                  <input type="text" class="form-control form-control-prepended search" placeholder="Search">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <span class="fe fe-search"></span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+            <div class="col-auto">
+              
+              <!-- Navigation (button group) -->
+              <div class="nav btn-group" role="tablist">
+                <button class="btn btn-lg btn-white active" data-toggle="tab" data-target="#tabPaneOne" role="tab" aria-controls="tabPaneOne" aria-selected="true">
+                  <span class="fe fe-grid"></span>
+                </button>
+                <button class="btn btn-lg btn-white" data-toggle="tab" data-target="#tabPaneTwo" role="tab" aria-controls="tabPaneTwo" aria-selected="false">
+                  <span class="fe fe-list"></span>
+                </button>
+              </div> <!-- / .nav -->
+
+            </div>
+          </div> <!-- / .row -->
+
+          <!-- Tab content -->
+          <div class="tab-content">
+            <div class="tab-pane fade active show" id="tabPaneOne" role="tabpanel">
+              <div class="row listAlias">
+                <div class="col-12 col-md-6 col-xl-4">
+
+                  <!-- Card -->
+                  <div class="card">
+                    <a href="project-overview.html">
+                      <img src="assets/img/avatars/projects/project-1.jpg" alt="..." class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col">
+                      
+                          <!-- Title -->
+                          <h4 class="card-title mb-2 name">
+                            <a href="project-overview.html">Homepage Redesign</a>
+                          </h4>
+
+                          <!-- Subtitle -->
+                          <p class="card-text small text-muted">
+                            Updated 4hr ago
+                          </p>
+
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Dropdown -->
+                          <div class="dropdown">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a href="#!" class="dropdown-item">
+                                Action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Another action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Something else here
+                              </a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                      <!-- Divider -->
+                      <hr>
+
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <div class="row align-items-center no-gutters">
+                            <div class="col-auto">
+
+                              <div class="small mr-2">29%</div>
+                              
+                            </div>
+                            <div class="col">
+                              
+                              <!-- Progress -->
+                              <div class="progress progress-sm">
+                                <div class="progress-bar" role="progressbar" style="width: 29%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+
+                            </div>
+                          </div> <!-- / .row -->
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Avatar group -->
+                          <div class="avatar-group">
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
+                              <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
+                              <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
+                              <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Miyah Myles">
+                              <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                    </div> <!-- / .card-body -->
+                  </div>
+                  
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+
+                  <!-- Card -->
+                  <div class="card">
+                    <a href="project-overview.html">
+                      <img src="assets/img/avatars/projects/project-2.jpg" alt="..." class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col">
+                      
+                          <!-- Title -->
+                          <h4 class="card-title mb-2 name">
+                            <a href="project-overview.html">Travels &amp; Time</a>
+                          </h4>
+
+                          <!-- Subtitle -->
+                          <p class="card-text small text-muted">
+                            Updated 4hr ago
+                          </p>
+
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Dropdown -->
+                          <div class="dropdown">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a href="#!" class="dropdown-item">
+                                Action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Another action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Something else here
+                              </a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                      <!-- Divider -->
+                      <hr>
+
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <div class="row align-items-center no-gutters">
+                            <div class="col-auto">
+
+                              <div class="small mr-2">77%</div>
+                              
+                            </div>
+                            <div class="col">
+                              
+                              <!-- Progress -->
+                              <div class="progress progress-sm">
+                                <div class="progress-bar" role="progressbar" style="width: 77%" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+
+                            </div>
+                          </div> <!-- / .row -->
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Avatar group -->
+                          <div class="avatar-group">
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
+                              <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
+                              <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
+                              <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Miyah Myles">
+                              <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                    </div> <!-- / .card-body -->
+                  </div>
+                  
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+
+                  <!-- Card -->
+                  <div class="card">
+                    <a href="project-overview.html">
+                      <img src="assets/img/avatars/projects/project-3.jpg" alt="..." class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col">
+                      
+                          <!-- Title -->
+                          <h4 class="card-title mb-2 name">
+                            <a href="project-overview.html">Safari Exploration</a>
+                          </h4>
+
+                          <!-- Subtitle -->
+                          <p class="card-text small text-muted">
+                            Updated 4hr ago
+                          </p>
+
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Dropdown -->
+                          <div class="dropdown">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a href="#!" class="dropdown-item">
+                                Action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Another action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Something else here
+                              </a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                      <!-- Divider -->
+                      <hr>
+
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <div class="row align-items-center no-gutters">
+                            <div class="col-auto">
+
+                              <div class="small mr-2">100%</div>
+                              
+                            </div>
+                            <div class="col">
+                              
+                              <!-- Progress -->
+                              <div class="progress progress-sm">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+
+                            </div>
+                          </div> <!-- / .row -->
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Avatar group -->
+                          <div class="avatar-group">
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
+                              <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
+                              <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
+                              <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Miyah Myles">
+                              <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                    </div> <!-- / .card-body -->
+                  </div>
+                  
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+
+                  <!-- Card -->
+                  <div class="card">
+                    <a href="project-overview.html">
+                      <img src="assets/img/avatars/projects/project-4.jpg" alt="..." class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col">
+                      
+                          <!-- Title -->
+                          <h4 class="card-title mb-2 name">
+                            <a href="project-overview.html">Personal Site</a>
+                          </h4>
+
+                          <!-- Subtitle -->
+                          <p class="card-text small text-muted">
+                            Updated 4hr ago
+                          </p>
+
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Dropdown -->
+                          <div class="dropdown">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a href="#!" class="dropdown-item">
+                                Action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Another action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Something else here
+                              </a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                      <!-- Divider -->
+                      <hr>
+
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <div class="row align-items-center no-gutters">
+                            <div class="col-auto">
+
+                              <div class="small mr-2">12%</div>
+                              
+                            </div>
+                            <div class="col">
+                              
+                              <!-- Progress -->
+                              <div class="progress progress-sm">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+
+                            </div>
+                          </div> <!-- / .row -->
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Avatar group -->
+                          <div class="avatar-group">
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
+                              <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
+                              <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
+                              <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Miyah Myles">
+                              <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                    </div> <!-- / .card-body -->
+                  </div>
+                  
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+
+                  <!-- Card -->
+                  <div class="card">
+                    <a href="project-overview.html">
+                      <img src="assets/img/avatars/projects/project-5.jpg" alt="..." class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col">
+                      
+                          <!-- Title -->
+                          <h4 class="card-title mb-2 name">
+                            <a href="project-overview.html">Wander (iOS)</a>
+                          </h4>
+
+                          <!-- Subtitle -->
+                          <p class="card-text small text-muted">
+                            Updated 4hr ago
+                          </p>
+
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Dropdown -->
+                          <div class="dropdown">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a href="#!" class="dropdown-item">
+                                Action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Another action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Something else here
+                              </a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                      <!-- Divider -->
+                      <hr>
+
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <div class="row align-items-center no-gutters">
+                            <div class="col-auto">
+
+                              <div class="small mr-2">80%</div>
+                              
+                            </div>
+                            <div class="col">
+                              
+                              <!-- Progress -->
+                              <div class="progress progress-sm">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+
+                            </div>
+                          </div> <!-- / .row -->
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Avatar group -->
+                          <div class="avatar-group">
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
+                              <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
+                              <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
+                              <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Miyah Myles">
+                              <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                    </div> <!-- / .card-body -->
+                  </div>
+                  
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+
+                  <!-- Card -->
+                  <div class="card">
+                    <a href="project-overview.html">
+                      <img src="assets/img/avatars/projects/project-6.jpg" alt="..." class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col">
+                      
+                          <!-- Title -->
+                          <h4 class="card-title mb-2 name">
+                            <a href="project-overview.html">Wander (Web)</a>
+                          </h4>
+
+                          <!-- Subtitle -->
+                          <p class="card-text small text-muted">
+                            Updated 4hr ago
+                          </p>
+
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Dropdown -->
+                          <div class="dropdown">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a href="#!" class="dropdown-item">
+                                Action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Another action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Something else here
+                              </a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                      <!-- Divider -->
+                      <hr>
+
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <div class="row align-items-center no-gutters">
+                            <div class="col-auto">
+
+                              <div class="small mr-2">65%</div>
+                              
+                            </div>
+                            <div class="col">
+                              
+                              <!-- Progress -->
+                              <div class="progress progress-sm">
+                                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+
+                            </div>
+                          </div> <!-- / .row -->
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Avatar group -->
+                          <div class="avatar-group">
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
+                              <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
+                              <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
+                              <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Miyah Myles">
+                              <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                            </a>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                    </div> <!-- / .card-body -->
+                  </div>
+                  
+                </div>
+              </div> <!-- / .row -->
+            </div>
+            <div class="tab-pane fade" id="tabPaneTwo" role="tabpanel">
+              <div class="row list">
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          
+                          <!-- Avatar -->
+                          <a href="project-overview.html" class="avatar avatar-lg avatar-4by3">
+                            <img src="assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded">
+                          </a>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Title -->
+                          <h4 class="card-title mb-1 name">
+                            <a href="project-overview.html">Homepage Redesign</a>
+                          </h4>
+
+                          <!-- Text -->
+                          <p class="card-text small text-muted mb-1">
+                            <time datetime="2018-06-21">Updated 2hr ago</time>
+                          </p>
+
+                          <!-- Progress -->
+                          <div class="row align-items-center no-gutters">
+                            <div class="col-auto">
+
+                              <div class="small mr-2">29%</div>
+                              
+                            </div>
+                            <div class="col">
+                              
+                              <!-- Progress -->
+                              <div class="progress progress-sm">
+                                <div class="progress-bar" role="progressbar" style="width: 29%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+
+                            </div>
+                          </div> <!-- / .row -->
+                          
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Avatar group -->
+                          <div class="avatar-group d-none d-md-inline-flex">
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
+                              <img src="assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
+                              <img src="assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
+                              <img src="assets/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Miyah Myles">
+                              <img src="assets/img/avatars/profiles/avatar-5.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                          </div>
+
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Dropdown -->
+                          <div class="dropdown">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a href="#!" class="dropdown-item">
+                                Action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Another action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Something else here
+                              </a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+                    </div> <!-- / .card-body -->
+                  </div>
 
                 </div>
-              </div>
+                <div class="col-12">
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.4.2</span></h2><span class="text-muted"> – May 24th, 2019</span>
-              <ul class="mb-5">
-                <li>Fixed navigation issues.</li>
-                <li>Added <code>$navbar-dropdown-toggle-on-hover</code> SCSS variable to enable/disable toggling navbar dropdowns on hover.</li>
-                <li>Replaced <code>$font-path</code> SCSS variable with <code>$path-to-fonts</code>. Changed its value to <code>../fonts</code> to allow specifying paths to different fonts.</li>
-              </ul>
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          
+                          <!-- Avatar -->
+                          <a href="project-overview.html" class="avatar avatar-lg avatar-4by3">
+                            <img src="assets/img/avatars/projects/project-2.jpg" alt="..." class="avatar-img rounded">
+                          </a>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.4.1</span></h2><span class="text-muted"> – May 23th, 2019</span>
-              <ul class="mb-5">
-                <li>Fixed SCSS compilation issues.</li>
-              </ul>
+                        </div>
+                        <div class="col ml-n2">
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.4.0</span></h2><span class="text-muted"> – May 23th, 2019</span>
-              <ul class="mb-5">
-                <li>Added collapsed sidebar.</li>
-                <li>Added inverted navigation color.</li>
-                <li>Added Kanban board page.</li>
-                <li>Added Social feed page.</li>
-                <li>Added Lift utility.</li>
-                <li>Added Autosize plugin.</li>
-                <li>Added Mapbox plugin.</li>
-                <li>Added <code>charts-dark.js</code> to enable dark mode for charts.</li>
-                <li>Changed the way we pass options to third-party plugins if initialized via <code>data</code> attributes.</li>
-                <li>Got rid of jQuery dependency where possible.</li>
-                <li>Updated dependencies.</li>
-              </ul>
+                          <!-- Title -->
+                          <h4 class="card-title mb-1 name">
+                            <a href="project-overview.html">Travels &amp; Time</a>
+                          </h4>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.3.4</span></h2><span class="text-muted"> – March 12th, 2019</span>
-              <ul class="mb-5">
-                <li>Updated to Bootstrap v4.3.1.</li>
-                <li>Updated to Flatpickr v4.5.7.</li>
-                <li>Updated to Highlight.js 9.15.6.</li>
-                <li>Fixed Select2 search issue.</li>
-                <li>Fixed <code>.dropleft</code> icon issue.</li>
-                <li>Fixed <code>.icon</code> sizing issue.</li>
-              </ul>
+                          <!-- Text -->
+                          <p class="card-text small text-muted mb-1">
+                            <time datetime="2018-06-21">Updated 5hr ago</time>
+                          </p>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.3.3</span></h2><span class="text-muted"> – February 12th, 2019</span>
-              <ul class="mb-5">
-                <li>Updated to Bootstrap v4.3.0.</li>
-                <li>Updated to Gulp v4.</li>
-                <li>Updated other plugins and dependencies.</li>
-                <li>Rewritten <code>gulpfile.js</code> from scratch.</li>
-                <li>Removed deprecated packages.</li>
-              </ul>
+                          <!-- Progress -->
+                          <div class="row align-items-center no-gutters">
+                            <div class="col-auto">
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.3.2</span></h2><span class="text-muted"> – January 21st, 2019</span>
-              <ul class="mb-5">
-                <li>Updated to Bootstrap v4.2.1.</li>
-                <li>Replaced custom spacing utilities with Bootstrap ones.</li>
-                <li>Replaced Loaders with Spinners.</li>
-                <li>Replaced Toggles with Switches.</li>
-                <li>Cleaned up gulpfile.js and package.json.</li>
-                <li>Other small changes and improvements.</li>
-              </ul>
+                              <div class="small mr-2">77%</div>
+                              
+                            </div>
+                            <div class="col">
+                              
+                              <!-- Progress -->
+                              <div class="progress progress-sm">
+                                <div class="progress-bar" role="progressbar" style="width: 77%" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.3.1</span></h2><span class="text-muted"> – December 19th, 2018</span>
-              <ul class="mb-5">
-                <li>Added URL parser to set global preferences via query parameters.</li>
-                <li>Added SASS variable for image path.</li>
-                <li>Fixed <code>gulp build</code> task errors.</li>
-                <li>Replaced logo image.</li>
-              </ul>
+                            </div>
+                          </div> <!-- / .row -->
+                          
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Avatar group -->
+                          <div class="avatar-group d-none d-md-inline-flex">
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
+                              <img src="assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
+                              <img src="assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
+                              <img src="assets/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Miyah Myles">
+                              <img src="assets/img/avatars/profiles/avatar-5.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                          </div>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.3.0</span></h2><span class="text-muted"> – October 16th, 2018</span>
-              <ul class="mb-5">
-                <li>Added layout builder.</li>
-                <li>Added <code>dashboard-alt.html</code> page.</li>
-                <li>Added <code>.bg-vibrant</code> class for sidebar.</li>
-                <li>Added custom styles for <code>.navbar-dark</code> class.</li>
-                <li>Added alternative positioning for vertical modal.</li>
-                <li>Fixed dropdown issues when positioned inside responsive table.</li>
-                <li>Moved Highlight.js inside <code>/node_modules</code>.</li>
-              </ul>
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Dropdown -->
+                          <div class="dropdown">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a href="#!" class="dropdown-item">
+                                Action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Another action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Something else here
+                              </a>
+                            </div>
+                          </div>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.2.1</span></h2><span class="text-muted"> – September 8th, 2018</span>
-              <ul class="mb-5">
-                <li>Fixed light mode dropdown border color.</li>
-              </ul>
+                        </div>
+                      </div> <!-- / .row -->
+                    </div> <!-- / .card-body -->
+                  </div>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.2.0</span></h2><span class="text-muted"> – September 1st, 2018</span>
-              <ul class="mb-5">
-                <li>Added dark mode.</li>
-                <li>Fixed Select2 dropdown list search when using inside a modal window.</li>
-                <li>Improved the <code>.avatar</code> component SCSS by replacing contextual borders with masks to be able to use avatar groups and status indicators on any background. Please make sure to remove any <code>.border</code> classes from avatar groups markup.</li>
-                <li>Optimized <code>gulpfile.js</code> to perform <strong class="badge badge-soft-primary"><code>gulp build</code></strong> faster.</li>
-                <li>Split <code>theme.js</code> into modules.</li>
-              </ul>
+                </div>
+                <div class="col-12">
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.1.2</span></h2><span class="text-muted"> – August 17th, 2018</span>
-              <ul class="mb-5">
-                <li>Added <code>$font-path</code> SCSS variable.</li>
-                <li>Updated to Bootstrap v4.1.3.</li>
-                <li>Improved SCSS of the Select2 plugin styles overrides.</li>
-                <li>Fixed radio button issue.</li>
-                <li>Fixed card tables border radius issue.</li>
-                <li>Fixed validation styles for <code>.input-group-merge</code>.</li>
-                <li>Fixed Select2 dropdown items highlighting when using keyboard navigation.</li>
-                <li>Made Select2 dropdowns respect <code>.form-control-sm</code> and <code>.form-control-lg</code>.</li>
-                <li>Made Select2 searchbox optional.</li>
-              </ul>
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          
+                          <!-- Avatar -->
+                          <a href="project-overview.html" class="avatar avatar-lg avatar-4by3">
+                            <img src="assets/img/avatars/projects/project-3.jpg" alt="..." class="avatar-img rounded">
+                          </a>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.1.1</span></h2><span class="text-muted"> – July 31st, 2018</span>
-              <ul class="mb-5">
-                <li>Specified the exact Bootstrap version in <code>package.json</code> since latest Bootstrap update (v4.1.3) made change to input height that caused issues. Interim solution until we integrate 4.1.3 properly to Dashkit.</li>
-              </ul>
+                        </div>
+                        <div class="col ml-n2">
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.1.0</span></h2><span class="text-muted"> – July 24th, 2018</span>
-              <ul class="mb-5">
-                <li>
-                  New/Extended components:
-                  <ul>
-                    <li>Universal loading component with <code>.is-loading</code> convenience helper</li>
-                    <li>WYSIWYG editor powered by Quill.js</li>
-                    <li>Drag and drop file handling powered by Dropzone.js</li>
-                    <li>Rich select/multi-select powered by Select2</li>
-                    <li>Icon buttons</li>
-                  </ul>
-                </li>
-                <li>
-                  New example pages:
-                  <ul>
-                    <li>Orders page</li>
-                    <li>Invoice page</li>
-                    <li>Pricing page</li>
-                    <li>Create a project page</li>
-                    <li>Create a team page</li>
-                  </ul>
-                </li>
-                <li>
-                  Moved all plugin related styles into their own SCSS files.
-                </li>
-                <li>
-                  Small improvements to variable importing and modal animations. 
-                </li>
-              </ul>
+                          <!-- Title -->
+                          <h4 class="card-title mb-1 name">
+                            <a href="project-overview.html">Safari Exploration</a>
+                          </h4>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.0.2</span></h2><span class="text-muted"> – July 20th, 2018</span>
-              <ul class="mb-5">
-                <li>
-                  Updated to Bootstrap v4.1.2.
-                </li>
-                <li>
-                  Fixed border utilities.
-                </li>
-                <li>
-                  Fixed an issue where tabs didn't get toggled while charts did.
-                </li>
-              </ul>
+                          <!-- Text -->
+                          <p class="card-text small text-muted mb-1">
+                            <time datetime="2018-06-21">Updated 1hr ago</time>
+                          </p>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.0.1</span></h2><span class="text-muted"> – July 18th, 2018</span>
-              <ul class="mb-5">
-                <li>
-                  Removed page header from the topnav version.
-                </li>
-                <li>
-                  Changed variables import order. Added <code>!default</code> flag to custom variables.
-                </li>
-                <li>
-                  Fixed scrolling issue on authentication pages.
-                </li>
-                <li>
-                  Fixed Chart.js issue causing errors on pages with no charts.
-                </li>
-              </ul>
+                          <!-- Progress -->
+                          <div class="row align-items-center no-gutters">
+                            <div class="col-auto">
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.0.0</span></h2><span class="text-muted"> – June 25th, 2018</span>
-              <ul>
-                <li>
-                  Initial release of Dashkit! Lots more coming soon though 😁
-                </li>
-              </ul>
+                              <div class="small mr-2">100%</div>
+                              
+                            </div>
+                            <div class="col">
+                              
+                              <!-- Progress -->
+                              <div class="progress progress-sm">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
 
-          </div>
-        </div> <!-- / .row -->
+                            </div>
+                          </div> <!-- / .row -->
+                          
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Avatar group -->
+                          <div class="avatar-group d-none d-md-inline-flex">
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
+                              <img src="assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
+                              <img src="assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
+                              <img src="assets/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Miyah Myles">
+                              <img src="assets/img/avatars/profiles/avatar-5.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                          </div>
+
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Dropdown -->
+                          <div class="dropdown">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a href="#!" class="dropdown-item">
+                                Action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Another action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Something else here
+                              </a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+                    </div> <!-- / .card-body -->
+                  </div>
+
+                </div>
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          
+                          <!-- Avatar -->
+                          <a href="project-overview.html" class="avatar avatar-lg avatar-4by3">
+                            <img src="assets/img/avatars/projects/project-4.jpg" alt="..." class="avatar-img rounded">
+                          </a>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Title -->
+                          <h4 class="card-title mb-1 name">
+                            <a href="project-overview.html">Personal Site</a>
+                          </h4>
+
+                          <!-- Text -->
+                          <p class="card-text small text-muted mb-1">
+                            <time datetime="2018-06-21">Updated 2d ago</time>
+                          </p>
+
+                          <!-- Progress -->
+                          <div class="row align-items-center no-gutters">
+                            <div class="col-auto">
+
+                              <div class="small mr-2">12%</div>
+                              
+                            </div>
+                            <div class="col">
+                              
+                              <!-- Progress -->
+                              <div class="progress progress-sm">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 12%" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+
+                            </div>
+                          </div> <!-- / .row -->
+                          
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Avatar group -->
+                          <div class="avatar-group d-none d-md-inline-flex">
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
+                              <img src="assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
+                              <img src="assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
+                              <img src="assets/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Miyah Myles">
+                              <img src="assets/img/avatars/profiles/avatar-5.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                          </div>
+
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Dropdown -->
+                          <div class="dropdown">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a href="#!" class="dropdown-item">
+                                Action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Another action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Something else here
+                              </a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+                    </div> <!-- / .card-body -->
+                  </div>
+
+                </div>
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          
+                          <!-- Avatar -->
+                          <a href="project-overview.html" class="avatar avatar-lg avatar-4by3">
+                            <img src="assets/img/avatars/projects/project-5.jpg" alt="..." class="avatar-img rounded">
+                          </a>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Title -->
+                          <h4 class="card-title mb-1 name">
+                            <a href="project-overview.html">Wander (iOS)</a>
+                          </h4>
+
+                          <!-- Text -->
+                          <p class="card-text small text-muted mb-1">
+                            <time datetime="2018-06-21">Updated 4hr ago</time>
+                          </p>
+
+                          <!-- Progress -->
+                          <div class="row align-items-center no-gutters">
+                            <div class="col-auto">
+
+                              <div class="small mr-2">80%</div>
+                              
+                            </div>
+                            <div class="col">
+                              
+                              <!-- Progress -->
+                              <div class="progress progress-sm">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+
+                            </div>
+                          </div> <!-- / .row -->
+                          
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Avatar group -->
+                          <div class="avatar-group d-none d-md-inline-flex">
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
+                              <img src="assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
+                              <img src="assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
+                              <img src="assets/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Miyah Myles">
+                              <img src="assets/img/avatars/profiles/avatar-5.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                          </div>
+
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Dropdown -->
+                          <div class="dropdown">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a href="#!" class="dropdown-item">
+                                Action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Another action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Something else here
+                              </a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+                    </div> <!-- / .card-body -->
+                  </div>
+
+                </div>
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+                          
+                          <!-- Avatar -->
+                          <a href="project-overview.html" class="avatar avatar-lg avatar-4by3">
+                            <img src="assets/img/avatars/projects/project-6.jpg" alt="..." class="avatar-img rounded">
+                          </a>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Title -->
+                          <h4 class="card-title mb-1 name">
+                            <a href="project-overview.html">Wander (Web)</a>
+                          </h4>
+
+                          <!-- Text -->
+                          <p class="card-text small text-muted mb-1">
+                            <time datetime="2018-06-21">Updated 18hr ago</time>
+                          </p>
+
+                          <!-- Progress -->
+                          <div class="row align-items-center no-gutters">
+                            <div class="col-auto">
+
+                              <div class="small mr-2">65%</div>
+                              
+                            </div>
+                            <div class="col">
+                              
+                              <!-- Progress -->
+                              <div class="progress progress-sm">
+                                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+
+                            </div>
+                          </div> <!-- / .row -->
+                          
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Avatar group -->
+                          <div class="avatar-group d-none d-md-inline-flex">
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
+                              <img src="assets/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
+                              <img src="assets/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
+                              <img src="assets/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                            <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Miyah Myles">
+                              <img src="assets/img/avatars/profiles/avatar-5.jpg" class="avatar-img rounded-circle" alt="...">
+                            </a>
+                          </div>
+
+                        </div>
+                        <div class="col-auto">
+                          
+                          <!-- Dropdown -->
+                          <div class="dropdown">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a href="#!" class="dropdown-item">
+                                Action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Another action
+                              </a>
+                              <a href="#!" class="dropdown-item">
+                                Something else here
+                              </a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div> <!-- / .row -->
+                    </div> <!-- / .card-body -->
+                  </div>
+                
+                </div>
+                
+              </div> <!-- / .row -->
+            </div>
+          </div> <!-- / .tab-content -->
+
+        </div>
       </div>
-      
+
     </div> <!-- / .main-content -->
 
     <!-- JAVASCRIPT

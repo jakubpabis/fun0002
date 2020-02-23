@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "title": "Ustawienia konta - Fundit"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVIGATION
+    ================================================== -->
+    @@include("partials/sidebar.html", {
+      "category": "dashboards",
+      "subcategory": "",
+      "page": "user-settings.html"
+    })
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content">
+
+      @@include("partials/topbar.html")
+
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+            
+            <!-- Header -->
+            <div class="header mt-5 mb-4">
+              <div class="header-body">
+                <div class="row align-items-center">
+                  <div class="col">
+                    
+                    <!-- Pretitle -->
+                    <h6 class="header-pretitle">
+                      Twoje konto
+                    </h6>
+
+                    <!-- Title -->
+                    <h1 class="header-title">
+                      Ustawienia
+                    </h1>
+
+                  </div>
+                </div> <!-- / .row -->
+                    
+                <!-- Nav -->
+                <nav class="pt-4">
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link pb-3 active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">Profil</a>
+                    <a class="nav-item nav-link pb-3" id="nav-payments-tab" data-toggle="tab" href="#nav-payments" role="tab" aria-controls="nav-payments" aria-selected="false">Płatności</a>
+                    <a class="nav-item nav-link pb-3" id="nav-notifications-tab" data-toggle="tab" href="#nav-notifications" role="tab" aria-controls="nav-notifications" aria-selected="false">Powiadomienia</a>
+                    <a class="nav-item nav-link pb-3" id="nav-security-tab" data-toggle="tab" href="#nav-security" role="tab" aria-controls="nav-security" aria-selected="false">Bezpieczeństwo</a>
+                  </div>
+                </nav>
+
+              </div>
+            </div>
+
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <!-- Form -->
+                <form class="mb-4">
+
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      
+                      <!-- First name -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label>
+                          Imię
+                        </label>
+
+                        <!-- Input -->
+                        <input type="text" class="form-control">
+
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-md-6">
+                      
+                      <!-- Last name -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label>
+                          Nazwisko
+                        </label>
+
+                        <!-- Input -->
+                        <input type="text" class="form-control">
+
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-md-6">
+                      
+                      <!-- Email address -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label class="mb-1">
+                          Adres email
+                        </label>
+
+                        <!-- Input -->
+                        <input type="email" class="form-control">
+
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-md-6">
+                      
+                      <!-- Phone -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label>
+                          Telefon
+                        </label>
+
+                        <!-- Input -->
+                        <input type="text" class="form-control mb-3" placeholder="___ ___ ___" data-mask="000 000 000">
+
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-md-6">
+                      
+                      <!-- Birthday -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label>
+                          Data urodzenia
+                        </label>
+
+                        <!-- Input -->
+                        <input type="text" class="form-control" data-toggle="flatpickr">
+
+                      </div>
+
+                    </div>
+                  </div> <!-- / .row -->
+
+                  <!-- Divider -->
+                  <hr class="mt-4 mb-5">
+
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      
+                      <!-- Public profile -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label class="mb-1">
+                          Public profile
+                        </label>
+
+                        <!-- Form text -->
+                        <small class="form-text text-muted">
+                          Making your profile public means that anyone on the Dashkit network will be able to find you.
+                        </small>
+
+                        <div class="row">
+                          <div class="col-auto">
+                            
+                            <!-- Switch -->
+                            <div class="custom-control custom-switch">
+                              <input type="checkbox" class="custom-control-input" id="switchOne">
+                              <label class="custom-control-label" for="switchOne"></label>
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+                            
+                            <!-- Help text -->
+                            <small class="text-muted">
+                              You're currently invisible
+                            </small>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-md-6">
+                      
+                      <!-- Allow for additional Bookings -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label class="mb-1">
+                          Allow for additional Bookings
+                        </label>
+
+                        <!-- Form text -->
+                        <small class="form-text text-muted">
+                          If you are available for hire outside of the current situation, you can encourage others to hire you.
+                        </small>
+
+                        <div class="row">
+                          <div class="col-auto">
+                            
+                            <!-- Switch -->
+                            <div class="custom-control custom-switch">
+                              <input type="checkbox" class="custom-control-input" id="switchTwo">
+                              <label class="custom-control-label" for="switchTwo"></label>
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+                            
+                            <!-- Help text -->
+                            <small class="text-muted">
+                              You're currently available
+                            </small>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+
+                    </div>
+                  </div> <!-- / .row -->
+
+                  <!-- Divider -->
+                  <hr class="mt-4 mb-5">
+
+                  
+                  </div> <!-- / .row -->
+
+                </form>
+              </div>
+              <div class="tab-pane fade" id="nav-payments" role="tabpanel" aria-labelledby="nav-payments-tab">
+
+              </div>
+              <div class="tab-pane fade" id="nav-notifications" role="tabpanel" aria-labelledby="nav-notifications-tab">
+
+              </div>
+              <div class="tab-pane fade" id="nav-security" role="tabpanel" aria-labelledby="nav-security-tab">
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+      
+    </div> <!-- / .main-content -->
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

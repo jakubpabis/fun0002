@@ -887,3 +887,37 @@
   }
 
 })();
+
+// function addData(chart, label, data) {
+//   chart.data.labels = label
+//   chart.data.datasets.forEach((dataset) => {
+//       dataset.data = data;
+//   });
+//   chart.update();
+// }
+
+// function updateChartData(chart, label, data)
+// {
+//   var $chart = document.getElementById(chart);
+//   console.log($chart);
+//   console.log(label);
+//   console.log(data);
+//   $chart.data.labels.pop();
+//   $chart.data.datasets.forEach((dataset) => {
+//       dataset.data.pop();
+//   });
+//   $chart.data.labels.push(label);
+//   $chart.data.datasets.forEach((dataset) => {
+//       dataset.data.push(data);
+//   });
+//   $chart.update();
+// }
+
+// $(document).ready(function(){
+
+//   $('*[data-chart]').on('click', function() {
+//     console.log($($(this).data('chart')));
+//     addData($($(this).data('chart')), $(this).data('labels'), $(this).data('sets'));
+//   });
+
+// });

@@ -1417,10 +1417,10 @@
 
               <!-- Navigation -->
                 <li class="nav-item">
-                  <a class="nav-link" href="#sidebarPages" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
+                  <a class="nav-link" href="#sidebarPages" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarPages">
                     <i class="fe fe-file"></i> Pages
                   </a>
-                  <div class="collapse " id="sidebarPages">
+                  <div class="collapse show" id="sidebarPages">
                     <ul class="nav nav-sm flex-column">
                       <li class="nav-item">
                         <a href="#sidebarProfile" class="nav-link" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProfile">
@@ -1549,7 +1549,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="invoice.html" class="nav-link ">
+                        <a href="invoice.html" class="nav-link active">
                           Invoice
                         </a>
                       </li>
@@ -2176,196 +2176,186 @@
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-12 col-lg-10 col-xl-8">
+            
+            <!-- Header -->
+            <div class="header mt-md-5">
+              <div class="header-body">
+                <div class="row align-items-center">
+                  <div class="col">
+                    
+                    <!-- Pretitle -->
+                    <h6 class="header-pretitle">
+                      Payments
+                    </h6>
 
-              <!-- Header -->
-              <div class="header mt-md-5">
-                <div class="header-body">
+                    <!-- Title -->
+                    <h1 class="header-title">
+                      Invoice #SDF9823KD
+                    </h1>
 
-                  <!-- Pretitle -->
-                  <h6 class="header-pretitle">
-                    Documentation
-                  </h6>
-  
-                  <!-- Title -->
-                  <h1 class="header-title">
-                    Changelog
-                  </h1>
+                  </div>
+                  <div class="col-auto">
+                    
+                    <!-- Buttons -->
+                    <a href="#!" class="btn btn-white lift">
+                      Download
+                    </a>
+                    <a href="#!" class="btn btn-primary ml-2 lift">
+                      Pay
+                    </a>
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="card card-body p-5">
+              <div class="row">
+                <div class="col text-right">
+
+                  <!-- Badge -->
+                  <div class="badge badge-danger">
+                    Overdue
+                  </div>
 
                 </div>
-              </div>
+              </div> <!-- / .row -->
+              <div class="row">
+                <div class="col text-center">
+                  
+                  <!-- Logo -->
+                  <img src="assets/img/logo.svg" alt="..." class="img-fluid mb-4" style="max-width: 2.5rem;">
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.4.2</span></h2><span class="text-muted"> – May 24th, 2019</span>
-              <ul class="mb-5">
-                <li>Fixed navigation issues.</li>
-                <li>Added <code>$navbar-dropdown-toggle-on-hover</code> SCSS variable to enable/disable toggling navbar dropdowns on hover.</li>
-                <li>Replaced <code>$font-path</code> SCSS variable with <code>$path-to-fonts</code>. Changed its value to <code>../fonts</code> to allow specifying paths to different fonts.</li>
-              </ul>
+                  <!-- Title -->
+                  <h2 class="mb-2">
+                    Invoice from Dashkit
+                  </h2>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.4.1</span></h2><span class="text-muted"> – May 23th, 2019</span>
-              <ul class="mb-5">
-                <li>Fixed SCSS compilation issues.</li>
-              </ul>
+                  <!-- Text -->
+                  <p class="text-muted mb-6">
+                    Invoice #SDF9823KD
+                  </p>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.4.0</span></h2><span class="text-muted"> – May 23th, 2019</span>
-              <ul class="mb-5">
-                <li>Added collapsed sidebar.</li>
-                <li>Added inverted navigation color.</li>
-                <li>Added Kanban board page.</li>
-                <li>Added Social feed page.</li>
-                <li>Added Lift utility.</li>
-                <li>Added Autosize plugin.</li>
-                <li>Added Mapbox plugin.</li>
-                <li>Added <code>charts-dark.js</code> to enable dark mode for charts.</li>
-                <li>Changed the way we pass options to third-party plugins if initialized via <code>data</code> attributes.</li>
-                <li>Got rid of jQuery dependency where possible.</li>
-                <li>Updated dependencies.</li>
-              </ul>
+                </div>
+              </div> <!-- / .row -->
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  
+                  <h6 class="text-uppercase text-muted">
+                    Invoiced from
+                  </h6>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.3.4</span></h2><span class="text-muted"> – March 12th, 2019</span>
-              <ul class="mb-5">
-                <li>Updated to Bootstrap v4.3.1.</li>
-                <li>Updated to Flatpickr v4.5.7.</li>
-                <li>Updated to Highlight.js 9.15.6.</li>
-                <li>Fixed Select2 search issue.</li>
-                <li>Fixed <code>.dropleft</code> icon issue.</li>
-                <li>Fixed <code>.icon</code> sizing issue.</li>
-              </ul>
+                  <p class="text-muted mb-4">
+                    <strong class="text-body">Kenny Blankenship</strong> <br>
+                    CEO of Good Themes <br>
+                    123 Happy Walk Way <br>
+                    San Francisco, CA
+                  </p>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.3.3</span></h2><span class="text-muted"> – February 12th, 2019</span>
-              <ul class="mb-5">
-                <li>Updated to Bootstrap v4.3.0.</li>
-                <li>Updated to Gulp v4.</li>
-                <li>Updated other plugins and dependencies.</li>
-                <li>Rewritten <code>gulpfile.js</code> from scratch.</li>
-                <li>Removed deprecated packages.</li>
-              </ul>
+                  <h6 class="text-uppercase text-muted">
+                    Invoiced ID
+                  </h6>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.3.2</span></h2><span class="text-muted"> – January 21st, 2019</span>
-              <ul class="mb-5">
-                <li>Updated to Bootstrap v4.2.1.</li>
-                <li>Replaced custom spacing utilities with Bootstrap ones.</li>
-                <li>Replaced Loaders with Spinners.</li>
-                <li>Replaced Toggles with Switches.</li>
-                <li>Cleaned up gulpfile.js and package.json.</li>
-                <li>Other small changes and improvements.</li>
-              </ul>
+                  <p class="mb-4">
+                    #SDF9823KD
+                  </p>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.3.1</span></h2><span class="text-muted"> – December 19th, 2018</span>
-              <ul class="mb-5">
-                <li>Added URL parser to set global preferences via query parameters.</li>
-                <li>Added SASS variable for image path.</li>
-                <li>Fixed <code>gulp build</code> task errors.</li>
-                <li>Replaced logo image.</li>
-              </ul>
+                </div>
+                <div class="col-12 col-md-6 text-md-right">
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.3.0</span></h2><span class="text-muted"> – October 16th, 2018</span>
-              <ul class="mb-5">
-                <li>Added layout builder.</li>
-                <li>Added <code>dashboard-alt.html</code> page.</li>
-                <li>Added <code>.bg-vibrant</code> class for sidebar.</li>
-                <li>Added custom styles for <code>.navbar-dark</code> class.</li>
-                <li>Added alternative positioning for vertical modal.</li>
-                <li>Fixed dropdown issues when positioned inside responsive table.</li>
-                <li>Moved Highlight.js inside <code>/node_modules</code>.</li>
-              </ul>
+                  <h6 class="text-uppercase text-muted">
+                    Invoiced to
+                  </h6>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.2.1</span></h2><span class="text-muted"> – September 8th, 2018</span>
-              <ul class="mb-5">
-                <li>Fixed light mode dropdown border color.</li>
-              </ul>
+                  <p class="text-muted mb-4">
+                    <strong class="text-body">Jimmy LeBuyer</strong> <br>
+                    Acquisitions at Themers <br>
+                    236 Main St., #201 <br>
+                    Los Angeles, CA
+                  </p>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.2.0</span></h2><span class="text-muted"> – September 1st, 2018</span>
-              <ul class="mb-5">
-                <li>Added dark mode.</li>
-                <li>Fixed Select2 dropdown list search when using inside a modal window.</li>
-                <li>Improved the <code>.avatar</code> component SCSS by replacing contextual borders with masks to be able to use avatar groups and status indicators on any background. Please make sure to remove any <code>.border</code> classes from avatar groups markup.</li>
-                <li>Optimized <code>gulpfile.js</code> to perform <strong class="badge badge-soft-primary"><code>gulp build</code></strong> faster.</li>
-                <li>Split <code>theme.js</code> into modules.</li>
-              </ul>
+                  <h6 class="text-uppercase text-muted">
+                    Due date
+                  </h6>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.1.2</span></h2><span class="text-muted"> – August 17th, 2018</span>
-              <ul class="mb-5">
-                <li>Added <code>$font-path</code> SCSS variable.</li>
-                <li>Updated to Bootstrap v4.1.3.</li>
-                <li>Improved SCSS of the Select2 plugin styles overrides.</li>
-                <li>Fixed radio button issue.</li>
-                <li>Fixed card tables border radius issue.</li>
-                <li>Fixed validation styles for <code>.input-group-merge</code>.</li>
-                <li>Fixed Select2 dropdown items highlighting when using keyboard navigation.</li>
-                <li>Made Select2 dropdowns respect <code>.form-control-sm</code> and <code>.form-control-lg</code>.</li>
-                <li>Made Select2 searchbox optional.</li>
-              </ul>
+                  <p class="mb-4">
+                    <time datetime="2018-04-23">Apr 23, 2018</time>
+                  </p>
+                  
+                </div>
+              </div> <!-- / .row -->
+              <div class="row">
+                <div class="col-12">
+                  
+                  <!-- Table -->
+                  <div class="table-responsive">
+                    <table class="table my-4">
+                      <thead>
+                        <tr>
+                          <th class="px-0 bg-transparent border-top-0">
+                            <span class="h6">Description</span>
+                          </th>
+                          <th class="px-0 bg-transparent border-top-0">
+                            <span class="h6">Hours</span>
+                          </th>
+                          <th class="px-0 bg-transparent border-top-0 text-right">
+                            <span class="h6">Cost</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="px-0">
+                            Custom theme development
+                          </td>
+                          <td class="px-0">
+                            125
+                          </td>
+                          <td class="px-0 text-right">
+                            $6,250
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="px-0">
+                            Logo design
+                          </td>
+                          <td class="px-0">
+                            15
+                          </td>
+                          <td class="px-0 text-right">
+                            $750
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="px-0 border-top border-top-2">
+                           <strong>Total amount due</strong>
+                          </td>
+                          <td colspan="2" class="px-0 text-right border-top border-top-2">
+                            <span class="h3">
+                              $7,000
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.1.1</span></h2><span class="text-muted"> – July 31st, 2018</span>
-              <ul class="mb-5">
-                <li>Specified the exact Bootstrap version in <code>package.json</code> since latest Bootstrap update (v4.1.3) made change to input height that caused issues. Interim solution until we integrate 4.1.3 properly to Dashkit.</li>
-              </ul>
+                  <hr class="my-5">
+                  
+                  <!-- Title -->
+                  <h6 class="text-uppercase">
+                    Notes
+                  </h6>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.1.0</span></h2><span class="text-muted"> – July 24th, 2018</span>
-              <ul class="mb-5">
-                <li>
-                  New/Extended components:
-                  <ul>
-                    <li>Universal loading component with <code>.is-loading</code> convenience helper</li>
-                    <li>WYSIWYG editor powered by Quill.js</li>
-                    <li>Drag and drop file handling powered by Dropzone.js</li>
-                    <li>Rich select/multi-select powered by Select2</li>
-                    <li>Icon buttons</li>
-                  </ul>
-                </li>
-                <li>
-                  New example pages:
-                  <ul>
-                    <li>Orders page</li>
-                    <li>Invoice page</li>
-                    <li>Pricing page</li>
-                    <li>Create a project page</li>
-                    <li>Create a team page</li>
-                  </ul>
-                </li>
-                <li>
-                  Moved all plugin related styles into their own SCSS files.
-                </li>
-                <li>
-                  Small improvements to variable importing and modal animations. 
-                </li>
-              </ul>
+                  <!-- Text -->
+                  <p class="text-muted mb-0">
+                    We really appreciate your business and if there’s anything else we can do, please let us know! Also, should you need us to add VAT or anything else to this order, it’s super easy since this is a template, so just ask!
+                  </p>
 
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.0.2</span></h2><span class="text-muted"> – July 20th, 2018</span>
-              <ul class="mb-5">
-                <li>
-                  Updated to Bootstrap v4.1.2.
-                </li>
-                <li>
-                  Fixed border utilities.
-                </li>
-                <li>
-                  Fixed an issue where tabs didn't get toggled while charts did.
-                </li>
-              </ul>
-
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.0.1</span></h2><span class="text-muted"> – July 18th, 2018</span>
-              <ul class="mb-5">
-                <li>
-                  Removed page header from the topnav version.
-                </li>
-                <li>
-                  Changed variables import order. Added <code>!default</code> flag to custom variables.
-                </li>
-                <li>
-                  Fixed scrolling issue on authentication pages.
-                </li>
-                <li>
-                  Fixed Chart.js issue causing errors on pages with no charts.
-                </li>
-              </ul>
-
-              <h2 class="d-inline-block"><span class="badge badge-soft-primary mt-n1">v1.0.0</span></h2><span class="text-muted"> – June 25th, 2018</span>
-              <ul>
-                <li>
-                  Initial release of Dashkit! Lots more coming soon though 😁
-                </li>
-              </ul>
+                </div>
+              </div> <!-- / .row -->
+            </div>
 
           </div>
         </div> <!-- / .row -->

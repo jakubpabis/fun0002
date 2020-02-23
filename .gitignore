@@ -18,3 +18,5 @@
 !/build/themes
 !/build/plugins/sative
 !/build/plugins/sative/*
+!dashkit/dist/
+!dashkit/dist/*

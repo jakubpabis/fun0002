@@ -66,3 +66,8 @@
 .btn-group .btn + .btn {
   margin-left: 0;
 }
+
+.btn.fc {
+  display: flex;
+  align-items: center;
+}
