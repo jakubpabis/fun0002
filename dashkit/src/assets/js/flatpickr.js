@@ -19,8 +19,11 @@
   //
 
   function init(el) {
-    var options = el.dataset.options;
-        options = options ? JSON.parse(options) : {};
+    //var options = el.dataset.options;
+    //    options = options ? JSON.parse(options) : {};
+    var options = {
+      "locale": "pl"
+    }
 
     flatpickr(el, options);
   }

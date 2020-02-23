@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     @@include("partials/head.html", {
-      "title": "Fundit"
+      "title": "Panel główny - Fundit"
     })
   </head>
   <body>
@@ -219,12 +219,12 @@
                   
                   <!-- Pretitle -->
                   <h6 class="header-pretitle text-secondary">
-                    Social Media
+                    Wiadomości
                   </h6>
   
                   <!-- Title -->
                   <h1 class="header-title">
-                    Najnowsze informacje
+                    Informacje o Twoich inwestycjach
                   </h1>
   
                 </div>
@@ -254,7 +254,7 @@
                             </h6>
     
                             <!-- Title -->
-                            <h1 class="header-title text-white">
+                            <h1 class="header-title">
                               Wartość jednostek
                             </h1>
       
@@ -282,7 +282,7 @@
                           <h3>
                             Kup jednostki
                           </h3>
-                          <div class="row align-items-center">
+                          <div class="row align-items-center mb-5">
                             <div class="col-lg-4">
                               <input type="text" class="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" value="500">
                             </div>
@@ -295,6 +295,23 @@
                             </div>
                             <div class="col-auto">
                               <button type="button" class="btn btn-primary"><i class="fe fe-check-circle mr-2"></i> Kupuje za: <strong>450 PLN</strong></button>
+                            </div>
+                          </div>
+                          <h3>
+                            Sprzedaj jednostki
+                          </h3>
+                          <div class="row align-items-center mb-3">
+                            <div class="col-lg-4">
+                              <input type="text" class="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" value="500">
+                            </div>
+                            <div class="col-auto pl-0 pr-0">
+                              <h3 class="mb-0">&times;</h3>
+                            </div>
+                            <div class="col-lg-2 pr-0 input-jednostki">
+                              <input type="number" class="form-control" placeholder="Jednostki" value="15">
+                            </div>
+                            <div class="col-auto">
+                              <button type="button" class="btn btn-primary"><i class="fe fe-check-circle mr-2"></i> Sprzedaj</button>
                             </div>
                           </div>
                         </div>

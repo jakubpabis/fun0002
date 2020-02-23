@@ -11486,7 +11486,7 @@ object {
   left: 250px;
   right: 0;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
   border: none;
   border-bottom: 1px solid #E3EBF6; }
 

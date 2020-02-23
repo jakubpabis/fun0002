@@ -2201,12 +2201,39 @@
               </div>
             </div>
 
-            <div class="tab-content" id="nav-tabContent">
+            <div class="tab-content mb-5 pb-5" id="nav-tabContent">
               <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <!-- Form -->
                 <form class="mb-4">
 
                   <div class="row">
+                    <div class="col-12 mb-5">
+                      
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <label class="mb-3">Zdjęcie profile</label>
+                          <div class="dropzone dropzone-single" data-toggle="dropzone" data-options='{"url": "https://", "maxFiles": 1, "acceptedFiles": "image/*"}'>
+
+                            <!-- Fallback -->
+                            <div class="fallback">
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="projectCoverUploads">
+                                <label class="custom-file-label" for="projectCoverUploads">Wybierz zdjęcie</label>
+                              </div>
+                            </div>
+                          
+                            <!-- Preview -->
+                            <div class="dz-preview dz-preview-single">
+                              <div class="dz-preview-cover">
+                                <img class="dz-preview-img avatar-img rounded" src="assets/img/avatars/profiles/patryk.jpg" alt="" data-dz-thumbnail>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
                     <div class="col-12 col-md-6">
                       
                       <!-- First name -->
@@ -2214,7 +2241,7 @@
 
                         <!-- Label -->
                         <label>
-                          Imię
+                          Imię <span class="text-danger">*</span>
                         </label>
 
                         <!-- Input -->
@@ -2230,7 +2257,7 @@
 
                         <!-- Label -->
                         <label>
-                          Nazwisko
+                          Nazwisko <span class="text-danger">*</span>
                         </label>
 
                         <!-- Input -->
@@ -2245,12 +2272,17 @@
                       <div class="form-group">
 
                         <!-- Label -->
-                        <label class="mb-1">
-                          Adres email
+                        <label>
+                          Adres email <span class="text-danger">*</span>
                         </label>
 
                         <!-- Input -->
                         <input type="email" class="form-control">
+
+                        <!-- Form text -->
+                        <small class="form-text text-muted mt-2">
+                          Adres email zostanie użyty między innymi do wypłaty środków na konto PayPal, więc dobierz go starannie. 
+                        </small>
 
                       </div>
 
@@ -2295,90 +2327,124 @@
                   <div class="row">
                     <div class="col-12 col-md-6">
                       
-                      <!-- Public profile -->
+                      <!-- First name -->
                       <div class="form-group">
 
                         <!-- Label -->
-                        <label class="mb-1">
-                          Public profile
+                        <label>
+                          Ulica <span class="text-danger">*</span>
                         </label>
 
-                        <!-- Form text -->
-                        <small class="form-text text-muted">
-                          Making your profile public means that anyone on the Dashkit network will be able to find you.
-                        </small>
+                        <!-- Input -->
+                        <input type="text" class="form-control">
 
-                        <div class="row">
-                          <div class="col-auto">
-                            
-                            <!-- Switch -->
-                            <div class="custom-control custom-switch">
-                              <input type="checkbox" class="custom-control-input" id="switchOne">
-                              <label class="custom-control-label" for="switchOne"></label>
-                            </div>
+                      </div>
 
-                          </div>
-                          <div class="col ml-n2">
-                            
-                            <!-- Help text -->
-                            <small class="text-muted">
-                              You're currently invisible
-                            </small>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      
+                      <!-- Last name -->
+                      <div class="form-group">
 
-                          </div>
-                        </div> <!-- / .row -->
+                        <!-- Label -->
+                        <label>
+                          Nr domu <span class="text-danger">*</span>
+                        </label>
+
+                        <!-- Input -->
+                        <input type="text" class="form-control">
+
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-md-3">
+                      
+                      <!-- Last name -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label>
+                          Nr mieszkania
+                        </label>
+
+                        <!-- Input -->
+                        <input type="text" class="form-control">
+
                       </div>
 
                     </div>
                     <div class="col-12 col-md-6">
                       
-                      <!-- Allow for additional Bookings -->
+                      <!-- Email address -->
                       <div class="form-group">
 
                         <!-- Label -->
-                        <label class="mb-1">
-                          Allow for additional Bookings
+                        <label>
+                          Miejsowość <span class="text-danger">*</span>
                         </label>
 
-                        <!-- Form text -->
-                        <small class="form-text text-muted">
-                          If you are available for hire outside of the current situation, you can encourage others to hire you.
-                        </small>
+                        <!-- Input -->
+                        <input type="email" class="form-control">
 
-                        <div class="row">
-                          <div class="col-auto">
-                            
-                            <!-- Switch -->
-                            <div class="custom-control custom-switch">
-                              <input type="checkbox" class="custom-control-input" id="switchTwo">
-                              <label class="custom-control-label" for="switchTwo"></label>
-                            </div>
+                      </div>
 
-                          </div>
-                          <div class="col ml-n2">
-                            
-                            <!-- Help text -->
-                            <small class="text-muted">
-                              You're currently available
-                            </small>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      
+                      <!-- Phone -->
+                      <div class="form-group">
 
-                          </div>
-                        </div> <!-- / .row -->
+                        <!-- Label -->
+                        <label>
+                          Kod pocztowy <span class="text-danger">*</span>
+                        </label>
+
+                        <!-- Input -->
+                        <input type="text" class="form-control mb-3" placeholder="__-___" data-mask="00-000">
+
                       </div>
 
                     </div>
                   </div> <!-- / .row -->
 
-                  <!-- Divider -->
-                  <hr class="mt-4 mb-5">
-
-                  
-                  </div> <!-- / .row -->
+                  <!-- Submit -->
+                  <button type="submit" class="btn btn-lg btn-primary lift mt-5">
+                    <span class="fe fe-save mr-2" stroke-width="1"></span>
+                    Zapisz zmiany
+                  </button>
 
                 </form>
               </div>
               <div class="tab-pane fade" id="nav-payments" role="tabpanel" aria-labelledby="nav-payments-tab">
+                <!-- Form -->
+                <form class="mb-4">
 
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      
+                      <!-- First name -->
+                      <div class="form-group">
+
+                        <!-- Label -->
+                        <label>
+                          Nr konta PayPal
+                        </label>
+
+                        <!-- Input -->
+                        <input type="text" class="form-control"  placeholder="_________" data-mask="000000000">
+
+                      </div>
+
+                    </div>
+                  </div> <!-- / .row -->
+
+                  <!-- Submit -->
+                  <button type="submit" class="btn btn-lg btn-primary lift mt-5">
+                    <span class="fe fe-save mr-2" stroke-width="1"></span>
+                    Zapisz zmiany
+                  </button>
+
+                </form>
               </div>
               <div class="tab-pane fade" id="nav-notifications" role="tabpanel" aria-labelledby="nav-notifications-tab">
 
@@ -2402,8 +2468,9 @@
     <script src="./assets/libs/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
     <script src="./assets/libs/autosize/dist/autosize.min.js"></script>
     <script src="./assets/libs/chart.js/dist/Chart.min.js"></script>
-    <!-- <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script> -->
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
     <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/pl.js"></script>
     <!--<script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>-->
     <script src="./assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
     <script src="./assets/libs/list.js/dist/list.min.js"></script>
