@@ -90,3 +90,8 @@
     overflow-y: auto;
   }
 }
+
+.modal-content.no-bg {
+  background-color: transparent!important;
+  border: none!important;
+}

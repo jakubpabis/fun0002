@@ -12,6 +12,11 @@
   margin-bottom: $spacer;
   border-color: $card-outline-color;
   box-shadow: $card-box-shadow;
+
+  &.dark {
+    border-color: $dark;
+  }
+
 }
 
 .card-header {

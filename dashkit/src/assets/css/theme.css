@@ -8483,6 +8483,8 @@ a.text-google:hover, a.text-google:focus {
   margin-bottom: 1.5rem;
   border-color: #EDF2F9;
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03); }
+  .card.dark {
+    border-color: #12263F; }
 
 .card-header {
   display: flex;
@@ -8997,6 +8999,10 @@ a.text-google:hover, a.text-google:focus {
     max-height: 350px;
     overflow-y: auto; }
 
+.modal-content.no-bg {
+  background-color: transparent !important;
+  border: none !important; }
+
 .nav-tabs .nav-item {
   margin-left: 0.75rem;
   margin-right: 0.75rem; }
@@ -9045,6 +9051,18 @@ a.text-google:hover, a.text-google:focus {
   background-color: #02a694;
   border-color: #02a694;
   color: #FFFFFF; }
+
+.nav-pills .nav-link.facebook {
+  color: #3b5999; }
+  .nav-pills .nav-link.facebook.active {
+    background-color: #3b5999;
+    color: white; }
+
+.nav-pills .nav-link.twitter {
+  color: #1DA1F2; }
+  .nav-pills .nav-link.twitter.active {
+    background-color: #1DA1F2;
+    color: white; }
 
 .navbar {
   border-width: 0 0 1px 0;
