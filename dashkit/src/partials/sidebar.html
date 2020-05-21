@@ -1,16 +1,6 @@
 <nav class="navbar navbar-vertical fixed-left navbar-expand-md @@if(navColor=='default' && !demoMode){navbar-light}@@if(navColor=='inverted' &&!demoMode){}@@if(navColor=='vibrant' && !demoMode){navbar-dark bg-vibrant}" id="sidebar">
   <div class="container-fluid">
 
-    <!-- Toggler -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Brand -->
-    <a class="navbar-brand" href="index.html">
-      <img src="@@webRoot/assets/img/logo.svg" class="navbar-brand-img mx-auto" alt="...">
-    </a>
-
     <div class="avatar avatar-xxl mx-auto mb-5 d-none d-xl-block d-lg-block d-md-block text-center">
       <img src="assets/img/avatars/profiles/patryk.jpg" alt="..." class="mx-auto avatar-img rounded-circle">
       <h3 class="mt-3 header-title text-center">
@@ -43,6 +33,16 @@
       </div>
 
     </div>
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html">
+      <img src="@@webRoot/assets/img/logo.svg" class="navbar-brand-img mx-auto" alt="...">
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
     <!-- Collapse -->
     <div class="mt-md-5 collapse navbar-collapse" id="sidebarCollapse">
@@ -134,7 +134,7 @@
       </h6>-->
 
       <!-- Navigation -->
-        <!-- <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="#sidebarPages" data-toggle="collapse" role="button" aria-expanded="@@if(category=='pages'){true}@@if(category!=='pages'){false}" aria-controls="sidebarPages">
             <i class="fe fe-file"></i> Pages
           </a>
@@ -532,7 +532,7 @@
               </li>
             </ul>
           </div>
-        </li> -->
+        </li>
       </ul>
       
       <!-- Push content down -->

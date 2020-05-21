@@ -11498,6 +11498,9 @@ object {
   bottom: 6px;
   right: 10px;
   font-size: 18px; }
+  @media (max-width: 767px) {
+    .input-jednostki > i {
+      right: 22px; } }
 
 #topbar {
   position: fixed;
@@ -11510,6 +11513,11 @@ object {
 
 #sidebar {
   border: none; }
+  @media (max-width: 767px) {
+    #sidebar {
+      position: fixed;
+      left: 0;
+      right: 0; } }
 
 .main-content {
   padding-top: 72px;
