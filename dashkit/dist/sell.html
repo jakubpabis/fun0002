@@ -1196,6 +1196,61 @@
       </div>
     </div>
 
+    <!-- Modal: Kupowanie automatyczne -->
+    <div class="modal fade" id="modalEbuy" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card border-0">
+            <div class="card-header bg-primary">
+              <div class="row align-items-center">
+                <div class="col">
+
+                  <h2 class="mt-3 header-title text-white">
+                    Auto Robin
+                  </h2>
+
+                  <!-- Pretitle -->
+                  <h6 class="mt-2 mb-3 header-pretitle text-white">
+                    Wczesny zakup jednostek
+                  </h6>
+              
+                </div>
+                <div class="col-auto">
+
+                  <!-- Close -->
+                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              
+                </div>
+              </div> <!-- / .row -->
+            </div>
+            <div class="card-body">
+
+              <div class="row align-items-end">
+                <div class="col-sm-4 mb-sm-0 mb-4">
+                  <label for="">Kwota zakupu</label>
+                  <input type="text" class="form-control form-control-prepended" placeholder="Kwota" data-mask="#.### PLN" data-mask-reverse="true" value="100">
+                </div>
+                <div class="col-auto px-0 text-muted mb-2">
+                  =
+                </div>
+                <div class="col-sm-4 mb-sm-0 mb-4 input-jednostki">
+                  <label for="">Ilość jednostek</label>
+                  <input type="number" class="form-control" placeholder="Jednostki" value="2000">
+                </div>
+                <div class="col-auto pr-sm-0 ml-sm-0 ml-auto">
+                  <button type="button" class="btn btn-primary pl-sm-3 pr-sm-3 pr-4 pl-4"><i class="fe fe-check-circle mr-2"></i> Zaplanuj zakup</button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- NAVIGATION
     ================================================== -->
     <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light" id="sidebar">
@@ -1309,6 +1364,11 @@
                   <li class="nav-item">
                     <a href="subscription.html" class="nav-link" role="button">
                       Wykup abonament
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="history.html" class="nav-link" role="button">
+                      Historia transakcji
                     </a>
                   </li>
                   <li class="nav-item">
