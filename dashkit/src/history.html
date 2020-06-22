@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	@@include("partials/head.html", {
+	  "title": "Historia transakcji - Fundit"
+	})
+  </head>
+  <body>
+
+	<!-- MODALS
+	================================================== -->
+	@@include("partials/modals.html")
+
+	<!-- NAVIGATION
+	================================================== -->
+	@@include("partials/sidebar.html", {
+		"category": "dashboards",
+		"subcategory": "user-settings",
+		"page": "history.html"
+	})
+
+	<!-- MAIN CONTENT
+	================================================== -->
+	<div class="main-content">
+
+    @@include("partials/topbar.html")
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+            
+            <!-- Header -->
+            <div class="header mt-5 mb-4">
+              <div class="header-body">
+                <div class="row align-items-center">
+                  <div class="col">
+                    
+                    <!-- Pretitle -->
+                    <h6 class="header-pretitle">
+                      Twoje konto
+                    </h6>
+
+                    <!-- Title -->
+                    <h1 class="header-title">
+                      Historia transakcji
+                    </h1>
+
+                  </div>
+                </div> <!-- / .row -->
+                    
+                <!-- Nav -->
+                <nav class="pt-4">
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link pb-3 active" id="nav-buy-tab" data-toggle="tab" href="#nav-buy" role="tab" aria-controls="nav-buy" aria-selected="true">Kupno&nbsp;&nbsp;<span class="badge badge-pill badge-soft-secondary">32</span></a>
+                    <a class="nav-item nav-link pb-3" id="nav-sell-tab" data-toggle="tab" href="#nav-sell" role="tab" aria-controls="nav-sell" aria-selected="false">Sprzedaż&nbsp;&nbsp;<span class="badge badge-pill badge-soft-secondary">12</span></a>
+                    <a class="nav-item nav-link pb-3" id="nav-in-tab" data-toggle="tab" href="#nav-in" role="tab" aria-controls="nav-in" aria-selected="false">Wpłaty&nbsp;&nbsp;<span class="badge badge-pill badge-soft-secondary">2</span></a>
+                    <a class="nav-item nav-link pb-3" id="nav-out-tab" data-toggle="tab" href="#nav-out" role="tab" aria-controls="nav-out" aria-selected="false">Wypłaty&nbsp;&nbsp;<span class="badge badge-pill badge-soft-secondary">0</span></a>
+                  </div>
+                </nav>
+
+              </div>
+            </div>
+
+            <div class="tab-content mb-5 pb-5" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-buy" role="tabpanel" aria-labelledby="nav-buy-tab">
+                <!-- Form -->
+
+                <div class="row mb-4">
+                    <div class="col-12 mb-5">
+                        
+                        <div class="card" id="transactionList1" data-list='{"valueNames": ["table1-id", "table1-title", "table1-amount", "table1-date"]}'>
+                            <div class="card-header">
+                                <div class="row align-items-center">
+                                  <div class="col">
+            
+                                    <!-- Form -->
+                                    <form>
+                                      <div class="input-group input-group-flush">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="fe fe-search"></i>
+                                          </span>
+                                        </div>
+                                        <input class="list-search form-control" type="search" placeholder="Szukaj transakcji...">
+                                      </div>
+                                    </form>
+            
+                                  </div>
+                                </div> <!-- / .row -->
+                              </div>
+                            <div class="table-responsive">
+                            
+                                <table class="table table-sm table-hover table-nowrap card-table">
+                                  <thead>
+                                    <tr>
+                                    <th scope="col">
+                                        <a href="#" class="text-muted list-sort" data-sort="table1-id">ID transakcji</a>
+                                    </th>
+                                      <th scope="col">
+                                        <a href="#" class="text-muted list-sort" data-sort="table1-title">Tytuł transakcji</a>
+                                      </th>
+                                      <th scope="col">
+                                        <a href="#" class="text-muted list-sort" data-sort="table1-amount">Kwota</a>
+                                      </th>
+                                      <th scope="col">
+                                        <a href="#" class="text-muted list-sort desc" data-sort="table1-date">Data</a>
+                                      </th>
+                                      <th></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody class="list">
+                                    <tr>
+                                      <td class="table1-id">12333478909</td>
+                                      <td class="table1-title">Zakup jednostek - Auto Robin</td>
+                                      <td class="table1-amount">123.45 PLN</td>
+                                      <td class="table1-date">01/09/2020</td>
+                                      <td class="text-right">
+
+                                            <!-- Dropdown -->
+                                            <div class="dropdown">
+                                            <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe fe-more-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a href="#!" class="dropdown-item">
+                                                Action
+                                                </a>
+                                                <a href="#!" class="dropdown-item">
+                                                Another action
+                                                </a>
+                                                <a href="#!" class="dropdown-item text-danger">
+                                                Zgłoś problem
+                                                </a>
+                                            </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="table1-id">12333478909</td>
+                                      <td class="table1-title">Zakup jednostek - All Sport Cars</td>
+                                      <td class="table1-amount">123.45 PLN</td>
+                                      <td class="table1-date">04/08/2020</td>
+                                      <td class="text-right">
+
+                                        <!-- Dropdown -->
+                                        <div class="dropdown">
+                                        <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fe fe-more-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#!" class="dropdown-item">
+                                            Action
+                                            </a>
+                                            <a href="#!" class="dropdown-item">
+                                            Another action
+                                            </a>
+                                            <a href="#!" class="dropdown-item text-danger">
+                                            Zgłoś problem
+                                            </a>
+                                        </div>
+                                        </div>
+
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="table1-id">12333478909</td>
+                                      <td class="table1-title">Zakup jednostek - Fundit</td>
+                                      <td class="table1-amount">123.45 PLN</td>
+                                      <td class="table1-date">01/08/2020</td>
+                                      <td class="text-right">
+
+                                        <!-- Dropdown -->
+                                        <div class="dropdown">
+                                        <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fe fe-more-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#!" class="dropdown-item">
+                                            Action
+                                            </a>
+                                            <a href="#!" class="dropdown-item">
+                                            Another action
+                                            </a>
+                                            <a href="#!" class="dropdown-item text-danger">
+                                            Zgłoś problem
+                                            </a>
+                                        </div>
+                                        </div>
+
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table1-id">12333478909</td>
+                                        <td class="table1-title">Zakup jednostek - Auto Robin</td>
+                                        <td class="table1-amount">123.45 PLN</td>
+                                        <td class="table1-date">01/09/2020</td>
+                                        <td class="text-right">
+  
+                                              <!-- Dropdown -->
+                                              <div class="dropdown">
+                                              <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  <i class="fe fe-more-vertical"></i>
+                                              </a>
+                                              <div class="dropdown-menu dropdown-menu-right">
+                                                  <a href="#!" class="dropdown-item">
+                                                  Action
+                                                  </a>
+                                                  <a href="#!" class="dropdown-item">
+                                                  Another action
+                                                  </a>
+                                                  <a href="#!" class="dropdown-item text-danger">
+                                                  Zgłoś problem
+                                                  </a>
+                                              </div>
+                                              </div>
+  
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table1-id">12333478909</td>
+                                        <td class="table1-title">Zakup jednostek - All Sport Cars</td>
+                                        <td class="table1-amount">123.45 PLN</td>
+                                        <td class="table1-date">04/08/2020</td>
+                                        <td class="text-right">
+  
+                                          <!-- Dropdown -->
+                                          <div class="dropdown">
+                                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              <i class="fe fe-more-vertical"></i>
+                                          </a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                              <a href="#!" class="dropdown-item">
+                                              Action
+                                              </a>
+                                              <a href="#!" class="dropdown-item">
+                                              Another action
+                                              </a>
+                                              <a href="#!" class="dropdown-item text-danger">
+                                              Zgłoś problem
+                                              </a>
+                                          </div>
+                                          </div>
+  
+                                      </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table1-id">12333478909</td>
+                                        <td class="table1-title">Zakup jednostek - Fundit</td>
+                                        <td class="table1-amount">123.45 PLN</td>
+                                        <td class="table1-date">01/08/2020</td>
+                                        <td class="text-right">
+  
+                                          <!-- Dropdown -->
+                                          <div class="dropdown">
+                                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              <i class="fe fe-more-vertical"></i>
+                                          </a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                              <a href="#!" class="dropdown-item">
+                                              Action
+                                              </a>
+                                              <a href="#!" class="dropdown-item">
+                                              Another action
+                                              </a>
+                                              <a href="#!" class="dropdown-item text-danger">
+                                              Zgłoś problem
+                                              </a>
+                                          </div>
+                                          </div>
+  
+                                      </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table1-id">12333478909</td>
+                                        <td class="table1-title">Zakup jednostek - Auto Robin</td>
+                                        <td class="table1-amount">123.45 PLN</td>
+                                        <td class="table1-date">01/09/2020</td>
+                                        <td class="text-right">
+  
+                                              <!-- Dropdown -->
+                                              <div class="dropdown">
+                                              <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  <i class="fe fe-more-vertical"></i>
+                                              </a>
+                                              <div class="dropdown-menu dropdown-menu-right">
+                                                  <a href="#!" class="dropdown-item">
+                                                  Action
+                                                  </a>
+                                                  <a href="#!" class="dropdown-item">
+                                                  Another action
+                                                  </a>
+                                                  <a href="#!" class="dropdown-item text-danger">
+                                                  Zgłoś problem
+                                                  </a>
+                                              </div>
+                                              </div>
+  
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table1-id">12333478909</td>
+                                        <td class="table1-title">Zakup jednostek - All Sport Cars</td>
+                                        <td class="table1-amount">123.45 PLN</td>
+                                        <td class="table1-date">04/08/2020</td>
+                                        <td class="text-right">
+  
+                                          <!-- Dropdown -->
+                                          <div class="dropdown">
+                                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              <i class="fe fe-more-vertical"></i>
+                                          </a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                              <a href="#!" class="dropdown-item">
+                                              Action
+                                              </a>
+                                              <a href="#!" class="dropdown-item">
+                                              Another action
+                                              </a>
+                                              <a href="#!" class="dropdown-item text-danger">
+                                              Zgłoś problem
+                                              </a>
+                                          </div>
+                                          </div>
+  
+                                      </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table1-id">12333478909</td>
+                                        <td class="table1-title">Zakup jednostek - Fundit</td>
+                                        <td class="table1-amount">123.45 PLN</td>
+                                        <td class="table1-date">01/08/2020</td>
+                                        <td class="text-right">
+  
+                                          <!-- Dropdown -->
+                                          <div class="dropdown">
+                                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              <i class="fe fe-more-vertical"></i>
+                                          </a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                              <a href="#!" class="dropdown-item">
+                                              Action
+                                              </a>
+                                              <a href="#!" class="dropdown-item">
+                                              Another action
+                                              </a>
+                                              <a href="#!" class="dropdown-item text-danger">
+                                              Zgłoś problem
+                                              </a>
+                                          </div>
+                                          </div>
+  
+                                      </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table1-id">12333478909</td>
+                                        <td class="table1-title">Zakup jednostek - Auto Robin</td>
+                                        <td class="table1-amount">123.45 PLN</td>
+                                        <td class="table1-date">01/09/2020</td>
+                                        <td class="text-right">
+  
+                                              <!-- Dropdown -->
+                                              <div class="dropdown">
+                                              <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  <i class="fe fe-more-vertical"></i>
+                                              </a>
+                                              <div class="dropdown-menu dropdown-menu-right">
+                                                  <a href="#!" class="dropdown-item">
+                                                  Action
+                                                  </a>
+                                                  <a href="#!" class="dropdown-item">
+                                                  Another action
+                                                  </a>
+                                                  <a href="#!" class="dropdown-item text-danger">
+                                                  Zgłoś problem
+                                                  </a>
+                                              </div>
+                                              </div>
+  
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table1-id">12333478909</td>
+                                        <td class="table1-title">Zakup jednostek - All Sport Cars</td>
+                                        <td class="table1-amount">123.45 PLN</td>
+                                        <td class="table1-date">04/08/2020</td>
+                                        <td class="text-right">
+  
+                                          <!-- Dropdown -->
+                                          <div class="dropdown">
+                                          <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              <i class="fe fe-more-vertical"></i>
+                                          </a>
+                                          <div class="dropdown-menu dropdown-menu-right">
+                                              <a href="#!" class="dropdown-item">
+                                              Action
+                                              </a>
+                                              <a href="#!" class="dropdown-item">
+                                              Another action
+                                              </a>
+                                              <a href="#!" class="dropdown-item text-danger">
+                                              Zgłoś problem
+                                              </a>
+                                          </div>
+                                          </div>
+  
+                                      </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table1-id">12333478909</td>
+                                        <td class="table1-title">Zakup jednostek - Fundit</td>
+                                        <td class="table1-amount">123.45 PLN</td>
+                                        <td class="table1-date">01/08/2020</td>
+                                        <td class="text-right">
+  
+                                          <!-- Dropdown -->
+                                          <div class="dropdown">
+                                            <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe fe-more-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a href="#!" class="dropdown-item">
+                                                Action
+                                                </a>
+                                                <a href="#!" class="dropdown-item">
+                                                Another action
+                                                </a>
+                                                <a href="#!" class="dropdown-item text-danger">
+                                                Zgłoś problem
+                                                </a>
+                                            </div>
+                                            </div>
+  
+                                      </td>
+                                      </tr>
+                                  </tbody>
+                                </table>
+    
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+              </div>
+              <div class="tab-pane fade" id="nav-sell" role="tabpanel" aria-labelledby="nav-sell-tab">
+                
+                <div class="row mb-4">
+                    <div class="col-12 mb-5">
+                        
+                        <div class="card" id="transactionList2" data-list='{"valueNames": ["table2-id", "table2-title", "table2-amount", "table2-date"]}'>
+                            <div class="card-header">
+                                <div class="row align-items-center">
+                                  <div class="col">
+            
+                                    <!-- Form -->
+                                    <form>
+                                      <div class="input-group input-group-flush">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="fe fe-search"></i>
+                                          </span>
+                                        </div>
+                                        <input class="list-search form-control" type="search" placeholder="Szukaj transakcji...">
+                                      </div>
+                                    </form>
+            
+                                  </div>
+                                </div> <!-- / .row -->
+                              </div>
+                            <div class="table-responsive">
+                            
+                                <table class="table table-sm table-hover table-nowrap card-table">
+                                  <thead>
+                                    <tr>
+                                    <th scope="col">
+                                        <a href="#" class="text-muted list-sort" data-sort="table2-id">ID transakcji</a>
+                                    </th>
+                                      <th scope="col">
+                                        <a href="#" class="text-muted list-sort" data-sort="table2-title">Tytuł transakcji</a>
+                                      </th>
+                                      <th scope="col">
+                                        <a href="#" class="text-muted list-sort" data-sort="table2-amount">Kwota</a>
+                                      </th>
+                                      <th scope="col">
+                                        <a href="#" class="text-muted list-sort desc" data-sort="table2-date">Data</a>
+                                      </th>
+                                      <th></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody class="list">
+                                    <tr>
+                                      <td class="table2-id">12333478909</td>
+                                      <td class="table2-title">Sprzedaż jednostek - Auto Robin</td>
+                                      <td class="table2-amount">123.45 PLN</td>
+                                      <td class="table2-date">01/09/2020</td>
+                                      <td class="text-right">
+
+                                            <!-- Dropdown -->
+                                            <div class="dropdown">
+                                            <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe fe-more-vertical"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a href="#!" class="dropdown-item">
+                                                Action
+                                                </a>
+                                                <a href="#!" class="dropdown-item">
+                                                Another action
+                                                </a>
+                                                <a href="#!" class="dropdown-item text-danger">
+                                                Zgłoś problem
+                                                </a>
+                                            </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="table2-id">12333478909</td>
+                                      <td class="table2-title">Sprzedaż jednostek - All Sport Cars</td>
+                                      <td class="table2-amount">123.45 PLN</td>
+                                      <td class="table2-date">04/08/2020</td>
+                                      <td class="text-right">
+
+                                        <!-- Dropdown -->
+                                        <div class="dropdown">
+                                        <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fe fe-more-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#!" class="dropdown-item">
+                                            Action
+                                            </a>
+                                            <a href="#!" class="dropdown-item">
+                                            Another action
+                                            </a>
+                                            <a href="#!" class="dropdown-item text-danger">
+                                            Zgłoś problem
+                                            </a>
+                                        </div>
+                                        </div>
+
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="table2-id">12333478909</td>
+                                      <td class="table2-title">Sprzedaż jednostek - Fundit</td>
+                                      <td class="table2-amount">123.45 PLN</td>
+                                      <td class="table2-date">01/08/2020</td>
+                                      <td class="text-right">
+
+                                        <!-- Dropdown -->
+                                        <div class="dropdown">
+                                        <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fe fe-more-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#!" class="dropdown-item">
+                                            Action
+                                            </a>
+                                            <a href="#!" class="dropdown-item">
+                                            Another action
+                                            </a>
+                                            <a href="#!" class="dropdown-item text-danger">
+                                            Zgłoś problem
+                                            </a>
+                                        </div>
+                                        </div>
+
+                                    </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+    
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+              </div>
+              <div class="tab-pane fade" id="nav-in" role="tabpanel" aria-labelledby="nav-in-tab">
+
+                <div class="row mb-4">
+                    <div class="col-12 mb-5">
+                        
+                        <div class="card" id="transactionList3" data-list='{"valueNames": ["table3-id", "table3-title", "table3-amount", "table3-date"]}'>
+                            <div class="card-header">
+                                <div class="row align-items-center">
+                                  <div class="col">
+            
+                                    <!-- Form -->
+                                    <form>
+                                      <div class="input-group input-group-flush">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text">
+                                            <i class="fe fe-search"></i>
+                                          </span>
+                                        </div>
+                                        <input class="list-search form-control" type="search" placeholder="Szukaj transakcji...">
+                                      </div>
+                                    </form>
+            
+                                  </div>
+                                </div> <!-- / .row -->
+                              </div>
+                            <div class="table-responsive">
+                            
+                                <table class="table table-sm table-hover table-nowrap card-table">
+                                  <thead>
+                                    <tr>
+                                    <th scope="col">
+                                        <a href="#" class="text-muted list-sort" data-sort="table3-id">ID transakcji</a>
+                                    </th>
+                                      <th scope="col">
+                                        <a href="#" class="text-muted list-sort" data-sort="table3-title">Tytuł transakcji</a>
+                                      </th>
+                                      <th scope="col">
+                                        <a href="#" class="text-muted list-sort" data-sort="table3-amount">Kwota</a>
+                                      </th>
+                                      <th scope="col">
+                                        <a href="#" class="text-muted list-sort desc" data-sort="table3-date">Data</a>
+                                      </th>
+                                      <th></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody class="list">
+                                    <tr>
+                                      <td class="table3-id">12333478909</td>
+                                      <td class="table3-title">Wpłata - karta Visa .... 1234</td>
+                                      <td class="table3-amount">123.45 PLN</td>
+                                      <td class="table3-date">01/09/2020</td>
+                                      <td class="text-right">
+
+                                            <!-- Dropdown -->
+                                            <div class="dropdown">
+                                                <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fe fe-more-vertical"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a href="#!" class="dropdown-item">
+                                                    Action
+                                                    </a>
+                                                    <a href="#!" class="dropdown-item">
+                                                    Another action
+                                                    </a>
+                                                    <a href="#!" class="dropdown-item text-danger">
+                                                    Zgłoś problem
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table3-id">12333478909</td>
+                                        <td class="table3-title">Wpłata - przelew bankowy mBank ... 0234</td>
+                                        <td class="table3-amount">123.45 PLN</td>
+                                        <td class="table3-date">01/09/2020</td>
+                                        <td class="text-right">
+  
+                                              <!-- Dropdown -->
+                                              <div class="dropdown">
+                                                  <a class="dropdown-ellipses dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      <i class="fe fe-more-vertical"></i>
+                                                  </a>
+                                                  <div class="dropdown-menu dropdown-menu-right">
+                                                      <a href="#!" class="dropdown-item">
+                                                      Action
+                                                      </a>
+                                                      <a href="#!" class="dropdown-item">
+                                                      Another action
+                                                      </a>
+                                                      <a href="#!" class="dropdown-item text-danger">
+                                                      Zgłoś problem
+                                                      </a>
+                                                  </div>
+                                              </div>
+  
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                                </table>
+    
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+              </div>
+              <div class="tab-pane fade" id="nav-out" role="tabpanel" aria-labelledby="nav-out-tab">
+
+                <div class="row mb-4">
+                    <div class="col-12 mb-5">
+                        
+                        <h1>Jeszcze nic nie wypłacono...</h1>
+
+                    </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+
+    </div> <!-- / .main-content -->    
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+</body>
+</html>

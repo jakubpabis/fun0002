@@ -90,7 +90,7 @@
   //
   // Variables
   //
-
+    
     var chart = document.getElementById('headerChart2').getContext('2d');
 
     //

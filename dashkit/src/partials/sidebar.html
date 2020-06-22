@@ -101,22 +101,22 @@
           <hr class="navbar-divider my-3">
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#userSub" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="userSub">
+          <a class="nav-link @@if(subcategory=='user-settings'){active}" href="#userSub" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="userSub">
             <i class="fe fe-user"></i> Moje konto
           </a>
-          <div class="collapse" id="userSub">
+          <div class="collapse @@if(subcategory=='user-settings'){show}" id="userSub">
             <ul class="nav nav-sm flex-column">
-              <li class="nav-item">
+              <li class="nav-item @@if(page=='subscription.html'){active}">
                 <a href="subscription.html" class="nav-link" role="button">
                   Wykup abonament
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item @@if(page=='history.html'){active}">
                 <a href="history.html" class="nav-link" role="button">
                   Historia transakcji
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item @@if(page=='user-settings.html'){active}">
                 <a href="user-settings.html" class="nav-link" role="button">
                   Ustawienia
                 </a>
