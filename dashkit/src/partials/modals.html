@@ -1218,13 +1218,16 @@
 <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="card border-0">
-        <div class="card-header bg-primary">
+      <div class="card border-0 mb-0">
+        <div class="card-header bg-dark">
           <div class="row align-items-center">
             <div class="col">
 
-              <h2 class="mt-2 mb-1 header-title text-white">
-                Zapłać za abonament
+              <h6 class="my-2 header-pretitle text-muted">
+                Płatność
+              </h6>
+              <h2 class="mt-1 mb-2 header-title text-white text-uppercase">
+                Pakiet standard
               </h2>
               
             </div>
@@ -1240,7 +1243,24 @@
         </div>
         <div class="card-body">
 
-          <div id="paypal-button-container"></div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 mb-4">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex align-items-end justify-content-between px-0">
+                    <span class="h5 text-normal mb-0">Umożliwia wykonywanie transakcji na łączną kwotę</span> <span class="h5 text-normal mb-0 text-primary text-nowrap ml-5">1 000 PLN</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center justify-content-between px-0">
+                    <span class="h5 text-normal mb-0">Ważność pakietu</span> <span class="h5 text-normal mb-0 text-primary">nielimitowana</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center justify-content-between px-0">
+                  <strong>Cena pakietu</strong> <strong class="text-primary">39.99 PLN</strong>
+              </li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <div id="paypal-button-container"></div>
+            </div>
+          </div>
 
         </div>
 
