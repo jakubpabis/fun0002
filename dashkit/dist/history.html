@@ -1252,6 +1252,40 @@
 	  </div>
 	</div>
 
+	<div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="card border-0">
+	        <div class="card-header bg-primary">
+	          <div class="row align-items-center">
+	            <div class="col">
+
+	              <h2 class="mt-2 mb-1 header-title text-white">
+	                Zapłać za abonament
+	              </h2>
+              
+	            </div>
+	            <div class="col-auto">
+
+	              <!-- Close -->
+	              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+	                <span aria-hidden="true">&times;</span>
+	              </button>
+              
+	            </div>
+	          </div> <!-- / .row -->
+	        </div>
+	        <div class="card-body">
+
+	          <div id="paypal-button-container"></div>
+
+	        </div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<!-- NAVIGATION
 	================================================== -->
 	<nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light" id="sidebar">
@@ -1365,6 +1399,11 @@
 	              <li class="nav-item ">
 	                <a href="subscription.html" class="nav-link" role="button">
 	                  Wykup abonament
+	                </a>
+	              </li>
+	              <li class="nav-item ">
+	                <a href="upcoming.html" class="nav-link" role="button">
+	                  Zaplanowane transakcje
 	                </a>
 	              </li>
 	              <li class="nav-item active">
@@ -1817,12 +1856,17 @@
 
         <div class="mr-5 d-none d-md-flex">
           <div class="col-auto text-right">   
-            <h6 class="header-pretitle">
-              Pozostały abonament
-            </h6>
-            <h2 class="header-title">
-              1 234,56 <small>PLN</small>
-            </h2>
+            <a href="#" class="text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <h6 class="header-pretitle">
+                Pozostały abonament
+              </h6>
+              <h2 class="header-title">
+                1 234,56 <small>PLN</small>
+              </h2>
+            </a>
+            <div class="p-0 mt-3 dropdown-menu dropdown-menu-right bg-light-gray border-1 border-dark">
+              <a href="#!" class="dropdown-item h3 my-2 text-dark"><strong>Dokup abonament</strong></a>
+            </div> <!-- / .dropdown-menu --> 
           </div>
         </div>
 
@@ -1837,7 +1881,7 @@
               </h2>
             </a> 
             <!-- Menu -->
-            <div class="dropdown-menu dropdown-menu-right dropdown-menu-card">
+            <div class="mt-3 dropdown-menu dropdown-menu-right dropdown-menu-card">
                 <div class="card-header">
                   <div class="row align-items-center">
                     <div class="col">
@@ -2243,12 +2287,7 @@
                                                 <i class="fe fe-more-vertical"></i>
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="#!" class="dropdown-item">
-                                                Action
-                                                </a>
-                                                <a href="#!" class="dropdown-item">
-                                                Another action
-                                                </a>
+                                                
                                                 <a href="#!" class="dropdown-item text-danger">
                                                 Zgłoś problem
                                                 </a>
@@ -2270,12 +2309,7 @@
                                             <i class="fe fe-more-vertical"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right">
-                                            <a href="#!" class="dropdown-item">
-                                            Action
-                                            </a>
-                                            <a href="#!" class="dropdown-item">
-                                            Another action
-                                            </a>
+                                            
                                             <a href="#!" class="dropdown-item text-danger">
                                             Zgłoś problem
                                             </a>
@@ -2297,12 +2331,7 @@
                                             <i class="fe fe-more-vertical"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right">
-                                            <a href="#!" class="dropdown-item">
-                                            Action
-                                            </a>
-                                            <a href="#!" class="dropdown-item">
-                                            Another action
-                                            </a>
+                                            
                                             <a href="#!" class="dropdown-item text-danger">
                                             Zgłoś problem
                                             </a>
@@ -2324,12 +2353,7 @@
                                                   <i class="fe fe-more-vertical"></i>
                                               </a>
                                               <div class="dropdown-menu dropdown-menu-right">
-                                                  <a href="#!" class="dropdown-item">
-                                                  Action
-                                                  </a>
-                                                  <a href="#!" class="dropdown-item">
-                                                  Another action
-                                                  </a>
+                                                  
                                                   <a href="#!" class="dropdown-item text-danger">
                                                   Zgłoś problem
                                                   </a>
@@ -2351,12 +2375,7 @@
                                               <i class="fe fe-more-vertical"></i>
                                           </a>
                                           <div class="dropdown-menu dropdown-menu-right">
-                                              <a href="#!" class="dropdown-item">
-                                              Action
-                                              </a>
-                                              <a href="#!" class="dropdown-item">
-                                              Another action
-                                              </a>
+                                              
                                               <a href="#!" class="dropdown-item text-danger">
                                               Zgłoś problem
                                               </a>
@@ -2378,12 +2397,7 @@
                                               <i class="fe fe-more-vertical"></i>
                                           </a>
                                           <div class="dropdown-menu dropdown-menu-right">
-                                              <a href="#!" class="dropdown-item">
-                                              Action
-                                              </a>
-                                              <a href="#!" class="dropdown-item">
-                                              Another action
-                                              </a>
+                                              
                                               <a href="#!" class="dropdown-item text-danger">
                                               Zgłoś problem
                                               </a>
@@ -2405,12 +2419,7 @@
                                                   <i class="fe fe-more-vertical"></i>
                                               </a>
                                               <div class="dropdown-menu dropdown-menu-right">
-                                                  <a href="#!" class="dropdown-item">
-                                                  Action
-                                                  </a>
-                                                  <a href="#!" class="dropdown-item">
-                                                  Another action
-                                                  </a>
+                                                  
                                                   <a href="#!" class="dropdown-item text-danger">
                                                   Zgłoś problem
                                                   </a>
@@ -2432,12 +2441,7 @@
                                               <i class="fe fe-more-vertical"></i>
                                           </a>
                                           <div class="dropdown-menu dropdown-menu-right">
-                                              <a href="#!" class="dropdown-item">
-                                              Action
-                                              </a>
-                                              <a href="#!" class="dropdown-item">
-                                              Another action
-                                              </a>
+                                              
                                               <a href="#!" class="dropdown-item text-danger">
                                               Zgłoś problem
                                               </a>
@@ -2459,12 +2463,7 @@
                                               <i class="fe fe-more-vertical"></i>
                                           </a>
                                           <div class="dropdown-menu dropdown-menu-right">
-                                              <a href="#!" class="dropdown-item">
-                                              Action
-                                              </a>
-                                              <a href="#!" class="dropdown-item">
-                                              Another action
-                                              </a>
+                                              
                                               <a href="#!" class="dropdown-item text-danger">
                                               Zgłoś problem
                                               </a>
@@ -2486,12 +2485,7 @@
                                                   <i class="fe fe-more-vertical"></i>
                                               </a>
                                               <div class="dropdown-menu dropdown-menu-right">
-                                                  <a href="#!" class="dropdown-item">
-                                                  Action
-                                                  </a>
-                                                  <a href="#!" class="dropdown-item">
-                                                  Another action
-                                                  </a>
+                                                  
                                                   <a href="#!" class="dropdown-item text-danger">
                                                   Zgłoś problem
                                                   </a>
@@ -2513,12 +2507,7 @@
                                               <i class="fe fe-more-vertical"></i>
                                           </a>
                                           <div class="dropdown-menu dropdown-menu-right">
-                                              <a href="#!" class="dropdown-item">
-                                              Action
-                                              </a>
-                                              <a href="#!" class="dropdown-item">
-                                              Another action
-                                              </a>
+                                              
                                               <a href="#!" class="dropdown-item text-danger">
                                               Zgłoś problem
                                               </a>
@@ -2540,12 +2529,7 @@
                                                 <i class="fe fe-more-vertical"></i>
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="#!" class="dropdown-item">
-                                                Action
-                                                </a>
-                                                <a href="#!" class="dropdown-item">
-                                                Another action
-                                                </a>
+                                                
                                                 <a href="#!" class="dropdown-item text-danger">
                                                 Zgłoś problem
                                                 </a>
@@ -2623,12 +2607,7 @@
                                                 <i class="fe fe-more-vertical"></i>
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="#!" class="dropdown-item">
-                                                Action
-                                                </a>
-                                                <a href="#!" class="dropdown-item">
-                                                Another action
-                                                </a>
+                                                
                                                 <a href="#!" class="dropdown-item text-danger">
                                                 Zgłoś problem
                                                 </a>
@@ -2650,12 +2629,7 @@
                                             <i class="fe fe-more-vertical"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right">
-                                            <a href="#!" class="dropdown-item">
-                                            Action
-                                            </a>
-                                            <a href="#!" class="dropdown-item">
-                                            Another action
-                                            </a>
+                                            
                                             <a href="#!" class="dropdown-item text-danger">
                                             Zgłoś problem
                                             </a>
@@ -2677,12 +2651,7 @@
                                             <i class="fe fe-more-vertical"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right">
-                                            <a href="#!" class="dropdown-item">
-                                            Action
-                                            </a>
-                                            <a href="#!" class="dropdown-item">
-                                            Another action
-                                            </a>
+                                            
                                             <a href="#!" class="dropdown-item text-danger">
                                             Zgłoś problem
                                             </a>
@@ -2760,12 +2729,7 @@
                                                     <i class="fe fe-more-vertical"></i>
                                                 </a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a href="#!" class="dropdown-item">
-                                                    Action
-                                                    </a>
-                                                    <a href="#!" class="dropdown-item">
-                                                    Another action
-                                                    </a>
+                                                    
                                                     <a href="#!" class="dropdown-item text-danger">
                                                     Zgłoś problem
                                                     </a>
@@ -2787,12 +2751,7 @@
                                                       <i class="fe fe-more-vertical"></i>
                                                   </a>
                                                   <div class="dropdown-menu dropdown-menu-right">
-                                                      <a href="#!" class="dropdown-item">
-                                                      Action
-                                                      </a>
-                                                      <a href="#!" class="dropdown-item">
-                                                      Another action
-                                                      </a>
+                                                      
                                                       <a href="#!" class="dropdown-item text-danger">
                                                       Zgłoś problem
                                                       </a>
@@ -2853,6 +2812,32 @@
 
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AZG4VxF3M_a2mFWXkQp4j30tp0Cohw-WJ_qyYCoNvxtFIMDS4MSRi56KVzF-kRzkedl-U7uXmcXFz-3y&currency=PLN" data-sdk-integration-source="button-factory"></script>
+    <script defer>
+    paypal.Buttons({
+        style: {
+            shape: 'pill',
+            color: 'gold',
+            layout: 'vertical',
+            label: 'paypal',
+        
+        },
+        createOrder: function(data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: '100'
+                    }
+                }]
+            });
+        },
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+                alert('Transaction completed by ' + details.payer.name.given_name + '!');
+            });
+        }
+    }).render('#paypal-button-container');
+    </script>
 
 </body>
 </html>
