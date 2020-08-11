@@ -13,25 +13,33 @@
 
   var toggle = document.querySelectorAll('[data-toggle="quill"]');
 
-
   //
   // Functions
   //
 
   function init(el) {
     var elementOptions = el.dataset.options;
-        elementOptions = elementOptions ? JSON.parse(elementOptions) : {};
+    elementOptions = elementOptions ? JSON.parse(elementOptions) : {};
+
     var defaultOptions = {
       modules: {
-        toolbar: [['bold', 'italic'], ['link', 'blockquote', 'code', 'image'], [{'list': 'ordered'}, {'list': 'bullet'}]]
+        toolbar: [
+          ['bold', 'italic'],
+          ['link', 'blockquote', 'code', 'image'],
+          [{
+            'list': 'ordered'
+          }, {
+            'list': 'bullet'
+          }]
+        ]
       },
       theme: 'snow'
     };
-    var options = Object.assign(elementOptions, defaultOptions);
+
+    var options = Object.assign(defaultOptions, elementOptions);
 
     new Quill(el, options);
   }
-
 
   //
   // Events
@@ -42,5 +50,5 @@
       init(el);
     });
   }
-  
+
 })();

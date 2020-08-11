@@ -59,6 +59,13 @@ $table-border-color: $border-color !default;
 
 $table-head-bg: $black-dark !default;
 
+$table-accent-bg: $gray-900-dark !default;
+$table-hover-bg: $gray-900-dark !default;
+$table-active-bg: $gray-900-dark !default;
+
+$table-bg-level: 0 !default;
+$table-border-level: 0 !default;
+
 
 // Forms
 
@@ -145,7 +152,7 @@ $popover-border-color: $black !default;
 
 // Toasts
 
-$toast-background-color: $gray-800-dark !default;;
+$toast-background-color: $gray-800-dark !default;
 
 
 // Modals
@@ -157,6 +164,13 @@ $modal-content-border-color: $black !default;
 // Progress bars
 
 $progress-bg: $gray-600-dark !default;
+
+
+// List groups
+
+$list-group-border-color: $border-color !default;
+
+$list-group-hover-bg: $gray-900-dark !default;
 
 
 // 
@@ -204,3 +218,8 @@ $navbar-light-border-color: $gray-800-dark !default;
 
 $custom-switch-indicator-bg: $gray-800-dark !default;
 $custom-switch-indicator-active-bg: $white !default;
+
+
+// Backgrounds
+
+$bg-soft-level: 10 !default;

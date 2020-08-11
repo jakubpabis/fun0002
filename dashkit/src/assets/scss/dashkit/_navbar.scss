@@ -65,7 +65,7 @@
             color: $navbar-dark-hover-color;
           }
         }
-        
+
         .navbar-nav .show > .nav-link,
         .navbar-nav .dropdown-item.active,
         .navbar-nav .dropdown-item:active {
@@ -153,7 +153,7 @@
             color: $navbar-vibrant-hover-color;
           }
         }
-        
+
         .navbar-nav .show > .nav-link,
         .navbar-nav .dropdown-item.active,
         .navbar-nav .dropdown-item:active {
@@ -210,7 +210,6 @@
 
 .navbar-brand {
   margin-right: 0;
-  min-width: 180px;
 }
 
 .navbar-brand-img,
@@ -307,7 +306,7 @@
 // Expanded
 // 
 // Expanded navbar specific styles
-        
+
 .navbar-expand {
 
   @each $breakpoint, $value in $grid-breakpoints {
@@ -325,7 +324,7 @@
 
         .navbar-collapse {
           flex-grow: inherit;
-          
+
           &:before {
             display: none;
           }
@@ -355,7 +354,7 @@
             }
           }
         }
-        
+
         // Toggle dropdown on hover
         @if ($navbar-dropdown-toggle-on-hover) {
           .dropup, .dropright, .dropdown, .dropleft {
@@ -499,14 +498,16 @@
     }
   }
 
-  // Second level
   .navbar-nav .nav .nav-link {
     padding-left: $navbar-padding-x + $navbar-icon-min-width;
   }
 
-  // Third level
   .navbar-nav .nav .nav .nav-link {
     padding-left: $navbar-padding-x * 1.5 + $navbar-icon-min-width;
+  }
+
+  .navbar-nav .nav .nav .nav .nav-link {
+    padding-left: $navbar-padding-x * 2 + $navbar-icon-min-width;
   }
 
   .navbar-heading {
@@ -521,7 +522,7 @@
   // Expanded
   // 
   // Expanded navbar specific styles
-  
+
   &.navbar-expand {
 
     @each $breakpoint, $value in $grid-breakpoints {
@@ -531,7 +532,8 @@
         @include media-breakpoint-up(#{$breakpoint}) {
           display: block;
           position: fixed;
-          top: 0; bottom: 0;
+          top: 0;
+          bottom: 0;
           width: 100%;
           max-width: $navbar-vertical-width;
           padding-left: $navbar-vertical-padding-x;
@@ -589,35 +591,37 @@
             &.active {
 
               &:before {
-                top: 0.25rem;
-                bottom: 0.25rem;
-                left: 0; right: auto;
-                border-left: 10px solid $primary;
+                top: $nav-link-padding-y;
+                bottom: $nav-link-padding-y;
+                left: 0;
+                right: auto;
+                border-left: 2px solid $primary;
                 border-bottom: 0;
               }
             }
           }
 
-          // Second level
           .navbar-nav .nav .nav-link {
             padding-left: $navbar-vertical-padding-x + $navbar-icon-min-width;
           }
 
-          // Third level
           .navbar-nav .nav .nav .nav-link {
             padding-left: $navbar-vertical-padding-x * 1.5 + $navbar-icon-min-width;
           }
 
+          .navbar-nav .nav .nav .nav .nav-link {
+            padding-left: $navbar-vertical-padding-x * 2 + $navbar-icon-min-width;
+          }
+
           .navbar-brand {
-            min-width: 160px;
             display: block;
             text-align: center;
-            padding-top: (1rem - $navbar-padding-y);
-            padding-bottom: (2.5rem - $navbar-padding-y);
+            padding-top: (2rem - $navbar-padding-y);
+            padding-bottom: (2rem - $navbar-padding-y);
           }
 
           .navbar-brand-img {
-            max-height: 2.4rem;
+            max-height: 3rem;
           }
 
           .navbar-user {
@@ -651,7 +655,7 @@
   // Expanded
   // 
   // Expanded navbar specific styles
-  
+
   &.navbar-expand {
 
     @each $breakpoint, $value in $grid-breakpoints {

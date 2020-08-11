@@ -11,6 +11,7 @@ var demoMode = (function() {
   // Variables
   //
 
+  var popover = document.querySelector('#popoverDemo');
   var form = document.querySelector('#demoForm');
   var topnav = document.querySelector('#topnav');
   var topbar = document.querySelector('#topbar');
@@ -26,16 +27,39 @@ var demoMode = (function() {
   var stylesheetDark = document.querySelector('#stylesheetDark');
 
   var config = {
+    showPopover: (localStorage.getItem('dashkitShowPopover')) ? localStorage.getItem('dashkitShowPopover') : true,
     colorScheme: (localStorage.getItem('dashkitColorScheme')) ? localStorage.getItem('dashkitColorScheme') : 'light',
     navPosition: (localStorage.getItem('dashkitNavPosition')) ? localStorage.getItem('dashkitNavPosition') : 'sidenav',
     navColor: (localStorage.getItem('dashkitNavColor')) ? localStorage.getItem('dashkitNavColor') : 'default',
     sidebarSize: (localStorage.getItem('dashkitSidebarSize')) ? localStorage.getItem('dashkitSidebarSize') : 'base'
   }
 
-
   //
   // Functions
   //
+
+  function togglePopover() {
+    if (popover) {
+      var showPopover = JSON.parse(config.showPopover) && config.sidebarSize === 'base';
+
+      // Show popover on load
+      if (showPopover) {
+        $(popover).popover({
+          'boundary': 'viewport',
+          'offset': '50px',
+          'placement': 'top',
+          'template': '<div class="popover popover-lg popover-dark d-none d-md-block" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
+        }).popover('show');
+      }
+
+      // Hide popover on click
+      popover.addEventListener('click', function() {
+        $(popover).popover('hide');
+
+        localStorage.setItem('dashkitShowPopover', false);
+      });
+    }
+  }
 
   function parseUrl() {
     var search = window.location.search.substring(1);
@@ -102,7 +126,7 @@ var demoMode = (function() {
   }
 
   function toggleNavColor(navColor) {
-    
+
     if (sidebar && sidebarSmall && topnav) {
 
       if (navColor == 'default') {
@@ -182,13 +206,15 @@ var demoMode = (function() {
   }
 
   function hideNode(node) {
-    node.setAttribute('style', 'display: none !important');
+    node && node.setAttribute('style', 'display: none !important');
   }
-
 
   //
   // Event
   //
+
+  // Toggle popover
+  togglePopover();
 
   // Parse url
   parseUrl();
@@ -230,7 +256,6 @@ var demoMode = (function() {
       });
     });
   }
-
 
   //
   // Return

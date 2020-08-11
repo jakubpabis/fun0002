@@ -110,31 +110,3 @@
     color: $white;
   }
 }
-
-.nav-pills {
-
-  .nav-link {
-
-    &.facebook {
-      color: $facebook;
-
-      &.active {
-        background-color: $facebook;
-        color: white;
-      }
-
-    }
-
-    &.twitter {
-      color: $twitter;
-
-      &.active {
-        background-color: $twitter;
-        color: white;
-      }
-
-    }
-
-  }
-
-}

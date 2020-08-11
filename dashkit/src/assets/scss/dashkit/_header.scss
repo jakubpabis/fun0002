@@ -18,7 +18,7 @@
 .header-body {
   padding-top: $header-spacing-y;
   padding-bottom: $header-spacing-y;
-  //border-bottom: $header-body-border-width solid $header-body-border-color;
+  border-bottom: $header-body-border-width solid $header-body-border-color;
 }
 
 .header.bg-dark .header-body,

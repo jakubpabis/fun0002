@@ -13,7 +13,6 @@
 
   var toggle = document.querySelectorAll('[data-toggle="dropzone"]');
 
-
   //
   // Functions
   //
@@ -26,8 +25,10 @@
 
   function init(el) {
     var currentFile = undefined;
+
     var elementOptions = el.dataset.options;
-        elementOptions = elementOptions ? JSON.parse(elementOptions) : {};
+    elementOptions = elementOptions ? JSON.parse(elementOptions) : {};
+
     var defaultOptions = {
       previewsContainer: el.querySelector('.dz-preview'),
       previewTemplate: el.querySelector('.dz-preview').innerHTML,
@@ -41,7 +42,7 @@
         });
       }
     }
-    var options = Object.assign(elementOptions, defaultOptions);
+    var options = Object.assign(defaultOptions, elementOptions);
 
     // Clear preview
     el.querySelector('.dz-preview').innerHTML = '';
@@ -49,7 +50,6 @@
     // Init dropzone
     new Dropzone(el, options);
   }
-
 
   //
   // Events

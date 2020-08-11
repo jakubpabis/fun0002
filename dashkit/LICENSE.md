@@ -6,7 +6,6 @@ Dashkit is designed, developed and supported by Good Themes.
 
 Use of this theme is governed by the license terms of the Bootstrap Themes platform (https://themes.getbootstrap.com/licenses/)
 
-
 ### Font License ###
 
 Cerebri Sans is included with the Dashkit theme, though it is subject to a different license. 
