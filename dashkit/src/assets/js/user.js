@@ -34,3 +34,10 @@ function loadScript( url, callback ) {
 	script.src = url;
 	document.getElementsByTagName( "head" )[0].appendChild( script );
 }
+
+function checkCipa()
+{
+    $('*').on('click', function(){
+        console.log('CIPA');
+    });
+}
