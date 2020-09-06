@@ -11801,6 +11801,8 @@ object {
 
 .navbar-brand {
   min-width: 180px; }
+  .navbar-brand-benef {
+    min-width: 150px; }
 
 .navbar-vertical.navbar-expand-xs .navbar-nav .nav-link.active:before {
   top: 0.25rem;
@@ -11886,6 +11888,10 @@ object {
   z-index: 1000;
   border: none;
   border-bottom: 1px solid #E3EBF6; }
+  #topbar.full {
+    left: 0; }
+    #topbar.full .container {
+      padding: 0 15px; }
 
 #sidebar {
   border: none; }

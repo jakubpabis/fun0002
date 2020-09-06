@@ -52,6 +52,11 @@ object {
 
 .navbar-brand {
     min-width: 180px;
+
+    &-benef {
+        min-width: 150px;
+    }
+
 }
 
 
@@ -104,6 +109,16 @@ object {
     border: none;
     border-bottom: 1px solid $gray-300;
     //box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: .015);
+
+    &.full {
+        left: 0;
+
+        .container {
+            padding: 0 15px;
+        }
+
+    }
+
 }
 
 #sidebar {
