@@ -122,7 +122,7 @@ object {
 }
 
 #sidebar {
-    border: none;
+    border-left: 1px solid $gray-300;
 
     @media(max-width: 767px) {
         position: fixed;
@@ -135,7 +135,7 @@ object {
 
 .main-content {
     padding-top: 72px;
-    box-shadow: inset 1px 1px 0 rgba($color: $gray-300, $alpha: 1);
+    //box-shadow: inset 1px 1px 0 rgba($color: $gray-300, $alpha: 1);
     border: none!important;
 }
 

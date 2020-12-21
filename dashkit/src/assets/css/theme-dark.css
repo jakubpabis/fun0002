@@ -11894,7 +11894,7 @@ object {
       padding: 0 15px; }
 
 #sidebar {
-  border: none; }
+  border-left: 1px solid #E3EBF6; }
   @media (max-width: 767px) {
     #sidebar {
       position: fixed;
@@ -11904,7 +11904,6 @@ object {
 
 .main-content {
   padding-top: 72px;
-  box-shadow: inset 1px 1px 0 #e3ebf6;
   border: none !important; }
 
 .card {
