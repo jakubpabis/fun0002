@@ -90,68 +90,68 @@
   //
   // Variables
   //
-  
-  var chart = document.getElementById('headerChart2');
+    
+    var chart = document.getElementById('headerChart2').getContext('2d');
 
+    //
+    // Functions
+    //
 
-  //
-  // Functions
-  //
-
-  function init(chart) {
-    new Chart(chart, {
-      type: 'line',
-      options: {
-        scales: {
-          yAxes: [{
-            gridLines: {
-              color: '#283E59',
-              zeroLineColor: '#283E59'
-            },
-            ticks: {
-              callback: function(value) {
-                if ( !(value % 10) ) {
-                  return '' + value + 'k PLN';
+    function init(chart) {
+      new Chart(chart, {
+        type: 'line',
+        options: {
+          scales: {
+            yAxes: [{
+              gridLines: {
+                color: '#283E59',
+                zeroLineColor: '#283E59'
+              },
+              ticks: {
+                callback: function(value) {
+                  if ( !(value % 10) ) {
+                    return '' + value + 'k PLN';
+                  }
                 }
               }
-            }
-          }]
-        },
-        tooltips: {
-          callbacks: {
-            label: function(item, data) {
-              var label = data.datasets[item.datasetIndex].label || '';
-              var yLabel = item.yLabel;
-              var content = '';
+            }]
+          },
+          tooltips: {
+            callbacks: {
+              label: function(item, data) {
+                var label = data.datasets[item.datasetIndex].label || '';
+                var yLabel = item.yLabel;
+                var content = '';
 
-              if (data.datasets.length > 1) {
-                content += '<span class="popover-body-label mr-auto">' + label + '</span>';
+                if (data.datasets.length > 1) {
+                  content += '<span class="popover-body-label mr-auto">' + label + '</span>';
+                }
+
+                content += '<span class="popover-body-value">' + yLabel + 'k PLN</span>';
+                return content;
               }
-
-              content += '<span class="popover-body-value">' + yLabel + 'k PLN</span>';
-              return content;
             }
           }
+        },
+        data: {
+          labels: ['Lis', 'Gru', 'Sty'],
+          datasets: [{
+            label: 'Wartość jednostki udziałowej',
+            data: [-20,15,100]
+          }]
         }
-      },
-      data: {
-        labels: ['Sty', 'Lut', 'Mar', 'Kwi', 'Maj', 'Cze', 'Lip', 'Sie', 'Wrz', 'Paź', 'Lis', 'Gru'],
-        datasets: [{
-          label: 'Zarobki',
-          data: [-20,10,5,15,10,-20,15,25,20,-30,25,100]
-        }]
-      }
-    });
-  };
+      });
+    };
 
 
-  //
-  // Events
-  //
-  
-  if (typeof Chart !== 'undefined' && chart) {
-    init(chart);
-  }
+    //
+    // Events
+    //
+    
+    if (typeof Chart !== 'undefined' && chart) {
+      init(chart);
+    }
+
 
 })();
 
@@ -681,6 +681,10 @@
             borderWidth: 2
           },
           point: {
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+            borderColor: 'rgba(0, 0, 0, 0)',
+            borderWidth: 0,
+            radius: 0,
             hoverRadius: 0
           }
         },
@@ -691,9 +695,78 @@
         }
       },
       data: {
-        labels: new Array(12),
+        labels: new Array(9),
         datasets: [{
-          data: [0, 15, 10, 25, 30, 15, 40, 50, 80, 60, 55, 65]
+          data: [0, 15, 10, 25, 30, 15, 40, 50, 5]
+        }]
+      }
+    });
+  };
+
+
+  //
+  // Events
+  //
+  
+  if (typeof Chart !== 'undefined' && chart) {
+    init(chart);
+  }
+
+})();
+
+
+
+// Sparkline
+//
+// Sparkline card chart
+
+(function() {
+
+  //
+  // Variables
+  //
+  
+  var chart = document.getElementById('sparklineChart2');
+
+
+  //
+  // Functions
+  //
+
+  function init(chart) {
+    new Chart(chart, {
+      type: 'line',
+      options: {
+        scales: {
+          yAxes: [{
+            display: false
+          }],
+          xAxes: [{
+            display: false
+          }]
+        },
+        elements: {
+          line: {
+            borderWidth: 2
+          },
+          point: {
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+            borderColor: 'rgba(0, 0, 0, 0)',
+            borderWidth: 0,
+            radius: 0,
+            hoverRadius: 0
+          }
+        },
+        tooltips: {
+          custom: function() {
+            return false;
+          }
+        }
+      },
+      data: {
+        labels: new Array(9),
+        datasets: [{
+          data: [0, 15, 10, 45, 30, 15, 100, 50, 400]
         }]
       }
     });
@@ -814,3 +887,37 @@
   }
 
 })();
+
+// function addData(chart, label, data) {
+//   chart.data.labels = label
+//   chart.data.datasets.forEach((dataset) => {
+//       dataset.data = data;
+//   });
+//   chart.update();
+// }
+
+// function updateChartData(chart, label, data)
+// {
+//   var $chart = document.getElementById(chart);
+//   console.log($chart);
+//   console.log(label);
+//   console.log(data);
+//   $chart.data.labels.pop();
+//   $chart.data.datasets.forEach((dataset) => {
+//       dataset.data.pop();
+//   });
+//   $chart.data.labels.push(label);
+//   $chart.data.datasets.forEach((dataset) => {
+//       dataset.data.push(data);
+//   });
+//   $chart.update();
+// }
+
+// $(document).ready(function(){
+
+//   $('*[data-chart]').on('click', function() {
+//     console.log($($(this).data('chart')));
+//     addData($($(this).data('chart')), $(this).data('labels'), $(this).data('sets'));
+//   });
+
+// });

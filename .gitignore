@@ -11,10 +11,13 @@
 /build/themes/sative/meta/*
 /node_modules
 **/node_modules
-node_modules
+/react/node_modules
+/react/node_modules/*
 /.DS_Store
 **/.DS_Store
 !/.gitignore
 !/build/themes
 !/build/plugins/sative
 !/build/plugins/sative/*
+!dashkit/dist/
+!dashkit/dist/*

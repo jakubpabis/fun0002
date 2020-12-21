@@ -13,7 +13,6 @@
 
   var toggle = document.querySelectorAll('[data-toggle="popover"]');
 
-
   //
   // Functions
   //
@@ -22,7 +21,6 @@
     $(toggle).popover();
   }
 
-
   //
   // Events
   //
@@ -30,5 +28,5 @@
   if (toggle) {
     init(toggle);
   }
-  
+
 })();

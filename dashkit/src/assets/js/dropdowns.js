@@ -1,64 +1,53 @@
 //
 // dropdowns.js
-// Theme module
 //
 
 'use strict';
 
 (function() {
+  var dropdowns = document.querySelectorAll('.dropup, .dropright, .dropdown, .dropleft');
+  var events = ['click'];
 
-  //
-  // Variables
-  //
+  function toggleDropdown(e, dropdown) {
+    var parentMenu = dropdown.closest('.dropdown-menu');
 
-  var dropdown = document.querySelectorAll('.dropup, .dropright, .dropdown, .dropleft');
-  var dropdownSubmenuToggle = document.querySelectorAll('.dropdown-menu .dropdown-toggle');
+    if (parentMenu) {
+      e.preventDefault();
+      e.stopPropagation();
 
+      var currentMenu = dropdown.querySelector('.dropdown-menu');
+      var siblingMenus = parentMenu.querySelectorAll('.dropdown-menu');
 
-  //
-  // Functions
-  //
+      [].forEach.call(siblingMenus, function(menu) {
+        if (menu !== currentMenu) {
+          menu.classList.remove('show');
+        }
+      });
 
-  function toggleSubmenu(el) {
-    var dropdownMenu = el.parentElement.querySelector('.dropdown-menu');
-    var dropdownMenuSiblings = el.closest('.dropdown-menu').querySelectorAll('.dropdown-menu');
-
-    [].forEach.call(dropdownMenuSiblings, function(el) {
-      if (el !== dropdownMenu) {
-        el.classList.remove('show');
-      }
-    });
-
-    dropdownMenu.classList.toggle('show');
+      currentMenu.classList.toggle('show');
+    }
   }
 
-  function hideSubmenu(el) {
-    var dropdownSubmenus = el.querySelectorAll('.dropdown-menu');
+  function hideDropdowns(dropdown) {
+    var currentMenu = dropdown.querySelector('.dropdown-menu');
+    var nestedMenus = currentMenu.querySelectorAll('.dropdown-menu');
 
-    if (dropdownSubmenus) {
-      [].forEach.call(dropdownSubmenus, function(el) {
-        el.classList.remove('show');
+    if (nestedMenus) {
+      [].forEach.call(nestedMenus, function(menu) {
+        menu.classList.remove('show');
       });
     }
   }
 
+  [].forEach.call(dropdowns, function(dropdown) {
+    var toggle = dropdown.querySelector('[data-toggle="dropdown"]');
 
-  //
-  // Events
-  //
-
-  if (dropdownSubmenuToggle) {
-    [].forEach.call(dropdownSubmenuToggle, function(el) {
-      el.addEventListener('click', function(e) {
-        e.preventDefault();
-        toggleSubmenu(el);
-        e.stopPropagation();
-      });
+    toggle.addEventListener(events[0], function(e) {
+      toggleDropdown(e, dropdown);
     });
-  }
-
-  $(dropdown).on('hide.bs.dropdown', function() {
-    hideSubmenu(this);
   });
 
+  $(dropdowns).on('hide.bs.dropdown', function() {
+    hideDropdowns(this);
+  });
 })();

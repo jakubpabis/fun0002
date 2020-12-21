@@ -14,7 +14,8 @@
 .dropdown-toggle {
 
   &::after {
-    width: auto; height: auto;
+    width: auto;
+    height: auto;
     border: none !important;
     vertical-align: middle;
     font-family: 'Feather';
@@ -43,7 +44,8 @@
 
   &::before {
     content: '\e92f';
-    width: auto; height: auto;
+    width: auto;
+    height: auto;
     border: none !important;
     vertical-align: middle;
     font-family: 'Feather';
@@ -73,6 +75,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -118,4 +121,17 @@
     max-height: $dropdown-card-body-max-height;
     overflow-y: auto;
   }
+}
+
+
+// Sizing
+
+.dropdown-menu-sm {
+  padding-top: $dropdown-padding-y-sm;
+  padding-bottom: $dropdown-padding-y-sm;
+  font-size: $dropdown-font-size-sm;
+}
+
+.dropdown-menu-sm .dropdown-item {
+  padding: $dropdown-item-padding-y-sm $dropdown-item-padding-x-sm;
 }

@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+        "title": "Wykup abonamentu - Fundit"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+	================================================== -->
+	@@include("partials/modals.html")
+
+	<!-- NAVIGATION
+	================================================== -->
+	@@include("partials/sidebar.html", {
+		"category": "dashboards",
+		"subcategory": "user-settings",
+		"page": "subscription.html"
+	})
+
+	<!-- MAIN CONTENT
+	================================================== -->
+	<div class="main-content">
+
+    @@include("partials/topbar.html")
+
+      <!-- HEADER -->
+      <div class="pt-7 pb-8 bg-dark bg-ellipses">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-6">
+              
+              <!-- Title -->
+              <h1 class="display-3 text-center text-white">
+                Wykup abonament
+              </h1>
+              
+              <!-- Text -->
+              <p class="lead text-center text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut inventore adipisci veritatis sit aspernatur fugit, velit minus ab placeat odio laboriosam. Earum omnis dolores laudantium amet repellendus aliquid, corporis molestias.
+              </p>
+
+            </div>
+          </div> <!-- / .row -->
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="container-fluid pb-6">
+        <div class="row mt-n7 mb-4 align-items-end">
+          <div class="col-12 col-lg-4">
+            
+            <!-- Card -->
+            <div class="card lift">
+              <div class="card-body">
+                
+                <!-- Title -->
+                <h5 class="text-uppercase text-center text-muted my-4">
+                  Pakiet Starter
+                </h5>
+                
+                <!-- Price -->
+                <div class="row no-gutters align-items-end justify-content-center mb-2">
+                  <div class="col-auto">
+                    <div class="display-2 mb-0">4.99</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="h2 mb-2 ml-1">PLN</div>
+                  </div>
+                </div> <!-- / .row -->
+
+                <!-- Period -->
+                <div class="h6 text-uppercase text-center text-muted mb-5">
+                    Jednarozowo
+                </div>
+
+                <!-- Features -->
+                <div class="mb-3">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center px-0">
+                        <span>Możliwość dokonania transakcji do:</span><br/><span class="h2 d-block mt-2">100 PLN</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Button -->
+                <button type="button" href="#modalPayment" data-toggle="modal" class="btn btn-block btn-light">
+                  Kup pakiet Starter
+                </button>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-lg-4 mt-n5">
+            
+            <!-- Card -->
+            <div class="card lift-lg lift">
+              <div class="card-body">
+                
+                <!-- Title -->
+                <h4 class="text-uppercase text-center text-primary my-4">
+                  <strong>Pakiet Standard</strong>
+                </h4>
+                
+                <!-- Price -->
+                <div class="row no-gutters align-items-end justify-content-center mb-2">
+                    <div class="col-auto">
+                        <div class="display-1 mb-0"><strong>39.99</strong></div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="h1 mb-2 ml-1">PLN</div>
+                    </div>
+                </div> <!-- / .row -->
+
+                <div class="h5 text-uppercase text-center text-muted mb-5">
+                    Jednarozowo
+                </div>
+
+                <!-- Features -->
+                <div class="mb-3">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center px-0">
+                        <span class="h3 font-weight-normal">Możliwość dokonania transakcji do:</span><br/><strong class="h1 d-block mt-2 text-primary">1 000 PLN</strong>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Button -->
+                <button type="button" href="#modalPayment" data-toggle="modal" class="btn btn-block btn-lg btn-primary py-3">
+                  <span class="h2">Kup pakiet Standard</span>
+                </button>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-lg-4">
+            
+            <!-- Card -->
+            <div class="card lift">
+              <div class="card-body">
+                
+                <!-- Title -->
+                <h5 class="text-uppercase text-center text-muted my-4">
+                    <span class="fe fe-star mr-2"></span> Pakiet VIP <span class="fe fe-star ml-2"></span>
+                </h5>
+                
+                <!-- Price -->
+                <div class="row no-gutters align-items-end justify-content-center mb-2">
+                    <div class="col-auto">
+                        <div class="display-2">119.99</div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="h2 mb-2 ml-1">PLN</div>
+                    </div>
+                </div> <!-- / .row -->
+
+                <div class="h6 text-uppercase text-center text-muted mb-5">
+                    miesięcznie
+                </div>
+
+                <!-- Features -->
+                <div class="mb-3">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-center px-0">
+                        <span class="h1 text-primary d-block">Nielimitowana kwota <br/>transakcji</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Button -->
+                <button type="button" href="#modalPayment" data-toggle="modal" class="btn btn-block btn-light">
+                  Kup pakiet VIP
+                </button>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6">
+            
+            <!-- Card -->
+            <div class="card card-inactive">
+              <div class="card-body">
+
+                <!-- Title -->
+                <h3 class="text-center">
+                  Potrzebujesz pomocy w wyborze?
+                </h3>
+
+                <!-- Text -->
+                <p class="text-muted text-center">
+                  We can help you decide what’s the best for your company based on a lot of factors and other cool stuff that I’m going to write about.
+                </p>
+
+                <!-- Button -->
+                <div class="text-center">
+                  <a href="#!" class="btn btn-outline-secondary">
+                    Skontaktuj się
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+
+    </div> <!-- / .main-content -->
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>
