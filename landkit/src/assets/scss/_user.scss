@@ -2,3 +2,27 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+
+.bg-dark-50 {
+    background-color: rgba($color: $dark, $alpha: 0.50)
+}
+
+.bg-dark-75 {
+    background-color: rgba($color: $dark, $alpha: 0.75)
+}
+
+.bg-dark-90 {
+    background-color: rgba($color: $dark, $alpha: 0.90)
+}
+
+.bg-dark-95 {
+    background-color: rgba($color: $dark, $alpha: 0.95)
+}
+
+.bg-gradient-black-dark {
+    background-image: linear-gradient(to bottom, $black 0%, $dark 100%);
+}
+
+.bg-gradient-black {
+    background-image: linear-gradient(to bottom, $black 0%, rgba($color: $black, $alpha: 0.85) 50%, rgba($color: $black, $alpha: 0) 100%);
+}

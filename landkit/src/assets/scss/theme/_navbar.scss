@@ -52,6 +52,7 @@
 }
 
 .navbar-brand-img {
+  min-height: $navbar-brand-height;
   max-height: $navbar-brand-height;
   width: auto;
 }

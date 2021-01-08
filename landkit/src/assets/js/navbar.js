@@ -14,7 +14,14 @@
   function makeNavbarDark(navbar) {
     navbar.classList.remove('navbar-light');
     navbar.classList.remove('bg-white');
+    navbar.classList.remove('bg-gradient-black');
     navbar.classList.add('navbar-dark');
+
+    isLight = false;
+  }
+
+  function makeNavbarDarker(navbar) {
+    navbar.classList.add('bg-gradient-black');
 
     isLight = false;
   }
@@ -31,7 +38,7 @@
     var scrollTop = window.pageYOffset;
 
     if (scrollTop && !isLight) {
-      makeNavbarLight(navbar);
+      makeNavbarDarker(navbar);
     }
 
     if (!scrollTop) {

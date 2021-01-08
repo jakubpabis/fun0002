@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     @@include("partials/head.html", {
-      "pageTitle": "Landkit"
+      "pageTitle": "Fundit"
     })
   </head>
   <body>
@@ -14,48 +14,48 @@
     <!-- NAVBAR
     ================================================== -->
     @@include("partials/navbar.html", {
-      "classList": "navbar-dark",
+      "classList": "navbar-dark px-xl-8",
       "container": "container-fluid",
-      "button": "info"
+      "button": "success"
     })
 
     <!-- WELCOME 
     ================================================== -->
-    <section class="mt-n11 pt-12 pb-8 pt-md-14 pb-md-11 bg-black bg-pattern-2">
+    <section class="mt-n11 pt-12 pb-8 pt-md-13 pb-md-11 bg-black bg-pattern-2">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-lg-10 text-center">
 
             <!-- Headin -->
             <h1 class="display-1 font-weight-bold text-white" data-aos="fade-up" data-aos-delay="50">
-              The UI framework that you'll actually love to use.
+              Inwestuj i zarabiaj na startup'ach z branży IT
             </h1>
 
             <!-- Text -->
-            <p class="lead text-gray-500 mb-6 mx-auto" data-aos="fade-up" data-aos-delay="100" style="max-width: 500px;">
-              We created an easy-to-use set of components for building startup sites and apps.
+            <p class="lead text-gray-500 mb-6 mx-auto" data-aos="fade-up" data-aos-delay="100" style="max-width: 600px;">
+              Fundit daje możliwość inwestycji w obiecujące startupy, jak również opcję szybkiego zwrotu z inwestycji poprzez platformę do sprzedaży jednostek udziałowych.
             </p>
 
             <!-- Button -->
             <p class="mb-7 mb-md-9" data-aos="fade-up" data-aos-delay="150">
-              <a class="btn btn-info shadow lift" href="#!">
-                Get it now <i class="fe fe-arrow-right ml-3"></i>
+              <a class="btn btn-primary shadow lift" href="#jakToDziala" data-toggle="smooth-scroll">
+                Dowiedz się więcej <i class="fe fe-arrow-right ml-3"></i>
               </a>
             </p>
 
           </div>
         </div> <!-- / .row -->
-        <div class="row">
-          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-12" data-aos="fade-up" data-aos-delay="200">
 
             <!-- Media -->
-            <div class="position-relative pt-7 pb-7 pl-7 mb-7 mb-md-9 rounded-xl shadow-multicolor overflow-hidden">
+            <div class="position-relative p-5 mb-7 mb-md-9 rounded-xl shadow-multicolor overflow-hidden">
 
               <!-- Background -->
               <div class="position-absolute top-0 right-0 bottom-0 left-0 bg-gradient-multicolor"></div>
 
               <!-- Image -->
-              <img class="position-relative img-fluid rounded-left shadow-lg" src="assets/img/screenshots/desktop/dashkit-alt.jpg" alt="..." />
+              <img class="position-relative img-fluid rounded shadow-lg" src="assets/img/alex-knight-2EJCSULRwC8-unsplash.jpg" alt="..." />
 
             </div>
 
@@ -66,7 +66,7 @@
 
             <!-- Heading -->
             <h6 class="text-uppercase text-center text-info mb-6">
-              Enable the future of tech
+              Zbierają się u nas:
             </h6>
 
           </div>
@@ -132,19 +132,19 @@
 
     <!-- FEATURES 
     ================================================== -->
-    <section class="bg-gradient-dark-black py-8 py-md-11">
+    <section id="jakToDziala" class="bg-gradient-dark-black py-8 py-md-11">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-lg-7 text-center">
 
             <!-- Heading -->
             <h2 class="display-3 font-weight-bold text-white">
-              Includes all the bells and whistles you'll need.
+              Jak działa <img src="@@webRoot/assets/img/logo_white.svg" class="ml-2 w-25 mt-n4" title="fundit" alt="Fundit branding logo białe">
             </h2>
 
             <!-- Text -->
             <p class="lead text-muted mb-9">
-              We make it easy by including all of the necessary assets from fonts to illustrations to icongraphy.
+              Innowacyjna platforma skupiająca się na zbiórce funduszy dla startup'ów z branży IT i nie tylko.
             </p>
 
           </div>
@@ -157,14 +157,14 @@
               <div class="card-body p-5 pb-0 my-auto">
 
                 <!-- Image -->
-                <img class="img-fluid" src="assets/img/illustrations/illustration-1-dark.png" alt="..." style="max-width: 150px;">
+                <img class="img-fluid" src="assets/img/illustrations/illustration-1-dark.png" alt="..." style="max-width: 164px;">
 
               </div>
               <div class="card-body p-5">
 
                 <!-- Heading -->
                 <h3 class="font-weight-bold text-white">
-                  Free Illustrations
+                  My znajdujemy interesujący startup
                 </h3>
 
                 <!-- Text -->
@@ -183,14 +183,14 @@
               <div class="card-body p-5 pb-0 my-auto">
 
                 <!-- Letter -->
-                <div class="line-height-1 font-weight-bolder text-info" style="font-size: 100px;">Aa</div>
+                <img class="img-fluid" src="assets/img/illustrations/illustration-2.png" alt="..." style="max-width: 220px;">
 
               </div>
               <div class="card-body p-5">
 
                 <!-- Heading -->
                 <h3 class="font-weight-bold text-white">
-                  Premium Font
+                  Sprawdzamy wiarygodność projektu
                 </h3>
 
                 <!-- Text -->
@@ -209,18 +209,14 @@
               <div class="card-body p-5 pb-0 my-auto">
 
                 <!-- Palette -->
-                <div class="d-inline-flex flex-row-reverse">
-                  <div class="p-6 rounded-circle bg-primary ml-n3"></div>
-                  <div class="p-6 rounded-circle bg-gray-800 ml-n3"></div>
-                  <div class="p-6 rounded-circle bg-gradient-multicolor"></div>
-                </div>
+                <img class="img-fluid" src="assets/img/illustrations/illustration-9.png" alt="..." style="max-width: 164px;">
 
               </div>
               <div class="card-body p-5">
 
                 <!-- Heading -->
                 <h3 class="font-weight-bold text-white">
-                  Color Palette
+                  Otwieramy zbiórkę na platformie
                 </h3>
 
                 <!-- Text -->
@@ -248,7 +244,7 @@
 
                 <!-- Heading -->
                 <h3 class="font-weight-bold text-white">
-                  Rich Iconography
+                  Ty rejestrujesz swoje konto
                 </h3>
 
                 <!-- Text -->
@@ -293,7 +289,7 @@
 
                 <!-- Heading -->
                 <h3 class="font-weight-bold text-white">
-                  Royalty Free Images
+                  Inwestujesz w startup
                 </h3>
 
                 <!-- Text -->
@@ -321,7 +317,7 @@
 
                 <!-- Heading -->
                 <h3 class="font-weight-bold text-white">
-                  Extensive Variables
+                  Zarabiasz!
                 </h3>
 
                 <!-- Text -->
@@ -346,30 +342,30 @@
 
             <!-- Heading -->
             <h2 class="display-3 font-weight-bold text-white mb-6 mb-md-8">
-              Generate dark mode in one click.
+              Chcesz szybkiego zwrotu inwestycji?
             </h2>
 
             <!-- Text -->
             <p class="text-muted lead mb-6">
-              <span class="text-white font-weight-bold">Considered.</span> Most frameworks simply invert colors, but we create a separate palette to make dark mode just as sharp.
+              <span class="text-white font-weight-bold">Nic prostszego!</span> Inwestuj w nowe projekty i odsprzedawaj swoje jednostki udziałowe innym uytkownikom fundit z zyskiem!
             </p>
 
             <!-- Text -->
-            <p class="text-muted lead mb-7 mb-md-0">
+            <!-- <p class="text-muted lead mb-7 mb-md-0">
               <span class="text-white font-weight-bold">Efficient.</span> Often dark mode is bundled into a single style codebase, but we've kept it separate to keep filesize small.
-            </p>
+            </p> -->
 
           </div>
           <div class="col-12 col-md-6">
 
             <!-- Media -->
-            <div class="position-relative vw-md-50 pt-7 pl-7 pl-md-9 overflow-hidden" style="max-width: 800px;">
+            <div class="position-relative vw-md-50 p-7 overflow-hidden" style="max-width: 900px;">
 
               <!-- Background -->
               <div class="position-absolute top-0 right-0 bottom-0 left-0 bg-gradient-multicolor rounded-xl"></div>
 
               <!-- Image -->
-              <img class="position-relative w-100 w-md-150" src="assets/img/screenshots/desktop/dashkit-alt-mixed-cropped.png" alt="...">
+              <img class="position-relative w-100 w-md-130 rounded" src="assets/img/piotr-laskawski-1AIiZzBtymY-unsplash.jpg" alt="...">
 
             </div>
 
@@ -387,18 +383,18 @@
 
             <!-- Heading -->
             <h2 class="display-4 font-weight-bold text-white mb-6 mb-md-8">
-              A comprenshive and organized Figma file.
+              Wolisz stabilny zysk?
             </h2>
 
             <!-- Text -->
             <p class="text-muted lead mb-6">
-              <span class="text-white font-weight-bold">Components.</span> UI elements are organized into components and variants to make extensive customization much easier.
+              <span class="text-white font-weight-bold">Proszę bardzo!</span> Kup jednostki udziałowe startup'u w który wierzysz i czekaj na wypłatę corocznej dywidendy.
             </p>
 
             <!-- Text -->
-            <p class="text-muted lead mb-7 mb-md-0">
+            <!-- <p class="text-muted lead mb-7 mb-md-0">
               <span class="text-white font-weight-bold">Color + Text Styles.</span> We've codified a type scale and color palette for rapid building of new components and pages.
-            </p>
+            </p> -->
 
           </div>
           <div class="col-12 col-md-6 col-lg-6 order-md-0">
@@ -407,18 +403,15 @@
             <div class="position-relative">
 
               <!-- Media -->
-              <div class="position-relative vw-md-50 p-7 p-md-9 pl-0 overflow-hidden float-right" style="max-width: 800px;">
+              <div class="position-relative vw-md-50 p-7 overflow-hidden float-right" style="max-width: 800px;">
 
                 <!-- Background -->
                 <div class="position-absolute top-0 right-0 bottom-0 left-0 bg-gradient-multicolor rounded-xl"></div>
 
                 <!-- Image -->
-                <img class="position-relative w-100 w-md-120 float-right" src="assets/img/screenshots/ui/landkit-figma.png" alt="...">
+                <img class="position-relative w-100 w-md-120 float-right" src="assets/img/pan-xiaozhen-qZtSuZvdob0-unsplash.jpg" alt="...">
 
               </div>
-
-              <!-- Icon -->
-              <img class="img-fluid position-absolute top-0 right-0 mt-n5 mr-n5" src="assets/img/icons/figma-dark-circle.png" alt="...">
 
             </div>
 
@@ -436,43 +429,48 @@
 
             <!-- Preheading -->
             <h6 class="text-uppercase text-info">
-              By the numbers
+              fundit w liczbach
             </h6>
 
             <!-- Heading -->
             <h2 class="display-3 font-weight-bold text-white">
-              Build your startup now.
+              Inwestuj i zarabiaj!
             </h2>
 
             <!-- Text -->
             <p class="text-muted lead mb-6 mb-md-8">
-              We've made it easier for thousands of people to build their dream companies.
+              Stworzyliśmy platformę, z której korzystają ju setki ludzi. Dołącz do grona inwestorów przyszłości!
             </p>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
 
             <!-- Stats -->
             <div class="d-flex">
               <div class="pr-5">
                 <h1 class="font-weight-bold text-white mb-0">
-                  <span data-countup='{"startVal": 0}' data-to="5" data-aos data-aos-id="countup:in">0</span>k
+                  <span data-countup='{"startVal": 0}' data-to="5240000" data-aos data-aos-id="countup:in">2000000</span> pln
                 </h1>
                 <p class="text-gray-700 mb-0">
-                  Sales
+                  Zebraliśmy już ponad
                 </p>
               </div>
               <div class="px-5">
                 <h1 class="font-weight-bold text-white mb-0">
-                  <span data-countup='{"startVal": 0}' data-to="17" data-aos data-aos-id="countup:in">0</span>k
+                  <span data-countup='{"startVal": 0}' data-to="17" data-aos data-aos-id="countup:in">0</span>
                 </h1>
                 <p class="text-gray-700 mb-0">
-                  Companies
+                  Zbiórek
                 </p>
               </div>
               <div class="pl-5">
                 <h1 class="font-weight-bold text-white mb-0">
-                  <span data-countup='{"startVal": "0"}' data-to="83" data-aos data-aos-id="countup:in">0</span>k
+                  <span data-countup='{"startVal": "0"}' data-to="942" data-aos data-aos-id="countup:in">0</span>
                 </h1>
                 <p class="text-gray-700 mb-0">
-                  Apps
+                  Użytkowników
                 </p>
               </div>
             </div>
@@ -503,26 +501,26 @@
     <section class="py-10 py-md-14 bg-black">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center">
 
             <!-- Pretitle -->
             <h6 class="text-uppercase text-info mb-6">
-              It's your future
+              Przyszłość należy do Ciebie
             </h6>
 
             <!-- Heading -->
             <h1 class="display-1 font-weight-bold text-white">
-              Build your new startup the easy way.
+              Zacznij zarabiać już dziś!
             </h1>
 
             <!-- Text -->
             <p class="fs-lg text-gray-500 mb-6 mb-md-8">
-              Focus on the core value of your company and let us handle your UI, responsive details, and accessibility.
+              Zarejestruj się na platformie, znajdź interesujący startup, zainwestuj i ciesz się szybko zarobionym kapitałem!
             </p>
 
             <!-- Button -->
             <a href="#!" class="btn btn-info lift">
-              Download a demo <i class="fe fe-arrow-right ml-2"></i>
+              Zarejestruj się <i class="fe fe-arrow-right ml-2"></i>
             </a>
 
           </div>

@@ -3529,8 +3529,8 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.15rem;
-  padding-bottom: 0.15rem;
+  padding-top: 0.52rem;
+  padding-bottom: 0.52rem;
   margin-right: 0;
   font-size: 1.5rem;
   line-height: inherit;
@@ -11535,7 +11535,8 @@ a.card, a.card-body, a.card-footer, a.card-meta {
   font-weight: 600; }
 
 .navbar-brand-img {
-  max-height: 2.4rem;
+  min-height: 1.66rem;
+  max-height: 1.66rem;
   width: auto; }
 
 .navbar-dark .navbar-brand {
@@ -13989,3 +13990,23 @@ body.compensate-for-scrollbar {
 @media (min-width: 992px) {
   .sidenav-right {
     right: 0; } }
+
+.bg-dark-50 {
+  background-color: rgba(27, 42, 78, 0.5); }
+
+.bg-dark-75 {
+  background-color: rgba(27, 42, 78, 0.75); }
+
+.bg-dark-90 {
+  background-color: rgba(27, 42, 78, 0.9); }
+
+.bg-dark-95 {
+  background-color: rgba(27, 42, 78, 0.95); }
+
+.bg-gradient-black-dark {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#161C2D), to(#1B2A4E));
+  background-image: linear-gradient(to bottom, #161C2D 0%, #1B2A4E 100%); }
+
+.bg-gradient-black {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#161C2D), color-stop(50%, rgba(22, 28, 45, 0.85)), to(rgba(22, 28, 45, 0)));
+  background-image: linear-gradient(to bottom, #161C2D 0%, rgba(22, 28, 45, 0.85) 50%, rgba(22, 28, 45, 0) 100%); }
