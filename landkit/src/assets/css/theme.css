@@ -14010,3 +14010,30 @@ body.compensate-for-scrollbar {
 .bg-gradient-black {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#161C2D), color-stop(50%, rgba(22, 28, 45, 0.85)), to(rgba(22, 28, 45, 0)));
   background-image: linear-gradient(to bottom, #161C2D 0%, rgba(22, 28, 45, 0.85) 50%, rgba(22, 28, 45, 0) 100%); }
+
+.btn.fc {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center; }
+
+.btn-facebook {
+  background-color: #3b5999;
+  color: white; }
+
+.btn-google {
+  background-color: #DB4437;
+  color: white; }
+
+.btn-twitter {
+  background-color: #1DA1F2;
+  color: white; }
+
+.btn-twitter:hover, .btn-twitter:active, .btn-twitter:focus,
+.btn-google:hover,
+.btn-google:active,
+.btn-google:focus,
+.btn-facebook:hover,
+.btn-facebook:active,
+.btn-facebook:focus {
+  color: white !important; }

@@ -1,4 +1,4 @@
-// 
+//
 // user.scss
 // Use this to write your custom SCSS
 //
@@ -25,4 +25,36 @@
 
 .bg-gradient-black {
     background-image: linear-gradient(to bottom, $black 0%, rgba($color: $black, $alpha: 0.85) 50%, rgba($color: $black, $alpha: 0) 100%);
+}
+
+.btn.fc {
+    display: flex;
+    align-items: center;
+}
+
+.btn-facebook {
+	background-color: $facebook;
+	color: white;
+}
+
+.btn-google {
+	background-color: $google;
+	color: white;
+}
+
+.btn-twitter {
+	background-color: $twitter;
+	color: white;
+}
+
+.btn-twitter,
+.btn-google,
+.btn-facebook {
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: white!important;
+	}
+
 }

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
     <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
     <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
@@ -23,10 +24,10 @@
 
   </head>
   <body>
-    
+
     <!-- CONTENT
     ================================================== -->
-    <section class="section-border border-primary">
+    <section class="section-border border-primary bg-black bg-pattern-2">
       <div class="container d-flex flex-column">
         <div class="row align-items-center justify-content-center no-gutters min-vh-100">
           <div class="col-8 col-md-6 col-lg-7 offset-md-1 order-md-2 mt-auto mt-md-0 pt-8 pb-4 py-md-11">
@@ -36,46 +37,63 @@
 
           </div>
           <div class="col-12 col-md-5 col-lg-4 order-md-1 mb-auto mb-md-0 pb-8 py-md-11">
-            
+
             <!-- Heading -->
-            <h1 class="mb-0 font-weight-bold text-center">
-              Sign up
+            <h1 class="mb-0 font-weight-bold text-center text-white">
+              Zarejestruj się
             </h1>
 
             <!-- Text -->
-            <p class="mb-6 text-center text-muted">
-              Simplify your workflow in minutes.
+			<p class="mb-6 text-center text-muted">
+              Zacznij inwestować w swoją przyszłość
             </p>
 
             <!-- Form -->
             <form class="mb-6">
 
+				<div class="form-group mb-8">
+	                <div class="row justify-content-center align-items-center">
+	                    <div class="col-auto">
+	                        <a href="index.html" class="btn btn-sm fc btn-facebook lift">
+	                            <i class="fab fa-facebook-f fa-lg mr-3"></i>
+	                            Facebook
+	                        </a>
+	                    </div>
+	                    <div class="col-auto">
+	                        <a href="index.html" class="btn btn-sm fc btn-google lift">
+	                            <i class="fab fa-google fa-lg mr-3"></i>
+	                            Google
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+
               <!-- Email -->
-              <div class="form-group">
+              <div class="form-group text-white">
                 <label for="email">
-                  Email Address
+                  Adres email
                 </label>
-                <input type="email" class="form-control" id="email" placeholder="name@address.com">
+                <input type="email" class="form-control bg-dark border-dark" id="email" placeholder="imie@nazwisko.pl">
               </div>
 
               <!-- Password -->
-              <div class="form-group mb-5">
+              <div class="form-group mb-5 text-white">
                 <label for="password">
-                  Password
+                  Hasło
                 </label>
-                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                <input type="password" class="form-control bg-dark border-dark" id="password" placeholder="Wprowadź hasło">
               </div>
 
               <!-- Submit -->
               <button class="btn btn-block btn-primary" type="submit">
-                Sign up
+                Zarejestruj się
               </button>
 
             </form>
 
             <!-- Text -->
             <p class="mb-0 font-size-sm text-center text-muted">
-              Already have an account? <a href="signin-illustration.html">Log in</a>.
+              Masz już konto? <a href="signin-illustration.html" class="text-white">Zaloguj się</a>.
             </p>
 
           </div>
@@ -108,6 +126,6 @@
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
 
-      
+
   </body>
 </html>
