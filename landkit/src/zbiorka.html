@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "pageTitle": "Utwórz nową zbiórkę - Fundit"
+    })
+  </head>
+  <body class="bg-dark">
+
+  <!-- MODALS
+  ================================================== -->
+  @@include("partials/modals.html")
+
+  <!-- NAVBAR
+  ================================================== -->
+  @@include("partials/navbar.html", {
+    "classList": "navbar-dark px-xl-8",
+    "container": "container-fluid",
+    "button": "success"
+  })
+
+  <!-- WELCOME
+  ================================================== -->
+  <section class="mt-n11 pt-12 pb-8 pt-md-13 pb-md-11 bg-black bg-pattern-2">
+	<div class="container">
+	  <div class="row justify-content-center">
+		<div class="col-12 col-lg-10 text-center">
+
+		  <!-- Headin -->
+		  <h1 class="display-1 font-weight-bold text-white" data-aos="fade-up" data-aos-delay="50">
+			Utwórz swoją pierwszą zbiórkę już dziś!
+		  </h1>
+
+		  <!-- Text -->
+		  <p class="lead text-gray-500 mb-6 mx-auto" data-aos="fade-up" data-aos-delay="100" style="max-width: 600px;">
+			Fundit daje możliwość tworzenia zbiórek inwestycyjnych, kompletnie <strong class="text-white">za darmo!</strong>
+		  </p>
+
+		  <!-- Button -->
+		  <p class="mb-7 mb-md-9" data-aos="fade-up" data-aos-delay="150">
+			<a class="btn btn-primary shadow lift" href="#jakZaczac" data-toggle="smooth-scroll">
+			  Dowiedz się więcej <i class="fe fe-arrow-right ml-3"></i>
+			</a>
+		  </p>
+
+		</div>
+	  </div> <!-- / .row -->
+	</div> <!-- / .container -->
+  </section>
+
+  <!-- SHAPE
+  ================================================== -->
+  <div class="position-relative">
+	<div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+	  @@include("assets/img/shapes/curves/curve-1.svg")
+	</div>
+  </div>
+
+    <!-- PAY IT DOWN
+    ================================================== -->
+    <section class="pt-8 pt-md-11 text-white bg-gradient-dark-black" id="jakZaczac">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Badge -->
+            <span class="badge badge-pill badge-primary mb-3">
+              <span class="h6 text-uppercase">To proste</span>
+            </span>
+
+            <!-- Heading -->
+            <h1 class="display-3 font-weight-bold">
+              Zacznij zbierać z <img src="@@webRoot/assets/img/logo_white.svg" class="ml-2 w-25 mt-n4" title="fundit" alt="Fundit branding logo białe">
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-gray-700 mb-7 mb-md-9">
+              Anytime you leave your home vacant, you're wasting potential earnings! Rent it out for an hour or a day at a time.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 col-lg-7">
+
+            <!-- Screenshot -->
+            <div class="mb-8 mb-md-0">
+
+              <!-- Image -->
+              <img src="assets/img/covers/cover-11.jpg" alt="..." class="screenshot img-fluid mw-md-110 float-right mr-md-6 mb-6 mb-md-0">
+
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-5">
+
+            <!-- List -->
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-primary mt-1">
+                <span>1</span>
+              </div>
+
+              <!-- Body -->
+              <div class="ml-5">
+
+                <!-- Heading -->
+                <h3>
+                  Wypełnij formularz
+                </h3>
+
+                <!-- Text -->
+                <p class="text-gray-700 mb-6">
+                  W kilku zdaniach opisz jak najlepiej swój pomysł biznes.
+                </p>
+
+              </div>
+
+            </div>
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-primary mt-1">
+                <span>2</span>
+              </div>
+
+              <!-- Body -->
+              <div class="ml-5">
+
+                <!-- Heading -->
+                <h3>
+					Poczekaj na odpowiedź
+                </h3>
+
+                <!-- Text -->
+                <p class="text-gray-700 mb-6">
+                  	Na zgłoszenia odpowiadamy zwykle w ciągu kilku godzin.
+                </p>
+
+              </div>
+
+            </div>
+            <div class="d-flex">
+
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-primary mt-1">
+                <span>3</span>
+              </div>
+
+              <!-- Body -->
+              <div class="ml-5">
+
+                <!-- Heading -->
+                <h3>
+                	Promuj swoją zbiórkę
+                </h3>
+
+                <!-- Text -->
+                <p class="text-gray-700 mb-0">
+                	Po wystawieniu zbiórki na platformię, zacznij ją aktywnie promować, aby zebrać jak najwięcej!
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- PRICING
+    ================================================== -->
+    <section class="py-8 py-md-12 bg-black text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+
+            <!-- Badge -->
+            <span class="badge badge-pill badge-primary mb-3">
+              <span class="h6 text-uppercase">Opłaty</span>
+            </span>
+
+            <!-- Heading -->
+            <h2>
+              Nie martw się o koszta! <br>
+              <span class="text-primary">U nas zbierasz środki</span> <strong>za darmo!</strong>
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-gray-700 mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <!-- List -->
+            <div class="row">
+              <div class="col-12 col-lg-6">
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-primary mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p>
+                    35% more earned
+                  </p>
+
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-primary mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <p class="mb-lg-0">
+                    No wasted time
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-6">
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <span class="badge badge-rounded-circle badge-primary mt-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </span>
+
+                  <!-- Text -->
+                  <p>
+                    60% less vacancy
+                  </p>
+
+                </div>
+
+                <!-- Item -->
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle badge-primary mr-1 mr-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="mb-0">
+                    Data driven
+                  </p>
+
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+          <div class="col-12 col-md-6">
+
+            <!-- Image -->
+            <img src="assets/img/illustrations/illustration-7.png" alt="..." class="img-fluid mw-md-130">
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    <!-- BLOG
+    ================================================== -->
+    <section class="py-8 py-md-11 bg-gradient-dark-black border-bottom text-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+
+            <!-- Badge -->
+            <span class="badge badge-pill badge-primary mb-3">
+              <span class="h6 text-uppercase">Zapisz się</span>
+            </span>
+
+            <!-- Heading -->
+            <h1>
+              Wypełnij formularz i zacznij zbiórkę!
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-7 mb-md-9">
+              We share common trends and strategies for improving your rental income and making sure you stay in high demand.
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+		<div class="row justify-content-center">
+          <div class="col-12 col-md-12 col-lg-10">
+
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group mb-5">
+
+                    <!-- Label -->
+                    <label for="contactName">
+                      Imię i nazwisko
+                    </label>
+
+                    <!-- Input -->
+                    <input type="text" class="form-control bg-gray-800 border-dark text-white" id="contactName" placeholder="Imię i nazwisko">
+
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group mb-5">
+
+                    <!-- Label -->
+                    <label for="contactEmail">
+                    	Adres email
+                    </label>
+
+                    <!-- Input -->
+                    <input type="email" class="form-control bg-gray-800 border-dark text-white" id="contactEmail" placeholder="super@biznes.pl">
+
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group mb-7 mb-md-9">
+
+                    <!-- Label -->
+                    <label for="contactMessage">
+                      Opis Twojego biznesu
+                    </label>
+
+                    <!-- Input -->
+                    <textarea class="form-control bg-gray-800 border-dark text-white" id="contactMessage" rows="5" placeholder="Opisz w kilku zdaniach jaki jest Twój pomysł na biznes."></textarea>
+
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+              <div class="row justify-content-center">
+                <div class="col-auto">
+
+                  <!-- Submit -->
+                  <button type="submit" class="btn btn-primary lift">
+                    Wyślij zgłoszenie
+                  </button>
+
+                </div>
+              </div> <!-- / .row -->
+            </form>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+      "classList": "bg-dark"
+    })
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>
