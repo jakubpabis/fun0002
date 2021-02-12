@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Landkit"
+    })
+  </head>
+  <body class="bg-light">
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/navbar.html", {
+        "classList": "navbar-dark px-xl-8",
+        "container": "container-fluid",
+        "button": "success"
+    })
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="mt-n11 pt-12 pb-8 pt-md-13 pb-13 pb-md-15 bg-black bg-pattern-2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center">
+            <!-- Headin -->
+            <h1 class="display-2 font-weight-bold text-white">
+              Inwestuj!
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-white-75 mb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quam debitis velit necessitatibus modi quidem consequatur dolore illo repellat voluptatum odit.
+            </p>
+
+            <!-- Badges -->
+            <nav class="nav justify-content-center">
+              <a
+                class="badge badge-pill badge-white-soft active mr-1 mb-1"
+                href="#"
+                data-toggle="pill"
+                data-filter="*"
+                data-target="#portfolio"
+              >
+                <span class="h6 text-uppercase">Branża IT</span>
+              </a>
+              <a
+                class="badge badge-pill badge-white-soft mr-1 mb-1"
+                href="#"
+                data-toggle="pill"
+                data-filter=".product"
+                data-target="#portfolio"
+              >
+                <span class="h6 text-uppercase">Automotive</span>
+              </a>
+              <a
+                class="badge badge-pill badge-white-soft mr-1 mb-1"
+                href="#"
+                data-toggle="pill"
+                data-filter=".ux"
+                data-target="#portfolio"
+              >
+                <span class="h6 text-uppercase">Med-tech</span>
+              </a>
+              <a
+                class="badge badge-pill badge-white-soft mr-1 mb-1"
+                href="#"
+                data-toggle="pill"
+                data-filter=".resources"
+                data-target="#portfolio"
+              >
+                <span class="h6 text-uppercase">Podróże</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        @@include("assets/img/shapes/curves/curve-1.svg")
+      </div>
+    </div>
+
+    <!-- CONTENT
+    ================================================== -->
+    <section class="bg-gradient-dark-black py-8 py-md-11">
+      <div class="container mt-n10 mt-md-n14">
+        <div class="row" id="portfolio" data-isotope='{"layoutMode": "fitRows"}'>
+          <div class="col-12 ux">
+            <!-- Card -->
+            <a class="card lift lift-lg shadow-light-lg mb-7" href="#!">
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/portfolio/portfolio-26.jpg" alt="..." />
+
+              <!-- Body -->
+              <div class="card-body">
+                <!-- Shape -->
+                <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                  @@include("assets/img/shapes/curves/curve-1.svg")
+                </div>
+
+                <!-- Preheading -->
+                <h6 class="text-uppercase mb-1 text-muted">Lifestyle Branding</h6>
+
+                <!-- Heading -->
+                <h4 class="mb-0">Larq Bright Campaign</h4>
+                <p class="text-muted mb-0 mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aperiam unde cupiditate iusto. Autem alias molestiae ipsum quo ex, cumque quod vel doloremque sit facilis maiores, eius optio iure quidem!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-5 product">
+            <!-- Card -->
+            <a class="card lift lift-lg shadow-light-lg mb-7" href="#!">
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/portfolio/portfolio-17.jpg" alt="..." />
+
+              <!-- Body -->
+              <div class="card-body">
+                <!-- Shape -->
+                <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                  @@include("assets/img/shapes/curves/curve-1.svg")
+                </div>
+
+                <!-- Preheading -->
+                <h6 class="text-uppercase mb-1 text-muted">Branding Exploration</h6>
+
+                <!-- Heading -->
+                <h4 class="mb-0">Curology "Any Face" Campaign</h4>
+                <p class="text-muted mb-0 mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aperiam unde cupiditate iusto. Autem alias molestiae ipsum quo ex, cumque quod vel doloremque sit facilis maiores, eius optio iure quidem!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-7 product">
+            <!-- Card -->
+            <a class="card lift lift-lg shadow-light-lg mb-7" href="#!">
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/portfolio/portfolio-18.jpg" alt="..." />
+
+              <!-- Body -->
+              <div class="card-body">
+                <!-- Shape -->
+                <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                  @@include("assets/img/shapes/curves/curve-1.svg")
+                </div>
+
+                <!-- Preheading -->
+                <h6 class="text-uppercase mb-1 text-muted">Product Exploration</h6>
+
+                <!-- Heading -->
+                <h4 class="mb-0">Goby Brush Prototype</h4>
+                <p class="text-muted mb-0 mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aperiam unde cupiditate iusto. Autem alias molestiae ipsum quo ex, cumque quod vel doloremque sit facilis maiores, eius optio iure quidem!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-7 resources">
+            <!-- Card -->
+            <a class="card lift lift-lg shadow-light-lg mb-7" href="#!">
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/portfolio/portfolio-19.jpg" alt="..." />
+
+              <!-- Body -->
+              <div class="card-body">
+                <!-- Shape -->
+                <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                  @@include("assets/img/shapes/curves/curve-1.svg")
+                </div>
+
+                <!-- Preheading -->
+                <h6 class="text-uppercase mb-1 text-muted">Product Design</h6>
+
+                <!-- Heading -->
+                <h4 class="mb-0">Goby Packaging </h4>
+                <p class="text-muted mb-0 mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aperiam unde cupiditate iusto. Autem alias molestiae ipsum quo ex, cumque quod vel doloremque sit facilis maiores, eius optio iure quidem!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-5 resources">
+            <!-- Card -->
+            <a class="card lift lift-lg shadow-light-lg mb-7" href="#!">
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/portfolio/portfolio-20.jpg" alt="..." />
+
+              <!-- Body -->
+              <div class="card-body">
+                <!-- Shape -->
+                <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                  @@include("assets/img/shapes/curves/curve-1.svg")
+                </div>
+
+                <!-- Preheading -->
+                <h6 class="text-uppercase mb-1 text-muted">Lifestyle Branding</h6>
+
+                <!-- Heading -->
+                <h4 class="mb-0">Larq Earthtones Collection</h4>
+                <p class="text-muted mb-0 mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aperiam unde cupiditate iusto. Autem alias molestiae ipsum quo ex, cumque quod vel doloremque sit facilis maiores, eius optio iure quidem!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 ux">
+            <!-- Card -->
+            <a class="card lift lift-lg shadow-light-lg mb-7" href="#!">
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/portfolio/portfolio-4.jpg" alt="..." />
+
+              <!-- Body -->
+              <div class="card-body">
+                <!-- Shape -->
+                <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                  @@include("assets/img/shapes/curves/curve-1.svg")
+                </div>
+
+                <!-- Preheading -->
+                <h6 class="text-uppercase mb-1 text-muted">Ideation</h6>
+
+                <!-- Heading -->
+                <h4 class="mb-0">Doodle Pads</h4>
+                <p class="text-muted mb-0 mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aperiam unde cupiditate iusto. Autem alias molestiae ipsum quo ex, cumque quod vel doloremque sit facilis maiores, eius optio iure quidem!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 ux">
+            <!-- Card -->
+            <a class="card lift lift-lg shadow-light-lg mb-7" href="#!">
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/portfolio/portfolio-2.jpg" alt="..." />
+
+              <!-- Body -->
+              <div class="card-body">
+                <!-- Shape -->
+                <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                  @@include("assets/img/shapes/curves/curve-1.svg")
+                </div>
+
+                <!-- Preheading -->
+                <h6 class="text-uppercase mb-1 text-muted">Branding</h6>
+
+                <!-- Heading -->
+                <h4 class="mb-0">Honest Packaging</h4>
+                <p class="text-muted mb-0 mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aperiam unde cupiditate iusto. Autem alias molestiae ipsum quo ex, cumque quod vel doloremque sit facilis maiores, eius optio iure quidem!
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-4 ux">
+            <!-- Card -->
+            <a class="card lift lift-lg shadow-light-lg mb-7" href="#!">
+              <!-- Image -->
+              <img class="card-img-top" src="assets/img/portfolio/portfolio-7.jpg" alt="..." />
+
+              <!-- Body -->
+              <div class="card-body">
+                <!-- Shape -->
+                <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                  @@include("assets/img/shapes/curves/curve-1.svg")
+                </div>
+
+                <!-- Preheading -->
+                <h6 class="text-uppercase mb-1 text-muted">Product Design</h6>
+
+                <!-- Heading -->
+                <h4 class="mb-0">Larq Bottle Redesign</h4>
+                <p class="text-muted mb-0 mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aperiam unde cupiditate iusto. Autem alias molestiae ipsum quo ex, cumque quod vel doloremque sit facilis maiores, eius optio iure quidem!
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- BORDER
+    ================================================== -->
+    <div class="bg-black">
+        <div class="container border-top border-gray-900-50"></div>
+    </div>
+  
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html", {
+        "classList": "bg-black"
+    })
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+  </body>
+</html>

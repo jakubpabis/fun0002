@@ -19,6 +19,38 @@
     background-color: rgba($color: $dark, $alpha: 0.95)
 }
 
+.bg-gray-100 {
+	background-color: $gray-100 !important;
+}
+
+.bg-gray-200 {
+	background-color: $gray-200 !important;
+}
+
+.bg-gray-300 {
+	background-color: $gray-300 !important;
+}
+
+.bg-gray-400 {
+	background-color: $gray-400 !important;
+}
+
+.bg-gray-500 {
+	background-color: $gray-500 !important;
+}
+
+.bg-gray-600 {
+	background-color: $gray-600 !important;
+}
+
+.bg-gray-700 {
+	background-color: $gray-700 !important;
+}
+
+.bg-black {
+background-color: $black !important;
+}
+
 .bg-gradient-black-dark {
     background-image: linear-gradient(to bottom, $black 0%, $dark 100%);
 }
